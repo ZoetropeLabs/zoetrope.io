@@ -1,0 +1,15 @@
+
+.footer-pad {
+	margin-bottom: $footer-height;
+	position: relative;
+	z-index: 2;
+}
+.footer-static {
+	position: fixed;
+	bottom:0;
+	height: $footer-height;
+	z-index: 1;
+	background: #333333;
+}
+
+// TODO: scale footer on mobile

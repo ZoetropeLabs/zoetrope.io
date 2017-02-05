@@ -61,20 +61,6 @@ $footer-height: 400px;
 @import "./components.scss";
 
 
-.footer-pad {
-	margin-bottom: $footer-height;
-	position: relative;
-	z-index: 2;
-}
-.footer-static {
-	position: fixed;
-	bottom:0;
-	height: $footer-height;
-	z-index: 1;
-}
-
-// TODO: scale footer on mobile
-
 html {
 	height: auto;
 }

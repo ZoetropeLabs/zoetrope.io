@@ -45,30 +45,34 @@
 @import "./bootstrap/_utilities.scss";
 
 // Extended Bootstrap components
-@import "./custom/type-custom.scss";
-@import "./custom/alerts-custom.scss";
-@import "./custom/buttons-custom.scss";
-@import "./custom/nav-heading.scss";
-@import "./custom/navbar-utilities.scss";
+@import "./bootstrap-theme/type-custom.scss";
+@import "./bootstrap-theme/alerts-custom.scss";
+@import "./bootstrap-theme/buttons-custom.scss";
+@import "./bootstrap-theme/nav-heading.scss";
+@import "./bootstrap-theme/navbar-utilities.scss";
 
 // Custom theme components
-@import "./custom/icons.scss";
-@import "./custom/text-inherit.scss";
-@import "./custom/nav-bordered.scss";
-@import "./custom/buttons-radius.scss";
-@import "./custom/container-custom.scss";
-@import "./custom/block.scss";
-@import "./custom/navbar-transparent.scss";
-@import "./custom/carousel-light.scss";
-@import "./custom/callouts.scss";
-@import "./custom/featured-list.scss";
-@import "./custom/zoom.scss";
-@import "./custom/text-ribbon.scss";
-@import "./custom/iconlist.scss";
-@import "./custom/cards-bold.scss";
-@import "./custom/statcard.scss";
-@import "./custom/pull-quote.scss";
-@import "./custom/stage.scss";
+@import "./bootstrap-theme/icons.scss";
+@import "./bootstrap-theme/text-inherit.scss";
+@import "./bootstrap-theme/nav-bordered.scss";
+@import "./bootstrap-theme/buttons-radius.scss";
+@import "./bootstrap-theme/container-custom.scss";
+@import "./bootstrap-theme/block.scss";
+@import "./bootstrap-theme/navbar-transparent.scss";
+@import "./bootstrap-theme/carousel-light.scss";
+@import "./bootstrap-theme/callouts.scss";
+@import "./bootstrap-theme/featured-list.scss";
+@import "./bootstrap-theme/zoom.scss";
+@import "./bootstrap-theme/text-ribbon.scss";
+@import "./bootstrap-theme/iconlist.scss";
+@import "./bootstrap-theme/cards-bold.scss";
+@import "./bootstrap-theme/statcard.scss";
+@import "./bootstrap-theme/pull-quote.scss";
+@import "./bootstrap-theme/stage.scss";
+
+@import "./custom/homepage-block.scss";
+@import "./custom/blue-lines.scss";
+@import "./custom/footer.scss";
 
 //
 // Custom styles

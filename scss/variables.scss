@@ -5,6 +5,16 @@ $icon-font-path: "./fonts/";
 $icon-font-name: "toolkit-entypo";
 
 
+// Zoetrope Blue
+$zoetrope-blue:         #009FE3;
+$zoetrope-grey:         #333;
+$zoetrope-grey-light:   #FAFAFA;
+$zoetrope-blue-dark:    #008cc7;
+$zoetrope-blue-darkest: #283c4f;
+$zoetrope-green:    	#8BC34B;
+$zoetrope-white:        #fff;
+$zoetrope-grey-bg:    	#e3e3e3;
+
 // Gray colors
 $body-color:   #000;
 $gray-base:    #000;
@@ -16,7 +26,7 @@ $gray-lighter: lighten($gray-base, 93.5%); // #eee
 
 
 // Brand Colors
-$brand-success: #5cb85c;
+$brand-success: #8BC34B;
 $brand-info:    #5bc0de;
 $brand-warning: #f0ad4e;
 $brand-danger:  #FF3167;
