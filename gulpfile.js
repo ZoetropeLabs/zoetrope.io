@@ -13,15 +13,18 @@ var open         = require('gulp-open')
 var babel        = require('gulp-babel')
 var replace      = require('gulp-replace')
 var wrapper      = require('gulp-wrapper')
+const browserSync = require('browser-sync').create();
+const child = require('child_process');
+const gutil = require('gulp-util');
 
 var Paths = {
   HERE                 : './',
-  DIST                 : 'dist',
-  DIST_TOOLKIT_JS      : 'dist/toolkit.js',
-  SCSS_TOOLKIT_SOURCES : './scss/toolkit*',
+  DIST                 : 'assets',
+  DIST_TOOLKIT_JS      : 'assets/toolkit.js',
+  SCSS_TOOLKIT_SOURCES : './scss/site.scss',
   SCSS                 : './scss/**/**',
   JS                   : [
-
+      "./js/vendor/tether.min.js",
       "./js/bootstrap/util.js",
       "./js/bootstrap/alert.js",
       "./js/bootstrap/button.js",
@@ -34,43 +37,9 @@ var Paths = {
       "./js/bootstrap/scrollspy.js",
       "./js/bootstrap/tab.js",
       './js/custom/*'
-    ]
+    ],
+  SITE_ROOT       : "_site",
 }
-
-var banner  = '/*!\n' +
-  ' * Bootstrap\n' +
-  ' * Copyright 2011-2016\n' +
-  ' * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)\n' +
-  ' */\n'
-var jqueryCheck = 'if (typeof jQuery === \'undefined\') {\n' +
-   '  throw new Error(\'Bootstrap\\\'s JavaScript requires jQuery. jQuery must be included before Bootstrap\\\'s JavaScript.\')\n' +
-   '}\n'
-var jqueryVersionCheck = '+function ($) {\n' +
-  '  var version = $.fn.jquery.split(\' \')[0].split(\'.\')\n' +
-  '  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] >= 4)) {\n' +
-  '    throw new Error(\'Bootstrap\\\'s JavaScript requires at least jQuery v1.9.1 but less than v4.0.0\')\n' +
-  '  }\n' +
-  '}(jQuery);\n\n'
-
-gulp.task('default', ['scss-min', 'js-min'])
-
-gulp.task('watch', function () {
-  gulp.watch(Paths.SCSS, ['scss-min']);
-  gulp.watch(Paths.JS,   ['js-min']);
-})
-
-gulp.task('docs', ['server'], function () {
-  gulp.src(__filename)
-    .pipe(open({uri: 'http://localhost:9001/docs/'}))
-})
-
-gulp.task('server', function () {
-  connect.server({
-    root: 'docs',
-    port: 9001,
-    livereload: true
-  })
-})
 
 gulp.task('scss', function () {
   return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
@@ -115,12 +84,7 @@ gulp.task('js', function () {
       }
     ))
     .pipe(wrapper({
-       header: banner +
-               "\n" +
-               jqueryCheck +
-               "\n" +
-               jqueryVersionCheck +
-               "\n+function () {\n",
+       header: "+ function () {\n",
        footer: '\n}();\n'
     }))
     .pipe(gulp.dest(Paths.DIST))
@@ -134,3 +98,35 @@ gulp.task('js-min', ['js'], function () {
     }))
     .pipe(gulp.dest(Paths.DIST))
 })
+
+gulp.task('jekyll', () => {
+  const jekyll = child.spawn('jekyll', ['build',
+    '--watch',
+    '--incremental',
+    '--drafts'
+  ]);
+
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('Jekyll: ' + message));
+  };
+
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
+});
+
+gulp.task('serve', () => {
+  browserSync.init({
+    files: [Paths.SITE_ROOT + '/**'],
+    port: 4000,
+    server: {
+      baseDir: Paths.SITE_ROOT
+    }
+  });
+
+  gulp.watch(Paths.SCSS, ['scss']);
+  gulp.watch(Paths.JS, ['js']);
+});
+
+gulp.task('dev', ['js', 'scss', 'jekyll', 'serve'])
