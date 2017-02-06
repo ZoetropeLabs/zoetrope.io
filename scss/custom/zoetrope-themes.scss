@@ -1,0 +1,59 @@
+
+.zoetrope-blue, .zoetrope-white, .zoetrope-grey, .zoetrope-dark-blue{
+
+}
+
+.zoetrope-blue {
+    background: $zoetrope-blue;
+    color: white;
+    a {
+        color: white;
+    }
+    h1,h2,h3,h4 {
+        color: white;
+    }
+}
+
+.zoetrope-white {
+    background: $zoetrope-white;
+    color: $gray-darker;
+    a {
+        color: $zoetrope-blue;
+    }
+    h1,h2,h3,h4 {
+        color: $zoetrope-blue;
+    }
+}
+
+.zoetrope-grey {
+    background: $zoetrope-grey;
+    color: white;
+    a {
+        color: white;
+    }
+    h1,h2,h3,h4 {
+        color: $zoetrope-blue;
+    }
+}
+
+.zoetrope-light-grey{
+    background: $zoetrope-grey-bg;
+    color: $gray-darker;
+    a {
+        color: $zoetrope-blue;
+    }
+    h1,h2,h3,h4 {
+        color: $zoetrope-blue;
+    }
+}
+
+.zoetrope-dark-blue {
+    background: $zoetrope-blue-darkest;
+    color: white;
+    a {
+        color: white;
+    }
+    h1,h2,h3,h4 {
+        color: $zoetrope-blue;
+    }
+}

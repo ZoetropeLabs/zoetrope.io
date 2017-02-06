@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2048"
+   height="2048"
+   viewBox="0 0 2048 2048"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="email-line.svg">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Icon - email</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1861"
+     inkscape:window-height="1056"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="0.13419118"
+     inkscape:cx="-3060.2954"
+     inkscape:cy="586.67277"
+     inkscape:window-x="59"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     fit-margin-bottom="2"
+     fit-margin-top="2"
+     fit-margin-left="0"
+     fit-margin-right="0" />
+  <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">Icon - email</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <path
+     style="fill:#000000;fill-rule:evenodd;stroke:none"
+     d="m 83.092436,369.45733 c -68.364414,0 -75.1985998,75.37974 -70.66106,127.38621 0,369.10369 0,738.20726 0,1107.32276 -2.001175,68.751 70.908826,80.2948 123.675134,74.3801 609.6005,0 1219.20099,0 1828.80149,0 68.3758,0 75.1953,-75.3915 70.6611,-127.3982 0,-369.1036 0,-738.20727 0,-1107.31075 1.9863,-68.75096 -70.9084,-80.30666 -123.6751,-74.38012 -609.6006,0 -1219.20106,0 -1828.801564,0 z m 78.099064,74.38012 c 573.96616,0 1147.9323,0 1721.8985,0 -269.008,271.48128 -538.0158,542.97438 -807.0237,814.45565 -48.3125,49.5907 -107.99327,3.8082 -141.53284,-37.5709 C 676.7528,961.76063 418.97215,702.79903 161.1915,443.83745 z M 1964.908,462.4265 c 0,374.37573 0,748.7632 0,1123.1389 -185.9501,-187.1878 -371.9003,-374.3757 -557.8503,-561.5635 185.95,-187.19967 371.9002,-374.38757 557.8503,-561.5754 z M 83.092436,466.11574 C 269.0426,652.06593 454.99275,838.01613 640.94291,1023.9662 454.99275,1209.9163 269.0426,1395.8664 83.092436,1581.8166 c 0,-371.9003 0,-743.80047 0,-1115.70086 z M 689.28995,1072.3073 c 86.01825,83.6865 167.57077,172.4308 256.62878,252.6779 66.20807,47.3296 155.99427,18.4106 202.34977,-42.2359 70.1473,-70.1434 140.2947,-140.2987 210.442,-210.442 174.7932,177.2744 349.5864,354.5489 524.3795,531.8234 -573.9662,0 -1147.93234,0 -1721.8985,0 176.03282,-177.2745 352.06563,-354.549 528.09845,-531.8234 z"
+     id="Icon---email"
+     inkscape:connector-curvature="0" />
+</svg>

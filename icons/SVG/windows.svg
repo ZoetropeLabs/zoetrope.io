@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   data-icon="browser-type-chrome"
+   width="2048"
+   height="2048"
+   class="iconic iconic-browser-type iconic-size-lg iconic-browser-type-chrome"
+   viewBox="0 0 2048 2048"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="windows.svg">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1861"
+     inkscape:window-height="1056"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="0.11523438"
+     inkscape:cx="-3278.8402"
+     inkscape:cy="28.550872"
+     inkscape:window-x="59"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1-4" />
+  <g
+     id="g4"
+     transform="translate(0,1920)">
+    <title
+       id="title6">Browser Type Chrome</title>
+  </g>
+  <!-- Chrome -->
+  <!-- Firefox -->
+  <!-- IE -->
+  <!-- Safari -->
+  <!-- Chrome -->
+  <!-- Firefox -->
+  <!-- IE -->
+  <!-- Safari -->
+  <!-- Chrome -->
+  <!-- Firefox -->
+  <!-- IE -->
+  <!-- Safari -->
+  <g
+     style="fill:#000000;fill-opacity:1"
+     id="layer1-4"
+     inkscape:label="Layer 1"
+     transform="matrix(1.3183032,0,0,1.3183032,203.2248,1627.8437)">
+    <path
+       id="path13-7"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="m 1355.3874,-1193.0218 -794.45003,115.7661 0,587.58271 794.45003,-6.36515 0,-696.98366 z m -866.45577,126.5073 -599.11957,81.55342 0.79565,499.66413 598.32392,-3.5804 0,-577.63715 z m -598.72175,640.49299 0,499.664134 598.72175,82.349096 -0.39782,-578.03501 -598.32393,-3.97822 z m 669.93184,7.95644 0.79565,582.80887 794.45003,112.18574 0,-693.80115 -795.24568,-1.19346 z"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

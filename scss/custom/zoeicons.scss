@@ -1,0 +1,362 @@
+@font-face {
+	font-family: "zoeicons";
+	src: url('fonts/zoeicons.eot');
+	src: url('fonts/zoeicons.eot?#iefix') format('eot'),
+		url('fonts/zoeicons.woff2') format('woff2'),
+		url('fonts/zoeicons.woff') format('woff'),
+		url('fonts/zoeicons.ttf') format('truetype'),
+		url('fonts/zoeicons.svg#zoeicons') format('svg');
+}
+
+@mixin zoeicons-styles {
+	font-family: "zoeicons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%zoeicons {
+	@include zoeicons-styles;
+}
+
+@function zoeicons-char($filename) {
+	$char: "";
+
+	@if $filename == analytics {
+		$char: "\E001";
+	}
+	@if $filename == android {
+		$char: "\E002";
+	}
+	@if $filename == aohl {
+		$char: "\E003";
+	}
+	@if $filename == apple {
+		$char: "\E004";
+	}
+	@if $filename == application {
+		$char: "\E005";
+	}
+	@if $filename == approval {
+		$char: "\E006";
+	}
+	@if $filename == bigcommerce {
+		$char: "\E007";
+	}
+	@if $filename == blackberry {
+		$char: "\E008";
+	}
+	@if $filename == chrome {
+		$char: "\E009";
+	}
+	@if $filename == cloud {
+		$char: "\E00A";
+	}
+	@if $filename == consultants {
+		$char: "\E00B";
+	}
+	@if $filename == developers {
+		$char: "\E00C";
+	}
+	@if $filename == down {
+		$char: "\E00D";
+	}
+	@if $filename == download {
+		$char: "\E00E";
+	}
+	@if $filename == drupal {
+		$char: "\E00F";
+	}
+	@if $filename == email-line {
+		$char: "\E010";
+	}
+	@if $filename == eon {
+		$char: "\E011";
+	}
+	@if $filename == firefox {
+		$char: "\E012";
+	}
+	@if $filename == flip-0 {
+		$char: "\E013";
+	}
+	@if $filename == flip-1 {
+		$char: "\E014";
+	}
+	@if $filename == flip-2 {
+		$char: "\E015";
+	}
+	@if $filename == flip-3 {
+		$char: "\E016";
+	}
+	@if $filename == flip-4 {
+		$char: "\E017";
+	}
+	@if $filename == flip-5 {
+		$char: "\E018";
+	}
+	@if $filename == flip-6 {
+		$char: "\E019";
+	}
+	@if $filename == flip-7 {
+		$char: "\E01A";
+	}
+	@if $filename == flip-8 {
+		$char: "\E01B";
+	}
+	@if $filename == flip-9 {
+		$char: "\E01C";
+	}
+	@if $filename == github {
+		$char: "\E01D";
+	}
+	@if $filename == gsma {
+		$char: "\E01E";
+	}
+	@if $filename == html5 {
+		$char: "\E01F";
+	}
+	@if $filename == ie {
+		$char: "\E020";
+	}
+	@if $filename == linkedin {
+		$char: "\E021";
+	}
+	@if $filename == livechat-line {
+		$char: "\E022";
+	}
+	@if $filename == magento {
+		$char: "\E023";
+	}
+	@if $filename == mbition {
+		$char: "\E024";
+	}
+	@if $filename == mongodb {
+		$char: "\E025";
+	}
+	@if $filename == phone-line {
+		$char: "\E026";
+	}
+	@if $filename == photographer {
+		$char: "\E027";
+	}
+	@if $filename == python {
+		$char: "\E028";
+	}
+	@if $filename == reactjs {
+		$char: "\E029";
+	}
+	@if $filename == rexel {
+		$char: "\E02A";
+	}
+	@if $filename == rocket {
+		$char: "\E02B";
+	}
+	@if $filename == safari {
+		$char: "\E02C";
+	}
+	@if $filename == shopify {
+		$char: "\E02D";
+	}
+	@if $filename == small-arrow {
+		$char: "\E02E";
+	}
+	@if $filename == trolley {
+		$char: "\E02F";
+	}
+	@if $filename == up {
+		$char: "\E030";
+	}
+	@if $filename == wand {
+		$char: "\E031";
+	}
+	@if $filename == windows {
+		$char: "\E032";
+	}
+	@if $filename == woocommerce {
+		$char: "\E033";
+	}
+	@if $filename == zoetropatron {
+		$char: "\E034";
+	}
+	@if $filename == zoetrope-z {
+		$char: "\E035";
+	}
+
+	@return $char;
+}
+
+@mixin zoeicons($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %zoeicons;
+		} @else {
+			@include zoeicons-styles;
+		}
+		content: zoeicons-char($filename);
+	}
+}
+
+.zoeicons-analytics {
+	@include zoeicons(analytics);
+}
+.zoeicons-android {
+	@include zoeicons(android);
+}
+.zoeicons-aohl {
+	@include zoeicons(aohl);
+}
+.zoeicons-apple {
+	@include zoeicons(apple);
+}
+.zoeicons-application {
+	@include zoeicons(application);
+}
+.zoeicons-approval {
+	@include zoeicons(approval);
+}
+.zoeicons-bigcommerce {
+	@include zoeicons(bigcommerce);
+}
+.zoeicons-blackberry {
+	@include zoeicons(blackberry);
+}
+.zoeicons-chrome {
+	@include zoeicons(chrome);
+}
+.zoeicons-cloud {
+	@include zoeicons(cloud);
+}
+.zoeicons-consultants {
+	@include zoeicons(consultants);
+}
+.zoeicons-developers {
+	@include zoeicons(developers);
+}
+.zoeicons-down {
+	@include zoeicons(down);
+}
+.zoeicons-download {
+	@include zoeicons(download);
+}
+.zoeicons-drupal {
+	@include zoeicons(drupal);
+}
+.zoeicons-email-line {
+	@include zoeicons(email-line);
+}
+.zoeicons-eon {
+	@include zoeicons(eon);
+}
+.zoeicons-firefox {
+	@include zoeicons(firefox);
+}
+.zoeicons-flip-0 {
+	@include zoeicons(flip-0);
+}
+.zoeicons-flip-1 {
+	@include zoeicons(flip-1);
+}
+.zoeicons-flip-2 {
+	@include zoeicons(flip-2);
+}
+.zoeicons-flip-3 {
+	@include zoeicons(flip-3);
+}
+.zoeicons-flip-4 {
+	@include zoeicons(flip-4);
+}
+.zoeicons-flip-5 {
+	@include zoeicons(flip-5);
+}
+.zoeicons-flip-6 {
+	@include zoeicons(flip-6);
+}
+.zoeicons-flip-7 {
+	@include zoeicons(flip-7);
+}
+.zoeicons-flip-8 {
+	@include zoeicons(flip-8);
+}
+.zoeicons-flip-9 {
+	@include zoeicons(flip-9);
+}
+.zoeicons-github {
+	@include zoeicons(github);
+}
+.zoeicons-gsma {
+	@include zoeicons(gsma);
+}
+.zoeicons-html5 {
+	@include zoeicons(html5);
+}
+.zoeicons-ie {
+	@include zoeicons(ie);
+}
+.zoeicons-linkedin {
+	@include zoeicons(linkedin);
+}
+.zoeicons-livechat-line {
+	@include zoeicons(livechat-line);
+}
+.zoeicons-magento {
+	@include zoeicons(magento);
+}
+.zoeicons-mbition {
+	@include zoeicons(mbition);
+}
+.zoeicons-mongodb {
+	@include zoeicons(mongodb);
+}
+.zoeicons-phone-line {
+	@include zoeicons(phone-line);
+}
+.zoeicons-photographer {
+	@include zoeicons(photographer);
+}
+.zoeicons-python {
+	@include zoeicons(python);
+}
+.zoeicons-reactjs {
+	@include zoeicons(reactjs);
+}
+.zoeicons-rexel {
+	@include zoeicons(rexel);
+}
+.zoeicons-rocket {
+	@include zoeicons(rocket);
+}
+.zoeicons-safari {
+	@include zoeicons(safari);
+}
+.zoeicons-shopify {
+	@include zoeicons(shopify);
+}
+.zoeicons-small-arrow {
+	@include zoeicons(small-arrow);
+}
+.zoeicons-trolley {
+	@include zoeicons(trolley);
+}
+.zoeicons-up {
+	@include zoeicons(up);
+}
+.zoeicons-wand {
+	@include zoeicons(wand);
+}
+.zoeicons-windows {
+	@include zoeicons(windows);
+}
+.zoeicons-woocommerce {
+	@include zoeicons(woocommerce);
+}
+.zoeicons-zoetropatron {
+	@include zoeicons(zoetropatron);
+}
+.zoeicons-zoetrope-z {
+	@include zoeicons(zoetrope-z);
+}

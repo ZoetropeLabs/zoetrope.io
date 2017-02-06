@@ -24,6 +24,19 @@ url: "https://zconnect.io" # the base hostname & protocol for your site, e.g. ht
 twitter_username: jekyllrb
 github_username:  jekyll
 
+meta:
+  address: >
+    26B Oakfield road<br />
+    Clifton<br />
+    Bristol<br />
+    BS8 2BZ<br />
+    United Kingdom
+  phone: "T: 0117 230 0234"
+  email: enquiries@zoetrope.io
+  vat: "VAT registration: 173132825"
+  company: "Company No: 08742496"
+  notice: Zoetrope Ltd Trading as Zoetrope Labs
+
 # Build settings
 markdown: kramdown
 gems:
@@ -37,3 +50,11 @@ exclude:
   - gulpfile.js
   - js
   - scss
+  - icons
+
+
+defults:
+  -
+    primary_menu: false
+    secondary_menu: false
+    title: "Set a title!"

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   data-icon="browser-type-chrome"
+   width="2048"
+   height="2048"
+   class="iconic iconic-browser-type iconic-size-lg iconic-browser-type-chrome"
+   viewBox="0 0 2048 2048"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="magento.svg">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="0.11523438"
+     inkscape:cx="3012.71"
+     inkscape:cy="137.12657"
+     inkscape:window-x="1920"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <g
+     id="g4"
+     transform="translate(0,1920)">
+    <title
+       id="title6">Browser Type Chrome</title>
+  </g>
+  <!-- Chrome -->
+  <!-- Firefox -->
+  <!-- IE -->
+  <!-- Safari -->
+  <!-- Chrome -->
+  <!-- Firefox -->
+  <!-- IE -->
+  <!-- Safari -->
+  <!-- Chrome -->
+  <!-- Firefox -->
+  <!-- IE -->
+  <!-- Safari -->
+  <path
+     inkscape:connector-curvature="0"
+     id="rect1942"
+     d="m 316.70184,23.08148 c -166.95336,0 -302.139214,135.45126 -302.139214,302.40422 l 0,1397.0269 c 0,166.9546 135.185854,302.4059 302.139214,302.4059 l 1397.29356,0 c 166.9958,0 302.4053,-135.286 319.442,-296.5497 l 0,-1397.29332 c -17.0281,-172.6338 -152.5057,-307.994 -319.442,-307.994 l -1397.29356,0 z m 694.52066,171.96605 711.5576,433.64334 0,798.87053 -185.0107,111.8056 0,-803.92916 -526.5469,-319.17691 -526.54727,319.17691 0,803.92916 -185.01066,-111.8056 0,-798.87053 711.55793,-433.64334 z m -104.61762,503.12178 0,935.69939 104.61762,60.4269 104.883,-60.4269 0,-935.69939 232.1284,146.67634 0,814.84395 -337.0114,202.048 -337.01179,-202.048 0,-814.84395 232.39417,-146.67634 z"
+     style="fill:#000000;fill-opacity:1" />
+</svg>

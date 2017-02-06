@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2048"
+   height="2048"
+   viewBox="0 0 2048 2048"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="livechat-line.svg">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Icon-live chat</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1861"
+     inkscape:window-height="1056"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="0.20486111"
+     inkscape:cx="737.31208"
+     inkscape:cy="674.71442"
+     inkscape:window-x="59"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">Icon-live chat</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <path
+     d="m 1023.9996,158.49944 c -557.67038,0 -1009.749766,341.00691 -1009.749766,761.63981 0,259.71725 172.630666,488.79585 435.779146,626.27565 -17.0215,98.3208 -74.46953,217.8944 -219.4042,343.0841 0,0 378.18783,0 586.8454,-223.7798 66.67906,10.4533 135.73825,16.0599 206.52942,16.0599 557.6703,0 1009.7497,-341.007 1009.7497,-761.63985 0,-420.6329 -452.0794,-761.63982 -1009.7497,-761.63982 l 0,0 z m 0,1454.03966 c -81.42912,0 -160.00881,-8.4627 -235.27171,-22.8492 C 647.36293,1778.9266 390.63357,1811.604 390.63357,1811.604 485.58659,1705.2822 514.97704,1593.9789 518.11496,1502.5148 258.64582,1379.3734 86.374816,1164.7968 86.374816,920.13925 c 0,-382.41627 419.802974,-692.39983 937.624784,-692.39983 517.8218,0 937.6248,309.98356 937.6248,692.39983 0,382.41625 -419.803,692.39985 -937.6248,692.39985 l 0,0 z"
+     id="Icon-live-chat"
+     sketch:type="MSShapeGroup"
+     style="fill:#1a1a1a;fill-rule:evenodd;stroke:none"
+     inkscape:connector-curvature="0" />
+</svg>

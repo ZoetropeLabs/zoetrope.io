@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2048"
+   height="2048"
+   viewBox="0 0 2048 2048"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="small-arrow.svg">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1861"
+     inkscape:window-height="1056"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="0.38020834"
+     inkscape:cx="-46.247235"
+     inkscape:cy="936.75799"
+     inkscape:window-x="59"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">Arrow</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <path
+     style="fill:#000000;fill-opacity:0.9;fill-rule:evenodd;stroke:none"
+     d="m 2000.0833,1135.2452 c 2.3577,-3.3681 3.7049,-7.0729 5.8942,-10.601 4.5469,-7.6623 9.2958,-15.3921 12.8323,-23.7954 1.9366,-4.4627 2.8629,-9.3969 4.3785,-14.0954 2.6102,-7.6623 5.5573,-15.1984 7.1571,-23.1975 2.6103,-13.0008 4.0417,-26.2036 4.0417,-39.6001 0,-13.3965 -1.4314,-26.59928 -4.0417,-39.59168 -1.8524,-8.7991 -4.8837,-17.1013 -7.7465,-25.4036 -1.4314,-3.8733 -2.1051,-7.9992 -3.7049,-11.8977 -3.8733,-9.0938 -8.8917,-17.4972 -14.0448,-25.8921 -1.5999,-2.6944 -2.6945,-5.7257 -4.5469,-8.4202 -7.4098,-10.9041 -15.8636,-21.1009 -25.1595,-30.2957 L 1369.0924,282.7111 c -79.0149,-78.08868 -206.9342,-78.08868 -285.848,0 -78.9139,78.09711 -78.9139,204.67758 0,282.77468 l 261.1937,258.47404 -1128.74104,0 c -111.55046,0 -202.08416,89.4896 -202.08416,199.97908 0,110.3885 90.5337,199.9792 202.08416,199.9792 l 1128.84214,0 -261.2948,258.5666 c -78.9139,78.0971 -78.9139,204.686 0,282.7747 39.5074,39.0949 91.241,58.596 142.9745,58.596 51.6325,0 103.366,-19.5011 142.8735,-58.596 l 606.0504,-599.8363 c 9.2959,-9.2032 17.6824,-19.299 25.0584,-30.1947"
+     id="Arrow"
+     sketch:type="MSShapeGroup"
+     inkscape:connector-curvature="0" />
+</svg>

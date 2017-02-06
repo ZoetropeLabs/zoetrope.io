@@ -1,37 +1,37 @@
 </div>
 
-<div class="block block-secondary footer-static">
+<div class="block block-secondary footer-static zoetrope-grey">
   <footer class="container">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    {% include credentials.html %}
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
+    <div class="row footer-content">
+      <div class="col-xs-12 col-sm-3 footer-metadata details">
+        <h3>Get in touch</h3>
+        <!--<img src="/images/logo.png">-->
+        <ul class="list-unstyled">
+          <li>{{site.meta.phone}}</li>
+          <li>{{site.meta.email}}</li>
+          <li>{{site.meta.vat}}</li>
+          <li>{{site.meta.company}}</li>
+          <li>{{site.meta.notice}}</li>
         </ul>
       </div>
-
-      <div class="footer-col footer-col-2">
-        social
+      <div class="col-xs-12 col-sm-3 footer-metadata address">
+        <h3>Find Us</h3>
+        <ul class="list-unstyled">
+          <li>{{site.meta.address}}</li>
+        </ul>
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
+      <div class="col-xs-12 col-sm-6 footer-metadata partners">
+        <h3>Our Partners</h3>
+          <ul class="list-unstyled">
+            <li>IBM</li>
+            <li>IoT Security Foundation</li>
+          </ul>
       </div>
     </div>
 
-  </div>
-
-</footer>
+  </footer>
 
 </div>

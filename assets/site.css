@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -263,7 +264,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 1.4;
@@ -421,7 +422,7 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: #2D3238; }
@@ -4070,7 +4071,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4152,7 +4153,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8970,11 +8971,185 @@ img.zoom-img {
   left: auto;
   right: 20px; }
 
+@font-face {
+  font-family: "zoeicons";
+  src: url("fonts/zoeicons.eot");
+  src: url("fonts/zoeicons.eot?#iefix") format("eot"), url("fonts/zoeicons.woff2") format("woff2"), url("fonts/zoeicons.woff") format("woff"), url("fonts/zoeicons.ttf") format("truetype"), url("fonts/zoeicons.svg#zoeicons") format("svg"); }
+
+.zoeicons-analytics:before, .zoeicons-android:before, .zoeicons-aohl:before, .zoeicons-apple:before, .zoeicons-application:before, .zoeicons-approval:before, .zoeicons-bigcommerce:before, .zoeicons-blackberry:before, .zoeicons-chrome:before, .zoeicons-cloud:before, .zoeicons-consultants:before, .zoeicons-developers:before, .zoeicons-down:before, .zoeicons-download:before, .zoeicons-drupal:before, .zoeicons-email-line:before, .zoeicons-eon:before, .zoeicons-firefox:before, .zoeicons-flip-0:before, .zoeicons-flip-1:before, .zoeicons-flip-2:before, .zoeicons-flip-3:before, .zoeicons-flip-4:before, .zoeicons-flip-5:before, .zoeicons-flip-6:before, .zoeicons-flip-7:before, .zoeicons-flip-8:before, .zoeicons-flip-9:before, .zoeicons-github:before, .zoeicons-gsma:before, .zoeicons-html5:before, .zoeicons-ie:before, .zoeicons-linkedin:before, .zoeicons-livechat-line:before, .zoeicons-magento:before, .zoeicons-mbition:before, .zoeicons-mongodb:before, .zoeicons-phone-line:before, .zoeicons-photographer:before, .zoeicons-python:before, .zoeicons-reactjs:before, .zoeicons-rexel:before, .zoeicons-rocket:before, .zoeicons-safari:before, .zoeicons-shopify:before, .zoeicons-small-arrow:before, .zoeicons-trolley:before, .zoeicons-up:before, .zoeicons-wand:before, .zoeicons-windows:before, .zoeicons-woocommerce:before, .zoeicons-zoetropatron:before, .zoeicons-zoetrope-z:before {
+  font-family: "zoeicons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none; }
+
+.zoeicons-analytics:before {
+  content: ""; }
+
+.zoeicons-android:before {
+  content: ""; }
+
+.zoeicons-aohl:before {
+  content: ""; }
+
+.zoeicons-apple:before {
+  content: ""; }
+
+.zoeicons-application:before {
+  content: ""; }
+
+.zoeicons-approval:before {
+  content: ""; }
+
+.zoeicons-bigcommerce:before {
+  content: ""; }
+
+.zoeicons-blackberry:before {
+  content: ""; }
+
+.zoeicons-chrome:before {
+  content: ""; }
+
+.zoeicons-cloud:before {
+  content: ""; }
+
+.zoeicons-consultants:before {
+  content: ""; }
+
+.zoeicons-developers:before {
+  content: ""; }
+
+.zoeicons-down:before {
+  content: ""; }
+
+.zoeicons-download:before {
+  content: ""; }
+
+.zoeicons-drupal:before {
+  content: ""; }
+
+.zoeicons-email-line:before {
+  content: ""; }
+
+.zoeicons-eon:before {
+  content: ""; }
+
+.zoeicons-firefox:before {
+  content: ""; }
+
+.zoeicons-flip-0:before {
+  content: ""; }
+
+.zoeicons-flip-1:before {
+  content: ""; }
+
+.zoeicons-flip-2:before {
+  content: ""; }
+
+.zoeicons-flip-3:before {
+  content: ""; }
+
+.zoeicons-flip-4:before {
+  content: ""; }
+
+.zoeicons-flip-5:before {
+  content: ""; }
+
+.zoeicons-flip-6:before {
+  content: ""; }
+
+.zoeicons-flip-7:before {
+  content: ""; }
+
+.zoeicons-flip-8:before {
+  content: ""; }
+
+.zoeicons-flip-9:before {
+  content: ""; }
+
+.zoeicons-github:before {
+  content: ""; }
+
+.zoeicons-gsma:before {
+  content: ""; }
+
+.zoeicons-html5:before {
+  content: ""; }
+
+.zoeicons-ie:before {
+  content: ""; }
+
+.zoeicons-linkedin:before {
+  content: ""; }
+
+.zoeicons-livechat-line:before {
+  content: ""; }
+
+.zoeicons-magento:before {
+  content: ""; }
+
+.zoeicons-mbition:before {
+  content: ""; }
+
+.zoeicons-mongodb:before {
+  content: ""; }
+
+.zoeicons-phone-line:before {
+  content: ""; }
+
+.zoeicons-photographer:before {
+  content: ""; }
+
+.zoeicons-python:before {
+  content: ""; }
+
+.zoeicons-reactjs:before {
+  content: ""; }
+
+.zoeicons-rexel:before {
+  content: ""; }
+
+.zoeicons-rocket:before {
+  content: ""; }
+
+.zoeicons-safari:before {
+  content: ""; }
+
+.zoeicons-shopify:before {
+  content: ""; }
+
+.zoeicons-small-arrow:before {
+  content: ""; }
+
+.zoeicons-trolley:before {
+  content: ""; }
+
+.zoeicons-up:before {
+  content: ""; }
+
+.zoeicons-wand:before {
+  content: ""; }
+
+.zoeicons-windows:before {
+  content: ""; }
+
+.zoeicons-woocommerce:before {
+  content: ""; }
+
+.zoeicons-zoetropatron:before {
+  content: ""; }
+
+.zoeicons-zoetrope-z:before {
+  content: ""; }
+
 .strong-underline-border {
   border-bottom: 15px solid #009FE3; }
 
 div.block.homepage-hero {
-  height: 95vh; }
+  height: 85vh; }
   div.block.homepage-hero .block-background {
     background: url("/assets/img/homepage.jpg");
     background-size: cover; }
@@ -9046,8 +9221,58 @@ body.loaded .blue-line.animate {
   position: fixed;
   bottom: 0;
   height: 400px;
-  z-index: 1;
-  background: #333333; }
+  z-index: 1; }
+
+.block.footer-static {
+  padding: 50px 1rem; }
+
+.credentials {
+  padding: 0 0 50px 0; }
+
+.credentials > div {
+  font-size: 100px;
+  line-height: 60px;
+  color: #009FE3; }
+
+.zoetrope-blue {
+  background: #009FE3;
+  color: white; }
+  .zoetrope-blue a {
+    color: white; }
+  .zoetrope-blue h1, .zoetrope-blue h2, .zoetrope-blue h3, .zoetrope-blue h4 {
+    color: white; }
+
+.zoetrope-white {
+  background: #fff;
+  color: #222222; }
+  .zoetrope-white a {
+    color: #009FE3; }
+  .zoetrope-white h1, .zoetrope-white h2, .zoetrope-white h3, .zoetrope-white h4 {
+    color: #009FE3; }
+
+.zoetrope-grey {
+  background: #333;
+  color: white; }
+  .zoetrope-grey a {
+    color: white; }
+  .zoetrope-grey h1, .zoetrope-grey h2, .zoetrope-grey h3, .zoetrope-grey h4 {
+    color: #009FE3; }
+
+.zoetrope-light-grey {
+  background: #e3e3e3;
+  color: #222222; }
+  .zoetrope-light-grey a {
+    color: #009FE3; }
+  .zoetrope-light-grey h1, .zoetrope-light-grey h2, .zoetrope-light-grey h3, .zoetrope-light-grey h4 {
+    color: #009FE3; }
+
+.zoetrope-dark-blue {
+  background: #283c4f;
+  color: white; }
+  .zoetrope-dark-blue a {
+    color: white; }
+  .zoetrope-dark-blue h1, .zoetrope-dark-blue h2, .zoetrope-dark-blue h3, .zoetrope-dark-blue h4 {
+    color: #009FE3; }
 
 html {
   font-size: 14px; }

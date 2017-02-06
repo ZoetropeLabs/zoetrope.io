@@ -9,7 +9,21 @@
 	bottom:0;
 	height: $footer-height;
 	z-index: 1;
-	background: #333333;
 }
 
 // TODO: scale footer on mobile
+
+
+.block.footer-static {
+    padding: 50px 1rem;
+}
+
+.credentials {
+    padding: 0 0 50px 0;
+}
+
+.credentials > div {
+    font-size: 100px;
+    line-height: 60px;
+    color: $zoetrope-blue;
+}

@@ -16,6 +16,8 @@ var wrapper      = require('gulp-wrapper')
 const browserSync = require('browser-sync').create();
 const child = require('child_process');
 const gutil = require('gulp-util');
+var iconfont = require('gulp-iconfont');
+var iconfontCss = require('gulp-iconfont-css');
 
 var Paths = {
   HERE                 : './',
@@ -23,6 +25,11 @@ var Paths = {
   DIST_TOOLKIT_JS      : 'assets/toolkit.js',
   SCSS_TOOLKIT_SOURCES : './scss/site.scss',
   SCSS                 : './scss/**/**',
+  ICONS                : './icons/SVG/*',
+  DIST_ICON_SCSS       : '../../scss/custom/zoeicons.scss',
+  DIST_ICON_FONT       : 'assets/fonts/',
+  DIST_ICON_FONT_URL   : 'fonts/',
+  DIST_ICON_FONT_NAME  : 'zoeicons',
   JS                   : [
       "./js/vendor/tether.min.js",
       "./js/bootstrap/util.js",
@@ -40,6 +47,24 @@ var Paths = {
     ],
   SITE_ROOT       : "_site",
 }
+
+gulp.task('iconfont', function(){
+  return gulp.src(Paths.ICONS)
+    .pipe(iconfontCss({
+      fontName: Paths.DIST_ICON_FONT_NAME,
+      path: 'scss',
+      targetPath: Paths.DIST_ICON_SCSS,
+      fontPath: Paths.DIST_ICON_FONT_URL,
+      cssClass: Paths.DIST_ICON_FONT_NAME,
+    }))
+    .pipe(iconfont({
+      fontName: Paths.DIST_ICON_FONT_NAME,
+      //normalize: true,
+      log: gutil.log,
+     }))
+    .pipe(gulp.dest(Paths.DIST_ICON_FONT));
+});
+
 
 gulp.task('scss', function () {
   return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
@@ -129,4 +154,4 @@ gulp.task('serve', () => {
   gulp.watch(Paths.JS, ['js']);
 });
 
-gulp.task('dev', ['js', 'scss', 'jekyll', 'serve'])
+gulp.task('dev', ['js', 'scss', 'iconfont', 'jekyll', 'serve'])

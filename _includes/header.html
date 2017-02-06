@@ -8,7 +8,7 @@
         <a class="nav-link {% if page.url == my_page.url %}active{% endif %}" href="index.html">{{ my_page.title | escape }}</a>
       </li>
     {% endif %}
-  {% endfor %}  
+  {% endfor %}
   </ul>
 </div>
 
@@ -27,14 +27,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand mr-auto" href="">
-      <strong style="background: #fff; padding: 12px; border-radius: 4px; color: #28669F;">zconnect</strong>
+    <a class="navbar-brand mr-auto" href="/">
+      <img src="{{ site.baseurl }}/assets/img/ztlabs.svg" width="auto" height="60rems" alt={{site.title}} />
     </a>
 
     <div class="hidden-sm-down text-uppercase">
       <ul class="navbar-nav">
         {% for my_page in site.pages %}
-          {% if my_page.title %}
+          {% if my_page.title and my_page.primary_menu %}
           <li class="nav-item px-1 ">
             <a class="nav-link {% if page.url == my_page.url %}active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           </li>
@@ -43,4 +43,23 @@
       </ul>
     </div>
   </nav>
+</div>
+
+<div class="zoetrope-light-grey">
+  <div class="container app-navbar">
+    <nav class="navbar navbar-toggleable-sm">
+      <a class="navbar-brand dummy mr-auto" href="">&nbsp;</a>
+      <div class="hidden-sm-down text-uppercase">
+        <ul class="navbar-nav">
+          {% for my_page in site.pages %}
+            {% if my_page.title and my_page.secondary_menu %}
+            <li class="nav-item px-1">
+              <a class="nav-link {% if page.url == my_page.url %}active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div>
 </div>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   data-icon="browser-type-chrome"
+   width="2048"
+   height="2048"
+   class="iconic iconic-browser-type iconic-size-lg iconic-browser-type-chrome"
+   viewBox="0 0 2048 2048"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="chrome.svg">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1861"
+     inkscape:window-height="1056"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="0.11523438"
+     inkscape:cx="-984.36619"
+     inkscape:cy="1739.5052"
+     inkscape:window-x="59"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <g
+     id="g4"
+     transform="translate(0,1920)">
+    <title
+       id="title6">Browser Type Chrome</title>
+  </g>
+  <!-- Chrome -->
+  <g
+     data-width="128"
+     data-height="128"
+     class="iconic-container iconic-browser-type-chrome"
+     id="g8"
+     transform="matrix(15.711864,0,0,15.711864,18.44856,18.440704)">
+    <path
+       d="M 73.12,95.508 C 70.163,96.36 67.083,96.8 64,96.8 52.134,96.8 41.16,90.362 35.36,79.999 L 8.294,32.48 C 3.017,41.785 0,52.539 0,64.001 0,96.01 23.504,122.513 54.191,127.236 l 18.93,-31.727 z"
+       class="iconic-browser-type-chrome-rim iconic-browser-type-chrome-rim-left iconic-property-fill"
+       id="path10"
+       inkscape:connector-curvature="0" />
+    <path
+       d="M 32.071,56.444 C 35.484,41.89 48.513,31.2 64,31.2 l 54.957,-0.003 C 107.781,12.513 87.354,0 64,0 43.638,0 25.503,9.513 13.781,24.333 l 18.29,32.111 z"
+       class="iconic-browser-type-chrome-rim iconic-browser-type-chrome-rim-top iconic-property-fill"
+       id="path12"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 86.348,40 c 6.628,6.152 10.452,14.769 10.452,24 0,6.418 -1.854,12.633 -5.362,17.977 L 63.988,128 h 0.011 c 35.346,0 64,-28.654 64,-64 0,-8.489 -1.658,-16.59 -4.66,-24.003 L 86.347,40 z"
+       class="iconic-browser-type-chrome-rim iconic-browser-type-chrome-rim-right iconic-property-fill"
+       id="path14"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 64,40 c -13.234,0 -24,10.766 -24,24 0,4.101 1.051,8.146 3.038,11.698 C 47.29,83.286 55.322,88 64,88 72.077,88 79.562,83.975 84.027,77.232 l 0.013,-0.019 c 2.591,-3.921 3.961,-8.489 3.961,-13.212 0,-13.234 -10.766,-24 -24,-24 z"
+       class="iconic-browser-type-chrome-center iconic-property-fill"
+       id="path16"
+       inkscape:connector-curvature="0" />
+  </g>
+  <!-- Firefox -->
+  <!-- IE -->
+  <!-- Safari -->
+  <!-- Chrome -->
+  <!-- Firefox -->
+  <!-- IE -->
+  <!-- Safari -->
+  <!-- Chrome -->
+  <!-- Firefox -->
+  <!-- IE -->
+  <!-- Safari -->
+</svg>
