@@ -9320,8 +9320,41 @@ body.loaded .blue-line.animate {
 
 .contact-background {
   padding: 30px; }
-  .contact-background .container {
-    padding: 30px; }
+
+.contact-main {
+  padding: 30px; }
+
+.contact-sidebar > div {
+  padding: 30px;
+  margin: 30px; }
+
+#map-canvas {
+  height: 300px; }
+
+.contact-options {
+  padding-top: 20px; }
+
+.contact-option {
+  display: block; }
+
+.contact-icon, .contact-text {
+  display: block; }
+
+.contact-icon {
+  font-size: 100px;
+  line-height: 70px; }
+
+.contact-text {
+  font-size: 24px;
+  line-height: 100px; }
+
+.zconnect-hero .block-background {
+  background: url("/assets/img/zconnect.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.zconnect-hero .block-foreground {
+  display: block; }
 
 html {
   font-size: 14px; }

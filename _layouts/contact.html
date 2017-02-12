@@ -13,10 +13,39 @@ layout: default
 
 <article class="zoetrope-light-grey contact-background">
   <div class="container zoetrope-white">
-  <h1 class="page-heading">{{ page.title | escape }}</h1>
-  
   	<div class="row">
-  		<div class="col-xs-12 col-md-8">{{ content }}</div>
-  		<div class="col-xs-12 col-md-4"></div>
+  		<div class="col-xs-12 col-md-8 contact-main">
+  		<h1 class="page-heading">{{ page.title | escape }}</h1>
+  			{{ content }}
+        <div class="container col-xs-12 text-center contact-options">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <a class="contact-option" href="mailto:{{site.email}}">
+                <span class="contact-icon icon icon-mail"></span>
+                <span class="contact-text">{{site.email}}</span>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <a class="contact-option" href="tel:{{site.phone}}">
+                <span class="contact-icon icon icon-phone"></span>
+                <span class="contact-text">{{site.meta.phone}}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 contact-sidebar">
+        <div class="zoetrope-light-grey">
+          <h4>When Visiting Zoetrope</h4>
+          <p>Should you be visiting Zoetrope, we have an onsite bicycle shed and 2 client parking spaces.</p>
+          <p>When arriving, the postcode provided will get you to Oakfield Road, at which point you will see a building marked as "reflections house". Please enter the court yard and bear right to locate the coach house as well as our parking spaces.</p>
+        </div>
+      </div>
+    </div>
   </div>
+
+
 </article>
+
+<div id="map-canvas" class="zoetrope-grey map strong-underline-border">
+</div>

@@ -1,0 +1,14 @@
+
+.zconnect-hero {
+
+  .block-background {
+    background: url("/assets/img/zconnect.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .block-foreground {
+    display: block; //required for the container to work properly
+  }
+
+}
