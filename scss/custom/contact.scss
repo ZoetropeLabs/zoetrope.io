@@ -1,0 +1,23 @@
+
+
+.contact-hero {
+
+  .block-background {
+    background: url("/assets/img/contact.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .block-foreground {
+    display: block; //required for the container to work properly
+  }
+
+}
+
+.contact-background{
+	padding: 30px;
+
+	.container {
+		padding: 30px;
+	}
+}

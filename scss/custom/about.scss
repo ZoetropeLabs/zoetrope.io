@@ -1,0 +1,52 @@
+
+// Styles specific to the about page
+
+.about-hero {
+
+  .block-background {
+    background: url("/assets/img/about.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .block-foreground {
+    display: block; //required for the container to work properly
+  }
+
+}
+
+.zoetrope-team {
+  padding: 20px 0;
+}
+
+// The team profile cards
+.zoetrope-team .card {
+  
+  div.card-block {
+    padding: 0;
+  }
+
+  img.card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  .team-name {
+    padding-top: 15px;
+    font-weight: bold;
+  }
+
+  .team-subheading{
+    padding-bottom: 5px;
+    clear: both;
+    margin-bottom: 5px;
+  }
+
+  .team-role {
+    display: inline-block;
+  }
+  .team-links {
+    a { margin-right: 5px }
+  }
+}
+
