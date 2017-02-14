@@ -9277,6 +9277,9 @@ body.loaded .blue-line.animate {
 .underline-border {
   border-bottom: 5px solid #009FE3; }
 
+.block-inverse {
+  background-color: #e3e3e3; }
+
 .about-hero .block-background {
   background: url("/assets/img/about.jpg");
   background-size: cover;
