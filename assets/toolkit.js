@@ -4325,6 +4325,30 @@ var Enter = function ($) {
   return Enter;
 }(jQuery);
 
+var heroscroll = function ($) {
+
+  var elementSelector = ".scrolling-hero-text";
+  var index = 0;
+
+  var updateText = function updateText() {
+    var elements = $(elementSelector + " ul li").length;
+    var height = $(elementSelector + " ul li").first().height();
+
+    index += 1;
+    if (index == elements) {
+      index = 0;
+    }
+    $(elementSelector + " ul").css("top", "-" + index * height + "px");
+    setTimeout();
+  };
+
+  $(function () {
+    if ($(elementSelector).length) {
+      setInterval(updateText, 3000);
+    }
+  });
+}(jQuery);
+
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0-alpha.6): ImageGrid.js

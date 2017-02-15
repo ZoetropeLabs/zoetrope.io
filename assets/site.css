@@ -9161,7 +9161,18 @@ div.block.homepage-hero {
     display: block;
     padding: 10px;
     margin: 10px 0;
-    font-weight: bold; }
+    font-weight: bold;
+    height: 60px;
+    overflow: hidden;
+    position: relative; }
+    div.block.homepage-hero .boxed ul {
+      list-style: none;
+      position: absolute;
+      top: 0;
+      -webkit-transition: 500ms;
+      transition: 500ms; }
+    div.block.homepage-hero .boxed li {
+      line-height: 55px; }
   div.block.homepage-hero .blue-lines g {
     position: relative;
     -webkit-transform: translate(-200px, 0px);
