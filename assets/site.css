@@ -9152,14 +9152,28 @@ div.block.homepage-hero {
     background-size: cover; }
   div.block.homepage-hero .block-foreground {
     position: relative;
-    top: 100%;
-    left: 20%; }
+    top: 100%; }
+    @media (min-width: 768px) {
+      div.block.homepage-hero .block-foreground {
+        left: 20%; } }
   div.block.homepage-hero .boxed {
     border: 1px solid #fff;
     display: block;
     padding: 10px;
     margin: 10px 0;
     font-weight: bold; }
+  div.block.homepage-hero .blue-lines g {
+    position: relative;
+    -webkit-transform: translate(-200px, 0px);
+            transform: translate(-200px, 0px); }
+    @media (min-width: 1500px) {
+      div.block.homepage-hero .blue-lines g {
+        -webkit-transform: translate(5%, 0px);
+                transform: translate(5%, 0px); } }
+    @media (max-width: 991px) {
+      div.block.homepage-hero .blue-lines g {
+        -webkit-transform: translate(-400px, 0px);
+                transform: translate(-400px, 0px); } }
 
 .block-navigation h3 {
   color: #fff; }
@@ -9186,25 +9200,50 @@ div.block.homepage-hero {
   height: 100%;
   opacity: 1; }
 
+.blue-lines g {
+  position: relative;
+  -webkit-transform: translate(-400px, 0px);
+          transform: translate(-400px, 0px); }
+  @media (min-width: 1500px) {
+    .blue-lines g {
+      -webkit-transform: translate(-200px, 0px);
+              transform: translate(-200px, 0px); } }
+  @media (min-width: 1800px) {
+    .blue-lines g {
+      -webkit-transform: translate(-100px, 0px);
+              transform: translate(-100px, 0px); } }
+  @media (min-width: 2000px) {
+    .blue-lines g {
+      -webkit-transform: translate(0px, 0px);
+              transform: translate(0px, 0px); } }
+  @media (min-width: 2200px) {
+    .blue-lines g {
+      -webkit-transform: translate(100px, 0px);
+              transform: translate(100px, 0px); } }
+  @media (min-width: 2500px) {
+    .blue-lines g {
+      -webkit-transform: translate(300px, 0px);
+              transform: translate(300px, 0px); } }
+
 .blue-line {
   mix-blend-mode: multiply;
   stroke: #009FE3;
   stroke-width: 250px; }
 
-.blue-line.animate {
+.blue-lines.animate .blue-line {
   -webkit-transition: 1000ms;
   transition: 1000ms;
   opacity: 0; }
 
-.blue-line.line-left.animate {
+.blue-lines.animate .blue-line.line-left {
   -webkit-transform: translate(-300px, 0px);
           transform: translate(-300px, 0px); }
 
-.blue-line.line-right.animate {
+.blue-lines.animate .blue-line.line-right {
   -webkit-transform: translate(300px, 0px);
           transform: translate(300px, 0px); }
 
-body.loaded .blue-line.animate {
+body.loaded .blue-lines.animate .blue-line {
   -webkit-transform: none;
           transform: none;
   opacity: 1; }

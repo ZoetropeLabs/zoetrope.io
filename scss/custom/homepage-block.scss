@@ -2,53 +2,72 @@
 
 div.block.homepage-hero {
 
-	height: 85vh;
+    height: 85vh;
 
-	.block-background {
-		background: url("/assets/img/homepage.jpg");
-		background-size: cover;
-	}
+    .block-background {
+        background: url("/assets/img/homepage.jpg");
+        background-size: cover;
+    }
 
-	// Titles etc
-	.block-foreground{
-		position: relative;
-		top: 100%;
-		left: 20%;
-	}
-	.boxed{
-		border: 1px solid $zoetrope-white;
-		display: block;
-		padding: 10px;
-		margin:10px 0;
-		font-weight: bold;
-	}
+    // Titles etc
+    .block-foreground{
+        position: relative;
+        top: 100%;
+        @include media-breakpoint-up(md) {
+            left: 20%;
+        }
+    }
+    .boxed{
+        border: 1px solid $zoetrope-white;
+        display: block;
+        padding: 10px;
+        margin:10px 0;
+        font-weight: bold;
+    }
 
+    // Positioning of blue lines on homepage
+    .blue-lines g{
+        position: relative;
+
+        // Positioning to keep content in place
+        @media (min-width: 1500px) {
+            transform: translate(5%, 0px);
+        }
+        @include media-breakpoint-down(xl) {
+            transform: translate(-200px, 0px);
+        }
+        @include media-breakpoint-down(md) {
+            transform: translate(-400px, 0px);
+        }
+    }
 }
+
+
 
 .block-navigation{
 
-	h3 {
-		color: $zoetrope-white;
-	}
+    h3 {
+        color: $zoetrope-white;
+    }
 
-	.homepage-menu-block a{
-		display: block;
-		color: $zoetrope-white;
-		height: 250px;
-		padding: 80px 0;
-	}
+    .homepage-menu-block a{
+        display: block;
+        color: $zoetrope-white;
+        height: 250px;
+        padding: 80px 0;
+    }
 
-	a:hover{
-		text-decoration: none;
-	}
+    a:hover{
+        text-decoration: none;
+    }
 
-	.btn-effect {
-		border: 1px solid $zoetrope-white;
-		padding: 5px;
-	}
+    .btn-effect {
+        border: 1px solid $zoetrope-white;
+        padding: 5px;
+    }
 
-	.block-connect {
-		background: url("/assets/img/producthandover_sm.jpg");
-		background-size: cover;
-	}
+    .block-connect {
+        background: url("/assets/img/producthandover_sm.jpg");
+        background-size: cover;
+    }
 }
