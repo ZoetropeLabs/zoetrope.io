@@ -9196,9 +9196,11 @@ div.block.homepage-hero {
   background-size: cover; }
 
 .blue-lines {
-  width: 100%;
-  height: 100%;
   opacity: 1; }
+
+.blue-lines.header {
+  width: 100%;
+  height: 100%; }
 
 .blue-lines g {
   position: relative;
@@ -9247,6 +9249,29 @@ body.loaded .blue-lines.animate .blue-line {
   -webkit-transform: none;
           transform: none;
   opacity: 1; }
+
+.masked-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .masked-image img {
+    position: absolute;
+    width: 100%;
+    height: auto; }
+
+.left-mask {
+  z-index: 2;
+  position: absolute;
+  bottom: -20px;
+  left: 0; }
+  .left-mask path {
+    fill: #fff; }
+
+.right-lines {
+  position: absolute;
+  bottom: 0;
+  left: 250px; }
 
 .footer-pad {
   margin-bottom: 400px;
