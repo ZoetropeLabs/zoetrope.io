@@ -9261,6 +9261,9 @@ body.loaded .blue-lines.animate .blue-line {
           transform: none;
   opacity: 1; }
 
+.image-mask-outer {
+  height: 100%; }
+
 .masked-image {
   position: relative;
   width: 100%;
@@ -9271,18 +9274,27 @@ body.loaded .blue-lines.animate .blue-line {
     width: 100%;
     height: auto; }
 
-.left-mask {
+.left-mask, .right-mask {
   z-index: 2;
   position: absolute;
   bottom: -20px;
   left: 0; }
-  .left-mask path {
+  .left-mask path, .right-mask path {
     fill: #fff; }
+
+.right-mask {
+  bottom: -20px;
+  right: 0; }
 
 .right-lines {
   position: absolute;
   bottom: 0;
   left: 250px; }
+
+.left-lines {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
 .footer-pad {
   margin-bottom: 400px;
@@ -9435,7 +9447,7 @@ body.loaded .blue-lines.animate .blue-line {
   display: block; }
 
 html {
-  font-size: 14px; }
+  font-size: 16px; }
 
 h1.text-uppercase, h2.text-uppercase, h3.text-uppercase, h4.text-uppercase, h5.text-uppercase, h6.text-uppercase,
 .h1.text-uppercase, .h2.text-uppercase, .h3.text-uppercase, .h4.text-uppercase, .h5.text-uppercase, .h6.text-uppercase {
@@ -9464,6 +9476,9 @@ h6, .h6 {
 
 strong {
   font-weight: bold; }
+
+.block-foreground.container {
+  display: block; }
 
 html {
   height: auto; }

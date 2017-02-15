@@ -108,3 +108,9 @@ h6, .h6 {
 strong {
   font-weight: bold;
 }
+
+
+// Block overrides
+.block-foreground.container {
+  display: block;
+}

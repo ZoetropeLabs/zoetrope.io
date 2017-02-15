@@ -60,6 +60,9 @@ body.loaded .blue-lines.animate .blue-line {
 }
 
 // Image masking styles
+.image-mask-outer{
+    height: 100%
+}
 .masked-image{
     position: relative;
     width: 100%;
@@ -74,7 +77,7 @@ body.loaded .blue-lines.animate .blue-line {
 
 }
 
-.left-mask {
+.left-mask, .right-mask {
     z-index: 2;
     position:absolute;
     bottom: -20px;
@@ -85,8 +88,19 @@ body.loaded .blue-lines.animate .blue-line {
     }
 }
 
+.right-mask {
+    bottom: -20px;
+    right: 0;
+}
+
 .right-lines {
     position:absolute;
     bottom: 0;
     left: 250px;
+}
+
+.left-lines {
+    position:absolute;
+    bottom: 0;
+    left: 0;
 }
