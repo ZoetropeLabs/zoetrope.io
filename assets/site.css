@@ -9318,6 +9318,17 @@ body.loaded .blue-lines.animate .blue-line {
   line-height: 60px;
   color: #009FE3; }
 
+.v-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .zoetrope-blue {
   background: #009FE3;
   color: white; }
