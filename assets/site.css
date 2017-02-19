@@ -9387,29 +9387,26 @@ body.loaded .blue-lines.animate .blue-line {
   display: block; }
 
 .zoetrope-team {
-  padding: 20px 0; }
+  padding: 40px 0; }
 
-.zoetrope-team .card div.card-block {
-  padding: 0; }
-
-.zoetrope-team .card img.card-img-top {
-  width: 100%;
-  height: auto; }
-
-.zoetrope-team .card .team-name {
-  padding-top: 15px;
-  font-weight: bold; }
-
-.zoetrope-team .card .team-subheading {
-  padding-bottom: 5px;
-  clear: both;
-  margin-bottom: 5px; }
-
-.zoetrope-team .card .team-role {
-  display: inline-block; }
-
-.zoetrope-team .card .team-links a {
-  margin-right: 5px; }
+.zoetrope-team .card {
+  margin-bottom: 40px; }
+  .zoetrope-team .card div.card-block {
+    padding: 0; }
+  .zoetrope-team .card img.card-img-top {
+    width: 100%;
+    height: auto; }
+  .zoetrope-team .card .team-name {
+    padding-top: 15px;
+    font-weight: bold; }
+  .zoetrope-team .card .team-subheading {
+    padding-bottom: 5px;
+    clear: both;
+    margin-bottom: 5px; }
+  .zoetrope-team .card .team-role {
+    display: inline-block; }
+  .zoetrope-team .card .team-links a {
+    margin-right: 5px; }
 
 .contact-hero .block-background {
   background: url("/assets/img/contact.jpg");
