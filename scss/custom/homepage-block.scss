@@ -21,18 +21,18 @@ div.block.homepage-hero {
     .boxed{
         border: 1px solid $zoetrope-white;
         display: block;
-        padding: 10px;
-        margin: 10px 0;
+        margin: 15px 0;
         font-weight: bold;
         height: 60px;
         overflow: hidden;
         position: relative;
+        text-align: center;
         
         ul{
-            list-style: none;
             position: absolute;
             top: 0;
             transition: 500ms;
+            width: 100%;
         }
 
         li {

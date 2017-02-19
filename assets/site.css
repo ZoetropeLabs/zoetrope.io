@@ -9159,18 +9159,18 @@ div.block.homepage-hero {
   div.block.homepage-hero .boxed {
     border: 1px solid #fff;
     display: block;
-    padding: 10px;
-    margin: 10px 0;
+    margin: 15px 0;
     font-weight: bold;
     height: 60px;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    text-align: center; }
     div.block.homepage-hero .boxed ul {
-      list-style: none;
       position: absolute;
       top: 0;
       -webkit-transition: 500ms;
-      transition: 500ms; }
+      transition: 500ms;
+      width: 100%; }
     div.block.homepage-hero .boxed li {
       line-height: 55px; }
   div.block.homepage-hero .blue-lines g {
