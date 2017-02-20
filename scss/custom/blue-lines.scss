@@ -61,7 +61,8 @@ body.loaded .blue-lines.animate .blue-line {
 
 // Image masking styles
 .image-mask-outer{
-    height: 100%
+    height: 100%;
+    padding: 0;
 }
 .masked-image{
     position: relative;
@@ -89,8 +90,14 @@ body.loaded .blue-lines.animate .blue-line {
 }
 
 .right-mask {
-    bottom: -20px;
+    top: -55px;
     right: 0;
+
+    svg {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
 }
 
 .right-lines {

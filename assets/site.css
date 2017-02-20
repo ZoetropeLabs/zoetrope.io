@@ -9262,7 +9262,8 @@ body.loaded .blue-lines.animate .blue-line {
   opacity: 1; }
 
 .image-mask-outer {
-  height: 100%; }
+  height: 100%;
+  padding: 0; }
 
 .masked-image {
   position: relative;
@@ -9283,8 +9284,12 @@ body.loaded .blue-lines.animate .blue-line {
     fill: #fff; }
 
 .right-mask {
-  bottom: -20px;
+  top: -55px;
   right: 0; }
+  .right-mask svg {
+    position: absolute;
+    top: 0px;
+    right: 0px; }
 
 .right-lines {
   position: absolute;
@@ -9454,6 +9459,16 @@ body.loaded .blue-lines.animate .blue-line {
 .zconnect-hero .block-foreground {
   display: block; }
 
+.block-foreground.container {
+  display: block; }
+
+.zconnect-fixed-height {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 500px; }
+  .zconnect-fixed-height .block-background {
+    height: 500px; }
+
 html {
   font-size: 16px; }
 
@@ -9484,9 +9499,6 @@ h6, .h6 {
 
 strong {
   font-weight: bold; }
-
-.block-foreground.container {
-  display: block; }
 
 html {
   height: auto; }

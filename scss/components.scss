@@ -79,6 +79,7 @@
 @import "./custom/about.scss";
 @import "./custom/contact.scss";
 @import "./custom/zconnect.scss";
+@import "./custom/blocks.scss";
 
 //
 // Custom styles
@@ -110,7 +111,3 @@ strong {
 }
 
 
-// Block overrides
-.block-foreground.container {
-  display: block;
-}
