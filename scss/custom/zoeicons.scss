@@ -27,164 +27,167 @@
 @function zoeicons-char($filename) {
 	$char: "";
 
-	@if $filename == analytics {
+	@if $filename == ambie {
 		$char: "\E001";
 	}
-	@if $filename == android {
+	@if $filename == analytics {
 		$char: "\E002";
 	}
-	@if $filename == aohl {
+	@if $filename == android {
 		$char: "\E003";
 	}
-	@if $filename == apple {
+	@if $filename == aohl {
 		$char: "\E004";
 	}
-	@if $filename == application {
+	@if $filename == apple {
 		$char: "\E005";
 	}
-	@if $filename == approval {
+	@if $filename == application {
 		$char: "\E006";
 	}
-	@if $filename == bigcommerce {
+	@if $filename == approval {
 		$char: "\E007";
 	}
-	@if $filename == blackberry {
+	@if $filename == bigcommerce {
 		$char: "\E008";
 	}
-	@if $filename == chrome {
+	@if $filename == blackberry {
 		$char: "\E009";
 	}
-	@if $filename == cloud {
+	@if $filename == chrome {
 		$char: "\E00A";
 	}
-	@if $filename == consultants {
+	@if $filename == cloud {
 		$char: "\E00B";
 	}
-	@if $filename == developers {
+	@if $filename == consultants {
 		$char: "\E00C";
 	}
-	@if $filename == down {
+	@if $filename == developers {
 		$char: "\E00D";
 	}
-	@if $filename == download {
+	@if $filename == down {
 		$char: "\E00E";
 	}
-	@if $filename == drupal {
+	@if $filename == download {
 		$char: "\E00F";
 	}
-	@if $filename == email-line {
+	@if $filename == drupal {
 		$char: "\E010";
 	}
-	@if $filename == eon {
+	@if $filename == email-line {
 		$char: "\E011";
 	}
-	@if $filename == firefox {
+	@if $filename == eon {
 		$char: "\E012";
 	}
-	@if $filename == flip-0 {
+	@if $filename == firefox {
 		$char: "\E013";
 	}
-	@if $filename == flip-1 {
+	@if $filename == flip-0 {
 		$char: "\E014";
 	}
-	@if $filename == flip-2 {
+	@if $filename == flip-1 {
 		$char: "\E015";
 	}
-	@if $filename == flip-3 {
+	@if $filename == flip-2 {
 		$char: "\E016";
 	}
-	@if $filename == flip-4 {
+	@if $filename == flip-3 {
 		$char: "\E017";
 	}
-	@if $filename == flip-5 {
+	@if $filename == flip-4 {
 		$char: "\E018";
 	}
-	@if $filename == flip-6 {
+	@if $filename == flip-5 {
 		$char: "\E019";
 	}
-	@if $filename == flip-7 {
+	@if $filename == flip-6 {
 		$char: "\E01A";
 	}
-	@if $filename == flip-8 {
+	@if $filename == flip-7 {
 		$char: "\E01B";
 	}
-	@if $filename == flip-9 {
+	@if $filename == flip-8 {
 		$char: "\E01C";
 	}
-	@if $filename == github {
+	@if $filename == flip-9 {
 		$char: "\E01D";
 	}
-	@if $filename == gsma {
+	@if $filename == github {
 		$char: "\E01E";
 	}
-	@if $filename == html5 {
+	@if $filename == gsma {
 		$char: "\E01F";
 	}
-	@if $filename == ie {
+	@if $filename == html5 {
 		$char: "\E020";
 	}
-	@if $filename == linkedin {
+	@if $filename == ie {
 		$char: "\E021";
 	}
-	@if $filename == livechat-line {
+	@if $filename == linkedin {
 		$char: "\E022";
 	}
-	@if $filename == magento {
+	@if $filename == livechat-line {
 		$char: "\E023";
 	}
-	@if $filename == mbition {
+	@if $filename == magento {
 		$char: "\E024";
 	}
-	@if $filename == mongodb {
+	@if $filename == mbition {
 		$char: "\E025";
 	}
-	@if $filename == phone-line {
+	@if $filename == mongodb {
 		$char: "\E026";
 	}
-	@if $filename == photographer {
+	@if $filename == phone-line {
 		$char: "\E027";
 	}
-	@if $filename == python {
+	@if $filename == photographer {
 		$char: "\E028";
 	}
-	@if $filename == reactjs {
+	@if $filename == python {
 		$char: "\E029";
 	}
-	@if $filename == rexel {
+	@if $filename == reactjs {
 		$char: "\E02A";
 	}
-	@if $filename == rocket {
+	@if $filename == rexel {
 		$char: "\E02B";
 	}
-	@if $filename == safari {
+	@if $filename == rocket {
 		$char: "\E02C";
 	}
-	@if $filename == shopify {
+	@if $filename == safari {
 		$char: "\E02D";
 	}
-	@if $filename == small-arrow {
+	@if $filename == shopify {
 		$char: "\E02E";
 	}
-	@if $filename == trolley {
+	@if $filename == small-arrow {
 		$char: "\E02F";
 	}
-	@if $filename == up {
+	@if $filename == trolley {
 		$char: "\E030";
 	}
-	@if $filename == wand {
+	@if $filename == up {
 		$char: "\E031";
 	}
-	@if $filename == windows {
+	@if $filename == wand {
 		$char: "\E032";
 	}
-	@if $filename == woocommerce {
+	@if $filename == windows {
 		$char: "\E033";
 	}
-	@if $filename == zoetropatron {
+	@if $filename == woocommerce {
 		$char: "\E034";
 	}
-	@if $filename == zoetrope-z {
+	@if $filename == zoetropatron {
 		$char: "\E035";
+	}
+	@if $filename == zoetrope-z {
+		$char: "\E036";
 	}
 
 	@return $char;
@@ -201,6 +204,9 @@
 	}
 }
 
+.zoeicons-ambie {
+	@include zoeicons(ambie);
+}
 .zoeicons-analytics {
 	@include zoeicons(analytics);
 }

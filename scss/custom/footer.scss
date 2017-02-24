@@ -18,8 +18,20 @@
     padding: 50px 1rem;
 }
 
+.footer-content{
+  font-size: 12px;
+
+  .list-unstyled{
+    line-height: 18px;
+  }
+}
+
+.credentials-title{
+  padding: 0 0 50px 0;
+}
+
 .credentials {
-    padding: 0 0 50px 0;
+  padding: 0 0 80px 0;
 }
 
 .credentials > div {

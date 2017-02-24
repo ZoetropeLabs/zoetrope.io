@@ -141,6 +141,22 @@ gulp.task('jekyll', () => {
   jekyll.stderr.on('data', jekyllLogger);
 });
 
+gulp.task('jekyll-compile', gulpCallBack => {
+  const jekyll = child.spawn('jekyll', ['build']);
+
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('Jekyll: ' + message));
+  };
+
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
+  jekyll.on('exit', function(code) {
+        gulpCallBack(code === 0 ? null :'ERROR: Jekyll process exited with code: '+code);
+    });
+});
+
 gulp.task('serve', () => {
   browserSync.init({
     files: [Paths.SITE_ROOT + '/**'],
@@ -152,6 +168,31 @@ gulp.task('serve', () => {
 
   gulp.watch(Paths.SCSS, ['scss']);
   gulp.watch(Paths.JS, ['js']);
+});
+
+gulp.task('deploy', ['js', 'scss', 'iconfont', 'jekyll-compile'], cb => {
+
+  const settings = {
+    host: 'staging.zoetrope.io',
+    user: 'ben',
+    port: 2223,
+    path: '~/Sites/zconnect.io'
+  };
+
+  const scp = child.spawn('rsync', ['-rz', '--progress',
+                           './_site/', settings.user+'@'+settings.host+':'+settings.path]);
+
+  const scplog = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('scp: ' + message));
+  };
+
+  scp.stdout.on('data', scplog);
+  scp.stderr.on('data', scplog);
+  scp.on('exit', function(code) {
+      cb(code === 0 ? null :'ERROR: SCP process exited with code: '+code);
+  });
 });
 
 gulp.task('dev', ['js', 'scss', 'iconfont', 'jekyll', 'serve'])
