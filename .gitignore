@@ -5,3 +5,4 @@ _site
 *.sublime-*
 
 node_modules
+assets
