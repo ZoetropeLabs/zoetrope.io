@@ -16,9 +16,9 @@
 title: Zconnect
 email: enquiries@zoetrope.io
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Zconnect is an end-to-end solution for connecting new or existing products
+  to the web to unlock predictive maintenance, product intelligence and new business models.
+  We provide expertise, and the tools to get your business making the most of IoT.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zconnect.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
