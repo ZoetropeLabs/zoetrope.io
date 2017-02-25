@@ -1,25 +1,26 @@
-var fs           = require('fs')
-var gulp         = require('gulp')
-var path         = require('path')
-var sass         = require('gulp-sass')
-var autoprefixer = require('gulp-autoprefixer')
-var sourcemaps   = require('gulp-sourcemaps')
-var cleanCSS     = require('gulp-clean-css')
-var rename       = require('gulp-rename')
-var concat       = require('gulp-concat')
-var uglify       = require('gulp-uglify')
-var connect      = require('gulp-connect')
-var open         = require('gulp-open')
-var babel        = require('gulp-babel')
-var replace      = require('gulp-replace')
-var wrapper      = require('gulp-wrapper')
+const fs           = require('fs')
+const gulp         = require('gulp')
+const path         = require('path')
+const sass         = require('gulp-sass')
+const autoprefixer = require('gulp-autoprefixer')
+const sourcemaps   = require('gulp-sourcemaps')
+const cleanCSS     = require('gulp-clean-css')
+const rename       = require('gulp-rename')
+const concat       = require('gulp-concat')
+const uglify       = require('gulp-uglify')
+const connect      = require('gulp-connect')
+const open         = require('gulp-open')
+const babel        = require('gulp-babel')
+const replace      = require('gulp-replace')
+const wrapper      = require('gulp-wrapper')
 const browserSync = require('browser-sync').create();
 const child = require('child_process');
 const gutil = require('gulp-util');
-var iconfont = require('gulp-iconfont');
-var iconfontCss = require('gulp-iconfont-css');
+const iconfont = require('gulp-iconfont');
+const iconfontCss = require('gulp-iconfont-css');
+const imagemin = require('gulp-imagemin');
 
-var Paths = {
+const Paths = {
   HERE                 : './',
   DIST                 : 'assets',
   DIST_TOOLKIT_JS      : 'assets/toolkit.js',
@@ -45,8 +46,23 @@ var Paths = {
       "./js/bootstrap/tab.js",
       './js/custom/*'
     ],
-  SITE_ROOT       : "_site",
+  IMG_SRC               : "images/**",
+  SITE_ROOT             : "_site",
 }
+
+// SCP/Rsync settings for deploing the live site
+const DEPLOY_SETTINGS = {
+  host: 'staging.zoetrope.io',
+  user: 'ben',
+  port: 2223,
+  path: '~/Sites/zconnect.io'
+}
+
+gulp.task('img', () => {
+  gulp.src(Paths.IMG_SRC)
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
+    .pipe(gulp.dest('assets/img'))
+})
 
 gulp.task('iconfont', function(){
   return gulp.src(Paths.ICONS)
@@ -79,11 +95,11 @@ gulp.task('scss-min', ['scss'], function () {
   return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS({compatibility: 'ie9'}))
+    .pipe(cleanCSS({compatibility: '*'}))
     .pipe(autoprefixer())
-    .pipe(rename({
-      suffix: '.min'
-    }))
+    //.pipe(rename({
+    //  suffix: '.min'
+    //}))
     .pipe(sourcemaps.write(Paths.HERE))
     .pipe(gulp.dest(Paths.DIST))
 })
@@ -118,9 +134,9 @@ gulp.task('js', function () {
 gulp.task('js-min', ['js'], function () {
   return gulp.src(Paths.DIST_TOOLKIT_JS)
     .pipe(uglify())
-    .pipe(rename({
-      suffix: '.min'
-    }))
+    //.pipe(rename({
+    //  suffix: '.min'
+    //}))
     .pipe(gulp.dest(Paths.DIST))
 })
 
@@ -141,7 +157,7 @@ gulp.task('jekyll', () => {
   jekyll.stderr.on('data', jekyllLogger);
 });
 
-gulp.task('jekyll-compile', gulpCallBack => {
+gulp.task('jekyll-compile', ['build-min'], cb => {
   const jekyll = child.spawn('jekyll', ['build']);
 
   const jekyllLogger = (buffer) => {
@@ -153,7 +169,7 @@ gulp.task('jekyll-compile', gulpCallBack => {
   jekyll.stdout.on('data', jekyllLogger);
   jekyll.stderr.on('data', jekyllLogger);
   jekyll.on('exit', function(code) {
-        gulpCallBack(code === 0 ? null :'ERROR: Jekyll process exited with code: '+code);
+        cb(code === 0 ? null :'ERROR: Jekyll process exited with code: '+code);
     });
 });
 
@@ -168,19 +184,15 @@ gulp.task('serve', () => {
 
   gulp.watch(Paths.SCSS, ['scss']);
   gulp.watch(Paths.JS, ['js']);
+  gulp.watch(Paths.IMG_SRC, ['img']);
 });
 
-gulp.task('deploy', ['js', 'scss', 'iconfont', 'jekyll-compile'], cb => {
+gulp.task('deploy', ['jekyll-compile'], cb => {
 
-  const settings = {
-    host: 'staging.zoetrope.io',
-    user: 'ben',
-    port: 2223,
-    path: '~/Sites/zconnect.io'
-  };
+  const settings = DEPLOY_SETTINGS;
 
   const scp = child.spawn('rsync', ['-rz', '--progress',
-                           './_site/', settings.user+'@'+settings.host+':'+settings.path]);
+                           Paths.SITE_ROOT + '/', settings.user+'@'+settings.host+':'+settings.path]);
 
   const scplog = (buffer) => {
     buffer.toString()
@@ -195,4 +207,8 @@ gulp.task('deploy', ['js', 'scss', 'iconfont', 'jekyll-compile'], cb => {
   });
 });
 
-gulp.task('dev', ['js', 'scss', 'iconfont', 'jekyll', 'serve'])
+
+// Helper tasks
+gulp.task('build', ['js', 'scss', 'iconfont', 'img'])
+gulp.task('build-min', ['js-min', 'scss-min', 'iconfont', 'img'])
+gulp.task('dev', ['build', 'jekyll' ,'serve'])

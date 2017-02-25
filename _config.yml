@@ -52,6 +52,7 @@ exclude:
   - js
   - scss
   - icons
+  - images
 
 
 defults:
