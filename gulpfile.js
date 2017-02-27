@@ -27,6 +27,7 @@ const Paths = {
   SCSS_TOOLKIT_SOURCES : './scss/site.scss',
   SCSS                 : './scss/**/**',
   ICONS                : './icons/SVG/*',
+  FONTS                : './fonts/*',
   DIST_ICON_SCSS       : '../../scss/custom/zoeicons.scss',
   DIST_ICON_FONT       : 'assets/fonts/',
   DIST_ICON_FONT_URL   : 'fonts/',
@@ -64,7 +65,12 @@ gulp.task('img', () => {
     .pipe(gulp.dest('assets/img'))
 })
 
-gulp.task('iconfont', function(){
+gulp.task('fonts', () => {
+  return gulp.src(Paths.FONTS)
+        .pipe(gulp.dest(Paths.DIST_ICON_FONT));
+})
+
+gulp.task('iconfont', () => {
   return gulp.src(Paths.ICONS)
     .pipe(iconfontCss({
       fontName: Paths.DIST_ICON_FONT_NAME,
@@ -82,7 +88,7 @@ gulp.task('iconfont', function(){
 });
 
 
-gulp.task('scss', function () {
+gulp.task('scss', () => {
   return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -91,7 +97,7 @@ gulp.task('scss', function () {
     .pipe(gulp.dest(Paths.DIST))
 })
 
-gulp.task('scss-min', ['scss'], function () {
+gulp.task('scss-min', ['scss'], () => {
   return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -104,7 +110,7 @@ gulp.task('scss-min', ['scss'], function () {
     .pipe(gulp.dest(Paths.DIST))
 })
 
-gulp.task('js', function () {
+gulp.task('js', () => {
   return gulp.src(Paths.JS)
     .pipe(concat('toolkit.js'))
     .pipe(replace(/^(export|import).*/gm, ''))
@@ -131,7 +137,7 @@ gulp.task('js', function () {
     .pipe(gulp.dest(Paths.DIST))
 })
 
-gulp.task('js-min', ['js'], function () {
+gulp.task('js-min', ['js'], () => {
   return gulp.src(Paths.DIST_TOOLKIT_JS)
     .pipe(uglify())
     //.pipe(rename({
@@ -140,7 +146,7 @@ gulp.task('js-min', ['js'], function () {
     .pipe(gulp.dest(Paths.DIST))
 })
 
-gulp.task('jekyll', () => {
+gulp.task('jekyll', ['build'], () => {
   const jekyll = child.spawn('jekyll', ['build',
     '--watch',
     '--incremental',
@@ -184,7 +190,7 @@ gulp.task('serve', () => {
 
   gulp.watch(Paths.SCSS, ['scss']);
   gulp.watch(Paths.JS, ['js']);
-  gulp.watch(Paths.IMG_SRC, ['img']);
+  //gulp.watch(Paths.IMG_SRC, ['img']);
 });
 
 gulp.task('deploy', ['jekyll-compile'], cb => {
@@ -209,6 +215,6 @@ gulp.task('deploy', ['jekyll-compile'], cb => {
 
 
 // Helper tasks
-gulp.task('build', ['js', 'scss', 'iconfont', 'img'])
-gulp.task('build-min', ['js-min', 'scss-min', 'iconfont', 'img'])
-gulp.task('dev', ['build', 'jekyll' ,'serve'])
+gulp.task('build', ['js', 'scss', 'iconfont', 'img', 'fonts'])
+gulp.task('build-min', ['js-min', 'scss-min', 'iconfont', 'img', 'fonts'])
+gulp.task('dev', ['jekyll' ,'serve'])

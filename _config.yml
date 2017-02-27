@@ -53,6 +53,9 @@ exclude:
   - scss
   - icons
   - images
+  - _site
+  - .code-highlighter-cache
+  - case-studies
 
 
 defults:
