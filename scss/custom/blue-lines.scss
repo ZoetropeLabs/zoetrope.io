@@ -103,11 +103,22 @@ body.loaded .blue-lines.animate .blue-line {
 .right-lines {
     position:absolute;
     bottom: 0;
-    left: 250px;
+    right: -300px;
 }
 
 .left-lines {
     position:absolute;
     bottom: 0;
     left: 0;
+}
+
+// Responsive tweaks
+@include media-breakpoint-down(md){
+    .left-mask, .right-mask { 
+        display: none; // No slanty mask on small displays
+    }
+    .right-lines{
+        left: auto;
+        right: -200px;
+    }
 }

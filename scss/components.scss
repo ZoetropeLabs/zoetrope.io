@@ -76,6 +76,7 @@
 @import "./custom/app-window.scss";
 @import "./custom/blue-lines.scss";
 @import "./custom/footer.scss";
+@import "./custom/header.scss";
 @import "./custom/zoetrope-themes.scss";
 @import "./custom/about.scss";
 @import "./custom/contact.scss";
@@ -110,17 +111,4 @@ h6, .h6 {
 
 strong {
   font-weight: bold;
-}
-
-
-.navbar-brand{
-  img{
-    vertical-align: middle;
-  }
-  h3{
-    vertical-align: middle;
-    display: inline;
-    color: $zoetrope-blue;
-    font-size: 40px;
-  }
 }
