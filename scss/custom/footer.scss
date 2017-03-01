@@ -1,14 +1,16 @@
 
-.footer-pad {
-	margin-bottom: $footer-height;
-	position: relative;
-	z-index: 2;
-}
-.footer-static {
-	position: fixed;
-	bottom:0;
-	height: $footer-height;
-	z-index: 1;
+@include media-breakpoint-up(sm){
+  .footer-pad {
+  	margin-bottom: $footer-height;
+  	position: relative;
+  	z-index: 2;
+  }
+  .footer-static {
+  	position: fixed;
+  	bottom:0;
+  	height: $footer-height;
+  	z-index: 1;
+  }
 }
 
 // TODO: scale footer on mobile
@@ -20,6 +22,10 @@
 
 .footer-content{
   font-size: 12px;
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
 
   .list-unstyled{
     line-height: 18px;
