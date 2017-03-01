@@ -19,15 +19,14 @@ div.block.homepage-hero {
     }
 
     .boxed{
-        border: 1px solid $zoetrope-white;
         display: block;
-        margin: 15px 0;
+        margin: 0 0 15px;
         font-weight: bold;
         height: 60px;
         overflow: hidden;
         position: relative;
         text-align: center;
-        
+
         ul{
             position: absolute;
             top: 0;
