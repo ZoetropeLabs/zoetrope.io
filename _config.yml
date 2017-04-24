@@ -42,6 +42,7 @@ meta:
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
