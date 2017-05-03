@@ -1,6 +1,5 @@
 ---
 layout: whitepaper
-permalink: test
 title: Test whitepaper
 
 hs_form_id: 91f4a3ac-381c-4e71-991a-ad084f57e819

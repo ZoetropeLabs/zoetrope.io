@@ -63,6 +63,7 @@ exclude:
   - _site
   - .code-highlighter-cache
   - case-studies
+  - whitepapers
 
 
 defults:
