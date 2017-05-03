@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="block block-inverse contact-hero strong-underline-border">
+  <div class="block-foreground container">
+    &nbsp;
+  </div>
+  <div class="block-background">
+    &nbsp;
+  </div>
+</div>
+
+<article class="zoetrope-light-grey contact-background">
+  <div class="container zoetrope-white">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 contact-main">
+      <h1 class="page-heading">{{ page.title | escape }}</h1>
+        {{ content }}
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <!-- Hubspot form -->
+        <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            css: '',
+            portalId: "{{site.hs_portal_id}}",
+            formId: "{{page.hs_form_id}}"
+          });
+        </script>
+        <div class="no-hubspot">
+          <h2>Our content gating system is blocked on your browser</h2>
+          <p> From here, either: </p>
+          <ol>
+            <li> Drop us an email at <a href="mailto:{{site.meta.email}}">{{site.meta.email}}</a> to ask us for the whitepaper(s) you're after. </li>
+            <li> Disable your ad-blocker (e.g. ghostery / ad-block plus / uBlock) for this site and reload the page.</li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</article>

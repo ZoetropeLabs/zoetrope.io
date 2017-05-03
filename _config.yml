@@ -40,6 +40,10 @@ meta:
 
 google_analytics: UA-45970762-5
 
+hs_portal_id: "515796"
+
+permalink: /title
+
 # Build settings
 markdown: kramdown
 gems:

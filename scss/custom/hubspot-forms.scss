@@ -1,0 +1,66 @@
+
+.no-hubspot{
+    // used when hubspot cannot be loaded
+    display: none;
+}
+
+.form-group{
+    padding: 15px 0;
+}
+
+.form-text, .hs-input{
+    background: transparent;
+    border: 1px solid $zoetrope-blue;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 100%;
+    color: $gray-lighter;
+    font-weight: 300;
+    font-family: $font-family-sans-serif;
+}
+
+.btn, .hs-button{
+    background: $zoetrope-blue;
+    padding: 10px;
+    width: 100%;
+    color: $zoetrope-white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+// hubspot specific form overrides
+.hs-form fieldset{
+    max-width: 100% !important;
+}
+
+.hs-form fieldset.form-columns-1 .input{
+    margin-right: 0 !important;
+}
+
+.hs-form fieldset .hs-input{
+    width: 100% !important;
+}
+
+.hs-form fieldset.form-columns-2{
+    margin-right: -8px !important;
+}
+
+.hs-input.error, .hs-input.invalid{
+    border: 1px solid $brand-danger;
+}
+
+.hs-form label{
+    padding-top: 5px;
+}
+
+// Error messages
+.hs-error-msgs{
+    list-style: none;
+    padding-left: 0;
+}
+
+// Field specific overrides
+.hs_lastname .input{
+    margin-right: 0px !important;
+}
