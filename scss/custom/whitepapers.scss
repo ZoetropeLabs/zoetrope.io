@@ -1,0 +1,28 @@
+
+
+.whitepaper-page {
+    padding-top: 40px;
+}
+
+
+.whitepaper-hero{
+
+    h1 {
+        font-size: 3rem;
+        background: rgba(0.3,0.3,0.3,0.4);
+        display: inline-block;
+        padding: 20px;
+    }
+}
+
+// Specific pages
+.whitepaper-test-whitepaper.whitepaper-hero{
+
+    min-height: 300px;
+
+    .block-background {
+        background: url("/assets/img/whitepapers/technical_whitepaper_hero.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}

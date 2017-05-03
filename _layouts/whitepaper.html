@@ -2,23 +2,24 @@
 layout: default
 ---
 
-<div class="block block-inverse contact-hero strong-underline-border">
+<div class="block block-inverse whitepaper-hero whitepaper-{{page.title | slugify: "pretty"}} strong-underline-border">
   <div class="block-foreground container">
-    &nbsp;
+    <h1 class="page-heading">{{ page.title | escape }}</h1>
   </div>
   <div class="block-background">
     &nbsp;
   </div>
 </div>
 
-<article class="zoetrope-light-grey contact-background">
-  <div class="container zoetrope-white">
+<article class="zoetrope-white whitepaper-page">
+  <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-8 contact-main">
-      <h1 class="page-heading">{{ page.title | escape }}</h1>
+      <div class="col-xs-12 col-md-8">
+
         {{ content }}
       </div>
       <div class="col-xs-12 col-md-4">
+        <h2>{{page.form_title}}</h2>
         <!-- Hubspot form -->
         <!--[if lte IE 8]>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
