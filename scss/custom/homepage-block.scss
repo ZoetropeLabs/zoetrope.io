@@ -5,7 +5,7 @@ div.block.homepage-hero {
     height: 85vh;
 
     .block-background {
-        background: url("/assets/img/homepage.jpg");
+        background: url("/assets/img/home.jpg") center bottom no-repeat;
         background-size: cover;
     }
 
@@ -13,9 +13,10 @@ div.block.homepage-hero {
     .block-foreground{
         position: relative;
         top: 100%;
-        @include media-breakpoint-up(md) {
-            left: 20%;
-        }
+    }
+
+    .page-heading{
+        line-height: 3.25rem;
     }
 
     .boxed{
