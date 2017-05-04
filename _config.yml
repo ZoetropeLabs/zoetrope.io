@@ -44,6 +44,9 @@ hs_portal_id: "515796"
 
 permalink: /title
 
+collections:
+  - people
+
 # Build settings
 markdown: kramdown
 gems:

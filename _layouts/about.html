@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% assign people = site.people | where:"management","false" | sort:"weight"  %}
+{% assign mangement_people = site.people | where:"management","true" | sort:"weight" %}\
+
 <div class="block block-inverse about-hero strong-underline-border">
   <div class="block-foreground container">
     <div class="container">
@@ -19,85 +22,57 @@ layout: default
   <div class="container card-deck zoetrope-team">
 
     <div class="row">
+      {% for person in mangement_people %}
       <div class="col-xs-12 col-md-6">
         <div class="card">
-          <img class="card-img-top" src="/assets/img/team/benhowes.jpg" alt="Ben Howes">
+          <img class="card-img-top" src="/assets/img/{{person.image_src}}" alt="Ben Howes">
           <div class="card-block">
-            <h4 class="card-title team-name">Ben Howes</h4>
+            <h4 class="card-title team-name">{{person.title}}</h4>
             <div class="team-subheading underline-border">
-              <div class="team-role">Founder &amp; CEO</div>
+              <div class="team-role">{{person.job_title}}</div>
               <div class="team-links float-right">
                 <!-- add social links -->
-                <a href="https://www.linkedin.com/in/benjaminhowes/"><span class="icon icon-linkedin"></span></a>
-                <a href="https://github.com/benhowes"><span class="icon icon-github"></span></a>
+                {%if person.linkedin %}
+                  <a href="{{person.linkedin}}"><span class="icon icon-linkedin"></span></a>
+                {%endif%}
+                {%if person.github %}
+                  <a href="{{person.github}}"><span class="icon icon-github"></span></a>
+                {%endif%}
               </div>
             </div>
-            <p class="card-text">I have always been entrepreneurial; I launched my first tech start-up while I was completing my Masters in Computer Science and Electronics at Bristol University.</p>
-            <p>I’m motivated by solving problems and I am passionate about technology; I find the potential that the Internet of Things holds for growing businesses really exciting, so I founded Zoetrope. I love working with our clients, delivering a remarkable solution to the new challenges that each one poses.</p>
+            <div class="card-text">{{person.content}}</div>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/team/richardwebb.jpg" alt="Richard Webb">
-          <div class="card-block">
-            <h4 class="card-title team-name">Richard Webb</h4>
-             <div class="team-subheading underline-border">
-              <div class="team-role">Cofounder</div>
-              <div class="team-links float-right">
-                <!-- add social links -->
-                <a href="https://www.linkedin.com/in/richard-fortescue-webb-9723a360/"><span class="icon icon-linkedin"></span></a>
-                <a href="https://github.com/bitdivision"><span class="icon icon-github"></span></a>
-              </div>
-            </div>
-            <p class="card-text">I met Ben while doing my Masters in Computer Science and Electronics. After a stint in Silicon Valley and building software for one of the UK’s largest financial institutions, he asked me to join him in starting Zoetrope.</p>
-            <p>I love that I am developing my skills and practising new uses for them every day. From electronics and PCB design to developing embedded and API software; they are all useful for our projects.</p>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
 
     <div class="row">
 
+      {% for person in people %}
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card">
-          <img class="card-img-top" src="/assets/img/team/mitchellharle.jpg" alt="Mitchell Harle">
+          <img class="card-img-top" src="/assets/img/{{person.image_src}}" alt="Ben Howes">
           <div class="card-block">
-            <h4 class="card-title team-name">Mitchell Harle</h4>
+            <h4 class="card-title team-name">{{person.title}}</h4>
             <div class="team-subheading underline-border">
-              <div class="team-role">Software Engineer</div>
+              <div class="team-role">{{person.job_title}}</div>
+              <div class="team-links float-right">
+                <!-- add social links -->
+                {%if person.linkedin %}
+                  <a href="{{person.linkedin}}"><span class="icon icon-linkedin"></span></a>
+                {%endif%}
+                {%if person.github %}
+                  <a href="{{person.github}}"><span class="icon icon-github"></span></a>
+                {%endif%}
+              </div>
             </div>
-            <p class="card-text">After completing a Masters in Physics at Durham University, I decided to become a software developer. I particularly enjoyed working on a project for an X-ray metrology company, creating 3D visualisations of the compositions of the X-ray’s wafer chips, in order to find defects.</p>
-            <P>At Zoetrope, I develop server software in Python and native mobile apps in React. I enjoy the agile environment of Zoetrope; I’m able to work with cutting-edge technology and I’m constantly learning new things.</p>
+            <div class="card-text">{{person.content}}</div>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/team/michaelboulton.jpg" alt="Michael Boulton">
-          <div class="card-block">
-            <h4 class="card-title team-name">Michael Boulton</h4>
-            <div class="team-subheading underline-border">
-              <div class="team-role">Software Engineer</div>
-            </div>
-            <p class="card-text">I first used my Masters in Computer science and Electronics in internal scalability and parallel computing for high-performance computing. Creating scientific simulations of super-computing with emerging technologies, I travelled around the world and was published a couple of times in scientific journals.</p>
-            <p>At Zoetrope, I develop embedded software with yocto, back-end software and web apps. I like that we get to know the whole story of the product - using the latest technology to build something all the way from the hardware to the apps.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/team/oliverking.jpg" alt="Oliver King">
-          <div class="card-block">
-            <h4 class="card-title team-name">Oliver King</h4>
-            <div class="team-subheading underline-border">
-              <div class="team-role">Software Engineer</div>
-            </div>
-             <p class="card-text">Once I had completed my PhD in the physical sciences, I continued on at Oxford University as a research scientist while also learning software development. At Zoetrope I’m applying my knowledge both to create web APIs for our products and use my data science experience to create insight.</p>
-            <p>I enjoy working in the small, close-knit team at Zoetrope. My contributions to projects make a difference to our clients’ diverse range of businesses and I can use my extensive interest and knowledge in data science to develop our predictive analytics</p>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
+
     </div>
   </div>
 </div>
