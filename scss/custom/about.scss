@@ -6,7 +6,7 @@
   .block-background {
     background: url("/assets/img/about.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
   }
 
   .block-foreground {
@@ -23,7 +23,7 @@
 .zoetrope-team .card {
 
   margin-bottom: 40px;
-  
+
   div.card-block {
     padding: 0;
   }
