@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Zconnect
+title: ZConnect
 email: enquiries@zoetrope.io
 description: > # this means to ignore newlines until "baseurl:"
-  Zconnect is an end-to-end solution for connecting new or existing products
+  ZConnect is an end-to-end solution for connecting new or existing products
   to the web to unlock predictive maintenance, product intelligence and new business models.
   We provide expertise, and the tools to get your business making the most of IoT.
 baseurl: "" # the subpath of your site, e.g. /blog

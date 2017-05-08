@@ -33,6 +33,7 @@ const Paths = {
   DIST_ICON_FONT_URL   : 'fonts/',
   DIST_ICON_FONT_NAME  : 'zoeicons',
   JS                   : [
+      "./js/vendor/jquery-3.2.1.min.js",
       "./js/vendor/tether.min.js",
       "./js/bootstrap/util.js",
       "./js/bootstrap/alert.js",

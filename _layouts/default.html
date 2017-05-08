@@ -17,9 +17,10 @@
 
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/515796.js"></script>
   <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyA2LnrUQpJzVcnm5iDTU2TJi2cSS26Y9Eo" ></script>
-  <script type="application/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
   <script type="application/javascript" src="{{ "/assets/toolkit.js" | relative_url }}"></script>
+  {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
+  {% endif %}
   </body>
 
 </html>
