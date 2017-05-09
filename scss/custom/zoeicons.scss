@@ -183,11 +183,14 @@
 	@if $filename == woocommerce {
 		$char: "\E034";
 	}
-	@if $filename == zoetropatron {
+	@if $filename == zconnect {
 		$char: "\E035";
 	}
-	@if $filename == zoetrope-z {
+	@if $filename == zoetropatron {
 		$char: "\E036";
+	}
+	@if $filename == zoetrope-z {
+		$char: "\E037";
 	}
 
 	@return $char;
@@ -359,6 +362,9 @@
 }
 .zoeicons-woocommerce {
 	@include zoeicons(woocommerce);
+}
+.zoeicons-zconnect {
+	@include zoeicons(zconnect);
 }
 .zoeicons-zoetropatron {
 	@include zoeicons(zoetropatron);
