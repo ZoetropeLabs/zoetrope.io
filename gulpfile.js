@@ -81,6 +81,7 @@ gulp.task('iconfont', () => {
       cssClass: Paths.DIST_ICON_FONT_NAME,
     }))
     .pipe(iconfont({
+      formats: ['svg', 'ttf', 'eot', 'woff', 'woff2'],
       fontName: Paths.DIST_ICON_FONT_NAME,
       //normalize: true,
       log: gutil.log,
