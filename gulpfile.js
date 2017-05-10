@@ -166,7 +166,12 @@ gulp.task('jekyll', ['build'], () => {
 });
 
 gulp.task('jekyll-compile', ['build-min'], cb => {
-  const jekyll = child.spawn('jekyll', ['build']);
+
+  // Set up env for jeykll production build
+  var env = Object.create( process.env );
+  env.JEKYLL_ENV = 'production';
+
+  const jekyll = child.spawn('jekyll', ['build'], {env: env, shell: true});
 
   const jekyllLogger = (buffer) => {
     buffer.toString()
@@ -174,12 +179,14 @@ gulp.task('jekyll-compile', ['build-min'], cb => {
       .forEach((message) => gutil.log('Jekyll: ' + message));
   };
 
+  jekyll.on('error', function( err ){ throw err })
   jekyll.stdout.on('data', jekyllLogger);
   jekyll.stderr.on('data', jekyllLogger);
   jekyll.on('exit', function(code) {
         cb(code === 0 ? null :'ERROR: Jekyll process exited with code: '+code);
     });
 });
+
 
 gulp.task('serve', () => {
   browserSync.init({
