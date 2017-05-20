@@ -114,11 +114,18 @@ body.loaded .blue-lines.animate .blue-line {
 
 // Responsive tweaks
 @include media-breakpoint-down(md){
-    .left-mask, .right-mask { 
+    .left-mask, .right-mask {
         display: none; // No slanty mask on small displays
     }
     .right-lines{
         left: auto;
         right: -200px;
     }
+}
+
+
+.bluelines-backdrop-img{
+    display: block;
+    padding: 40px;
+    margin: auto;
 }
