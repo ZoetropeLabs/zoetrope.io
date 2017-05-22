@@ -193,13 +193,17 @@ gulp.task('serve', () => {
     files: [Paths.SITE_ROOT + '/**'],
     port: 4000,
     server: {
-      baseDir: Paths.SITE_ROOT
+      baseDir: Paths.SITE_ROOT,
+      serveStaticOptions: {
+        extensions: ["html"]
+      }
     }
   });
 
   gulp.watch(Paths.SCSS, ['scss']);
   gulp.watch(Paths.JS, ['js']);
   //gulp.watch(Paths.IMG_SRC, ['img']);
+  //gulp.watch(Paths.FONTS, ['fonts', 'iconfont'])
 });
 
 gulp.task('deploy', ['jekyll-compile'], cb => {
