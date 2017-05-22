@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: ZConnect
-email: enquiries@zoetrope.io
+email: connect@zconnect.io
 description: > # this means to ignore newlines until "baseurl:"
   ZConnect is an end-to-end solution for connecting new or existing products
   to the web to unlock predictive maintenance, product intelligence and new business models.
@@ -33,7 +33,7 @@ meta:
     BS8 2BZ<br />
     United Kingdom
   phone: "T: 0117 230 0234"
-  email: enquiries@zoetrope.io
+  email: connect@zconnect.io
   vat: "VAT registration: 173132825"
   company: "Company No: 08742496"
   notice: Zoetrope Ltd Trading as Zoetrope Labs
