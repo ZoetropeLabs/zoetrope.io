@@ -4,6 +4,10 @@
 	color: $zoetrope-blue;
 }
 
+.navbar-padded{
+  padding-bottom: 0 !important; // Don't pad the secondry menu down
+}
+
 .navbar-brand{
   img{
     vertical-align: middle;
