@@ -149,7 +149,7 @@ gulp.task('js-min', ['js'], () => {
 })
 
 gulp.task('jekyll', ['build'], () => {
-  const jekyll = child.spawn('jekyll', ['build',
+  const jekyll = child.spawn('bundle', ['exec', 'jekyll', 'build',
     '--watch',
     '--incremental',
     '--drafts'
@@ -171,7 +171,7 @@ gulp.task('jekyll-compile', ['build-min'], cb => {
   var env = Object.create( process.env );
   env.JEKYLL_ENV = 'production';
 
-  const jekyll = child.spawn('jekyll', ['build'], {env: env, shell: true});
+  const jekyll = child.spawn('bundle', ['exec', 'jekyll', 'build'], {env: env, shell: true});
 
   const jekyllLogger = (buffer) => {
     buffer.toString()
