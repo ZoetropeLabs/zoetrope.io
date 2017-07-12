@@ -5,8 +5,8 @@ layout: default
 <div class="block block-inverse zconnect-hero hero strong-underline-border">
   <div class="block-foreground container">
     <div class="col-md-8 col-lg-6">
-      <h1 class="page-heading">Predict failures, streamline operations</h1>
-      ZConnect can alert you of predicted failures of your machines based on sensor conditions
+      <h1 class="page-heading">{{ page.title | escape }}</h1>
+      {{ page.subtitle }}
     </div>
   </div>
   <div class="block-background">
@@ -16,74 +16,55 @@ layout: default
 
 <article class="zoetrope-white">
 
-
-  <div class="block zconnect-fluid-height zcontent">
-    <div class="block-foreground container">
-      <div class="row">
-          <div class="col-sm-12 col-lg-6">
-            <h3>Use knowledge of previous faults and system design to predict faults before they become apparent</h3>
-            <p>the ZConnect team will work with you to understand your product and use your teams expert knowledge of your product to make a monitoring sytsem which will detect any abnormailities on your devices. This allows you to obverse problems such as part wear or damage to your product before your customer even realises anything is wrong.</p>
-            <p>A typical way to use this functionality is to raise low priority issues before they become big issues. This can either be used to order parts, or shedule a visit to the customer to make a repair. This reduces the downtime and the percieved response time.</p>
-          </div>
-          <div class="col-sm-12 col-lg-6 text-right">
-            <img width="65%" height="auto" src="/assets/img/demo-screens/Alert.png">
-          </div>
+  {% for row in page.rows %}
+    {% assign mod = forloop.index | modulo: 2 %}
+    {% if mod != 0 %}
+      <div class="block zconnect-fluid-height zcontent">
+        <div class="block-foreground container">
+          <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <h3>{{ row.title }}</h3>
+                {% for line in row.lines %}
+                  <p>{{ line }}</p>
+                {% endfor %}
+              </div>
+              {% if row.image %}
+              <div class="col-sm-12 col-lg-6 text-right">
+                <img width="65%" height="auto" src="{{ row.image }}">
+              </div>
+              {% endif %}
+            </div>
         </div>
-    </div>
-    <div class="block-background hidden-sm">
-      <div class="col-lg-6 offset-lg-6 image-mask-outer">
-          {% include image-mask-right.html path="/assets/img/home.jpg" %}
-        </div>
-    </div>
-  </div>
-
-  <div class="block zconnect-fixed-height zcontent">
-    <div class="block-foreground container">
-      <div class="row">
-          <div class="col-lg-6 offset-lg-6">
-            <h3>Integrate with your service engineer dispatch software to raise jobs</h3>
-            <p>Through partnerships with FSM (field service management) software or access to other systems, ZConnect is able to raise new issues on your existing service management software without any interruption to your day-to-day business.</p>
-            <p>Seemlessly link between ZConnect and your FSM software to allow service engineers to quickly access real-time sensor readings from a machine.</p>
+        <div class="block-background hidden-sm-down">
+          <div class="col-lg-6 offset-lg-6 image-mask-outer">
+            {% include image-mask-right.html path=row.background %}
           </div>
         </div>
-    </div>
-    <div class="block-background hidden-sm">
-      <div class="col-lg-6 image-mask-outer">
-          {% include image-mask-left.html path="/assets/img/whatwedo/code.jpg" %}
-        </div>
-    </div>
-  </div>
-
-  <div class="block zconnect-fixed-height zcontent">
-    <div class="block-foreground container">
-      <div class="row">
-          <div class="col-sm-12 col-lg-6">
-            <h3>Streamline your operations through attending jobs before they become critical</h3>
-            <p>Being able to attend to issues before they become critical offers an opportunity to smooth peaks and trough in demand - e.g. AC units with pre-existing problems are more likely to fail on a particuarly hot day. Knowing and fixing the weak ones on cooler days before the customer is aware of the problem can help make better use of your staff as well as improving their visibility of upcoming work.</p>
-          </div>
-        </div>
-    </div>
-    <div class="block-background hidden-sm">
-      <div class="col-lg-6 offset-lg-6 image-mask-outer">
-        
       </div>
-    </div>
-  </div>
-
-  <div class="block zconnect-fixed-height zcontent">
-    <div class="block-foreground container">
-      <div class="row">
-          <div class="col-lg-6 offset-lg-6">
-            <h3>Roll your insights in to product development</h3>
-            <p>Monitoring products across your fleet allows gathering a wealth of information about what faults are occuring, where and when. This data enables identification potential improvements for future products, both augmenting and streamlining your product improvement process.</p>
+    {% else %}
+      <div class="block zconnect-fluid-height zcontent">
+        <div class="block-foreground container">
+          <div class="row">
+              <div class="col-sm-12 col-lg-6 offset-lg-6">
+                <h3>{{ row.title }}</h3>
+                {% for line in row.lines %}
+                  <p>{{ line }}</p>
+                {% endfor %}
+              </div>
+              {% if row.image %}
+              <div class="col-sm-12 col-lg-6 text-right">
+                <img width="65%" height="auto" src="{{ row.image }}">
+              </div>
+              {% endif %}
+            </div>
+        </div>
+        <div class="block-background hidden-sm-down">
+          <div class="col-lg-6 image-mask-outer">
+            {% include image-mask-left.html path=row.background %}
           </div>
         </div>
-    </div>
-    <div class="block-background hidden-sm">
-      <div class="col-lg-6 image-mask-outer">
-          {% include image-mask-left.html path="/assets/img/whatwedo/consult.jpg" %}
-        </div>
-    </div>
-  </div>
+      </div>
+    {% endif %}
+  {% endfor %}
 
 </article>
