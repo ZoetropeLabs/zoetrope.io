@@ -1,5 +1,5 @@
 ---
-layout: predictive-maintenance
+layout: article
 title: Predict Errors, Reduce your customers downtime
 weight: 10
 ---
