@@ -5,10 +5,8 @@ layout: default
 <div class="block block-inverse zconnect-hero hero strong-underline-border">
   <div class="block-foreground container">
     <div class="col-md-8 col-lg-6">
-      {% if page.content != empty %}{{ page.content }}
-      {% else %}<h1 class="page-heading">{{ page.title | escape }}</h1>
-      {% endif %}
-      {{ page.subtitle | escape }}
+      <h1 class="page-heading">{{ page.heading }}</h1>
+      {{ page.subheading }}
     </div>
   </div>
   <div class="block-background">
@@ -24,11 +22,9 @@ layout: default
       <div class="block-foreground container">
         <div class="row">
             <div class="col-sm-12 col-lg-6{% if mod == 0 %} offset-lg-6{% endif %}">
-              <h3>{{ row.title | escape }}</h3>
+              <h3>{{ row.title }}</h3>
               {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
-              {% for line in row.lines %}
-                <p>{{ line | escape }}</p>
-              {% endfor %}
+              {{ row.text | markdownify }}</p>
             </div>
             {% if row.image %}
               <div class="col-sm-12 col-lg-6{% if mod != 0 %} text-right{% endif %}">
@@ -37,15 +33,19 @@ layout: default
             {% endif %}
           </div>
       </div>
-      {% if row.background %}
+      {% if row.background or row.include %}
         <div class="block-background hidden-sm-down">
           {% if mod != 0 %}
             <div class="col-lg-6 offset-lg-6 image-mask-outer">
-              {% include image-mask-right.html path=row.background %}
+              {% if row.include %}{% include {{ row.include.name }} props=row.include.props %}
+              {% else %}{% include image-mask-right.html path=row.background %}
+              {% endif %}
             </div>
           {% else %}
             <div class="col-lg-6 image-mask-outer">
-              {% include image-mask-left.html path=row.background %}
+              {% if row.include %}{% include {{ row.include.name }} props=row.include.props %}
+              {% else %}{% include image-mask-left.html path=row.background %}
+              {% endif %}
             </div>
           {% endif %}
         </div>
