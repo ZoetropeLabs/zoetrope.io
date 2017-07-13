@@ -26,26 +26,24 @@ layout: default
               {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
               {{ row.text | markdownify }}</p>
             </div>
-            {% if row.image %}
+            {% if row.image or row.include %}
               <div class="col-sm-12 col-lg-6{% if mod != 0 %} text-right{% endif %}">
-                <img width="65%" height="auto" src="{{ row.image }}">
+                {% if row.image %}<img width="65%" height="auto" src="{{ row.image }}">
+                {% else %}{% include {{ row.include.name }} props=row.include.props %}
+                {% endif %}
               </div>
             {% endif %}
           </div>
       </div>
-      {% if row.background or row.include %}
-        <div class="block-background hidden-sm-down">
+      {% if row.background %}
+        <div class="block-background hidden-md-down">
           {% if mod != 0 %}
             <div class="col-lg-6 offset-lg-6 image-mask-outer">
-              {% if row.include %}{% include {{ row.include.name }} props=row.include.props %}
-              {% else %}{% include image-mask-right.html path=row.background %}
-              {% endif %}
+              {% include image-mask-right.html path=row.background %}
             </div>
           {% else %}
             <div class="col-lg-6 image-mask-outer">
-              {% if row.include %}{% include {{ row.include.name }} props=row.include.props %}
-              {% else %}{% include image-mask-left.html path=row.background %}
-              {% endif %}
+              {% include image-mask-left.html path=row.background %}
             </div>
           {% endif %}
         </div>
