@@ -1,9 +1,16 @@
 
 
 // Block overrides
+.block-foreground{
+    z-index: 2;
+}
+
 .block-foreground.container {
   display: block;
+}
 
+.block-background {
+    z-index: 1;
 }
 
 .zconnect-fixed-height {
@@ -15,7 +22,18 @@
     .block-background {
         height: 500px;
     }
+}
 
+.zconnect-fluid-height {
+    padding-left: 0;
+    padding-right: 0;
+
+    min-height: 500px;
+
+    .block-background {
+        min-height: 500px;
+        height: 100%;
+    }
 }
 
 

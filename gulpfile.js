@@ -149,7 +149,7 @@ gulp.task('js-min', ['js'], () => {
 })
 
 gulp.task('jekyll', ['build'], () => {
-  const jekyll = child.spawn('jekyll', ['build',
+  const jekyll = child.spawn('bundle', ['exec', 'jekyll', 'build',
     '--watch',
     '--incremental',
     '--drafts'
@@ -171,7 +171,7 @@ gulp.task('jekyll-compile', ['build-min'], cb => {
   var env = Object.create( process.env );
   env.JEKYLL_ENV = 'production';
 
-  const jekyll = child.spawn('jekyll', ['build'], {env: env, shell: true});
+  const jekyll = child.spawn('bundle', ['exec', 'jekyll', 'build'], {env: env, shell: true});
 
   const jekyllLogger = (buffer) => {
     buffer.toString()
@@ -193,13 +193,17 @@ gulp.task('serve', () => {
     files: [Paths.SITE_ROOT + '/**'],
     port: 4000,
     server: {
-      baseDir: Paths.SITE_ROOT
+      baseDir: Paths.SITE_ROOT,
+      serveStaticOptions: {
+        extensions: ["html"]
+      }
     }
   });
 
   gulp.watch(Paths.SCSS, ['scss']);
   gulp.watch(Paths.JS, ['js']);
   //gulp.watch(Paths.IMG_SRC, ['img']);
+  //gulp.watch(Paths.FONTS, ['fonts', 'iconfont'])
 });
 
 gulp.task('deploy', ['jekyll-compile'], cb => {

@@ -2,16 +2,12 @@
 
 .app-window-block{
   // Some extra space around the block
-  padding: 50px;
+  padding: 0 40px;
 }
 
 .app-window{
   border: 1px solid $zoetrope-blue;
   @include border-radius(3px);
-}
-
-.app-window-mac{
-
 }
 
 .app-window-cover{
