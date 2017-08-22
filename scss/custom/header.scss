@@ -1,7 +1,17 @@
 
 
 .navbar-light .navbar-nav .nav-link{
-	color: $zoetrope-blue;
+	color: $zoetrope-white;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav a.nav-link:hover{
+  color: $zoetrope-grey;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  color: $zoetrope-white;
+  border-bottom: 3px solid white;
 }
 
 .navbar-padded{
@@ -19,4 +29,12 @@
     font-size: 40px;
     margin-left: -10px;
   }
+}
+
+.header-background{
+  background: linear-gradient(to right, #009fe3, #009fe3), url("/assets/img/homepage.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-blend-mode: multiply;
+  background-size: cover;
 }

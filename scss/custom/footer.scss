@@ -1,20 +1,4 @@
 
-@include media-breakpoint-up(sm){
-  .footer-pad {
-  	margin-bottom: $footer-height;
-  	position: relative;
-  	z-index: 2;
-  }
-  .footer-static {
-  	position: fixed;
-  	bottom:0;
-  	height: $footer-height;
-  	z-index: 1;
-  }
-}
-
-// TODO: scale footer on mobile
-
 
 .block.footer-static {
     padding: 50px 1rem;
@@ -37,15 +21,13 @@
 }
 
 .credentials {
-  padding: 0 0 80px 0;
+  padding: 40px 0 40px 0;
 }
 
 .credentials > div {
     font-size: 100px;
     line-height: 60px;
-    color: $zoetrope-blue;
 }
-
 
 .v-center {
   display: flex;

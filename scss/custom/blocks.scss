@@ -1,4 +1,7 @@
 
+.block-inverse{
+    background-color: transparent;
+}
 
 // Block overrides
 .block-foreground{
@@ -39,6 +42,22 @@
 
 .block.hero{
     font-size: 18px;
+}
+
+$push-down-amount: 100px;
+.solid-blue-angle-bg{
+    overflow: hidden;
+
+    .block-background{
+      margin-top: $push-down-amount; //pushes angle down a bit
+      background-color: $zoetrope-blue;
+      height: 100%;
+      @include angle-edge($angle: 6, $angle-position-y: 'top', $angle-position-x: 'left');
+    }
+
+    .push-down{
+        padding-top: $push-down-amount + 50px;
+    }
 }
 
 

@@ -71,11 +71,13 @@ $lead-letter-spacing: 0;
 
 // Buttons
 $btn-font-size:      16px;
-$btn-font-weight:    700;
+$btn-font-weight:    800;
 $btn-text-transform: none;
 $btn-letter-spacing: normal;
 $btn-padding-x-xs:   1px !default; // TODO: Change this to REMs since most of v4 in REMS
 $btn-padding-y-xs:   5px !default; // TODO: Change this to REMs since most of v4 in REMS
+$btn-border-radius: 10px;
+$btn-border-radius-lg: $btn-border-radius;
 
 $btn-toolbar-divider-bg: $gray-lighter;
 
