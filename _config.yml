@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ZConnect
-email: connect@zconnect.io
+title: Zoetrope labs
+email: enquiries@zoetrope.io
 description: > # this means to ignore newlines until "baseurl:"
   ZConnect is an end-to-end solution for connecting new or existing products
   to the web to unlock predictive maintenance, product intelligence and new business models.
   We provide expertise, and the tools to get your business making the most of IoT.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://zconnect.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://zoetrope.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 phone: "+441172300234"
@@ -33,12 +33,12 @@ meta:
     BS8 2BZ<br />
     United Kingdom
   phone: "T: 0117 230 0234"
-  email: connect@zconnect.io
+  email: enquiries@zoetrope.io
   vat: "VAT registration: 173132825"
   company: "Company No: 08742496"
   notice: Zoetrope Ltd Trading as Zoetrope Labs
 
-google_analytics: UA-45970762-5
+#google_analytics: UA-45970762-5
 
 hs_portal_id: "515796"
 
