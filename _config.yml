@@ -21,8 +21,8 @@ description: > # this means to ignore newlines until "baseurl:"
   We provide expertise, and the tools to get your business making the most of IoT.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zoetrope.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: zoetropeLabs
+github_username:  ZoetropeLabs
 phone: "+441172300234"
 
 meta:
@@ -32,7 +32,7 @@ meta:
     Bristol<br />
     BS8 2BZ<br />
     United Kingdom
-  phone: "T: 0117 230 0234"
+  phone: "0117 230 0234"
   email: enquiries@zoetrope.io
   vat: "VAT registration: 173132825"
   company: "Company No: 08742496"

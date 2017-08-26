@@ -1,19 +1,4 @@
 
-
-.contact-hero {
-
-  .block-background {
-    background: url("/assets/img/contact.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .block-foreground {
-    display: block; //required for the container to work properly
-  }
-
-}
-
 .contact-background{
 	padding: 30px;
 }
@@ -37,16 +22,15 @@
 .contact-option {
 	display: block;
 }
-.contact-icon, .contact-text {
-	display: block;
+
+.contact-icon, .contact-text{
+	font-size: 18px;
+	line-height: 40px;
+    vertical-align: middle;
 }
 .contact-icon{
-	font-size: 100px;
-	line-height: 70px;
-}
-.contact-text{
 	font-size: 24px;
-	line-height: 100px;
+    margin-right: 10px;
 }
 
 .contact-form-wrapper {

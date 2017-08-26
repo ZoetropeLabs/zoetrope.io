@@ -2,69 +2,68 @@
 layout: default
 ---
 
-<div class="block block-inverse contact-hero strong-underline-border">
-  <div class="block-foreground container">
-    &nbsp;
-  </div>
-  <div class="block-background">
-    &nbsp;
+
+<div class="block hero block-inverse hero homepage-hero">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="col-md-8 col-lg-7">
+          <h1 class="page-heading">{{ page.title | escape }}</h1>
+          <p>{{ content }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<article class="zoetrope-light-grey contact-background">
-  <div class="container zoetrope-white">
-  	<div class="row">
-  		<div class="col-xs-12 col-md-8 contact-main">
-  		<h1 class="page-heading">{{ page.title | escape }}</h1>
-  			{{ content }}
-
-        <div class="container col-xs-12 text-center contact-options">
-          <div class="row">
-            <div class="col-xs-12 contact-form-wrapper">
-              <!--[if lte IE 8]>
-              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-              <![endif]-->
-              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-              <script>
-                hbspt.forms.create({
-                  css: '',
-                  portalId: '515796',
-                  formId: 'ea5dc5d3-0574-4983-97a4-6e21e23f128c'
-                });
-              </script>
-            </div>
+<div class="block block-inverse solid-angle-bg solid-angle-bg-white solid-angle-bg-no-overlap">
+  <div class="block-foreground container">
+    <div class="content push-down-no-overlap">
+      <div class="row">
+        <div class="col-md-12 zoetrope-white">
+          <h4>Let's get connected</h4>
+        </div>
+        <div class="col-md-7">
+          <div class="contact-form-wrapper zoetrope-white">
+            <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+              hbspt.forms.create({
+                css: '',
+                portalId: '515796',
+                formId: 'a18f3a71-28ef-4a6e-86b1-e850d814fd3d'
+              });
+            </script>
           </div>
         </div>
-
-        <div class="container col-xs-12 text-center contact-options">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
+        <div class="col-md-5 zoetrope-white">
+            <div>
               <a class="contact-option" href="mailto:{{site.email}}">
                 <span class="contact-icon icon icon-mail"></span>
                 <span class="contact-text">{{site.email}}</span>
               </a>
             </div>
-            <div class="col-xs-12 col-sm-6">
+            <div>
               <a class="contact-option" href="tel:{{site.phone}}">
                 <span class="contact-icon icon icon-phone"></span>
                 <span class="contact-text">{{site.meta.phone}}</span>
               </a>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4 contact-sidebar">
-        <div class="zoetrope-light-grey">
-          <h4>When Visiting Zoetrope</h4>
-          <p>Should you be visiting Zoetrope, we have an onsite bicycle shed and 2 client parking spaces.</p>
-          <p>When arriving, the postcode provided will get you to Oakfield Road, at which point you will see a building marked as "reflections house". Please enter the court yard and bear right to locate the coach house as well as our parking spaces.</p>
+            <hr />
+            <h5>{{site.title}}</h5>
+            <p>{{site.meta.address}}</p>
         </div>
       </div>
     </div>
   </div>
+  <div class="block-background">&nbsp;</div>
+</div>
+
 
 
 </article>
 
-<div id="map-canvas" class="zoetrope-grey map strong-underline-border">
+<div id="map-canvas" class="zoetrope-grey map">
 </div>
