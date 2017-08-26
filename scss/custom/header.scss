@@ -34,7 +34,7 @@
 .header-background{
   background: linear-gradient(to right, #009fe3, #009fe3), url("/assets/img/homepage.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   background-blend-mode: multiply;
-  background-size: cover;
+  background-size: contain;
 }

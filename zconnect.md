@@ -1,6 +1,6 @@
 ---
 layout: article
-title: What we do
+title: ZConnect
 heading: ZConnect is a complete product IoT connectivity system
 subheading: Use IoT to predictively maintain, learn from your products, and delight your customers
 permalink: /zconnect/

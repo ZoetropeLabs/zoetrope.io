@@ -73,12 +73,12 @@ $push-down-amount: 100px;
         @include angle-edge($angle: 6, $angle-position-y: 'top', $angle-position-x: 'left');
     }
 
-    .push-down{
-        padding-top: $push-down-amount + 50px;
+    .push-down {
+        margin-top: $push-down-amount + 50px;
     }
 
     .push-down-no-overlap {
-        padding-top: $push-down-amount * 2 + 50px;
+        margin-top: $push-down-amount * 2 + 50px;
     }
 }
 

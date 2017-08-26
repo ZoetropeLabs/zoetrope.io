@@ -5,74 +5,81 @@ layout: default
 {% assign people = site.people | where:"management","false" | sort:"weight"  %}
 {% assign mangement_people = site.people | where:"management","true" | sort:"weight" %}\
 
-<div class="block block-inverse about-hero strong-underline-border">
-  <div class="block-foreground container">
-    <div class="container">
-      <h1 class="hero-half-title page-heading">We Thrive on Being Remarkable</h1>
-      <div class="hero-half-text">{{content}}</div>
+<div class="block hero block-inverse hero">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="col-md-8 col-lg-7">
+          <h1 class="page-heading">{{ page.title | escape }}</h1>
+          <p>{{ content }}</p>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="block-background">
-    {% include blue-lines.html %}
   </div>
 </div>
 
-<div class="zoetrope-white">
-
-  <div class="container card-deck zoetrope-team">
-
-    <div class="row">
-      {% for person in mangement_people %}
-      <div class="col-xs-12 col-md-6">
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/{{person.image_src}}" alt="Ben Howes">
-          <div class="card-block">
-            <h4 class="card-title team-name">{{person.title}}</h4>
-            <div class="team-subheading underline-border">
-              <div class="team-role">{{person.job_title}}</div>
-              <div class="team-links float-right">
-                <!-- add social links -->
-                {%if person.linkedin %}
-                  <a href="{{person.linkedin}}"><span class="icon icon-linkedin"></span></a>
-                {%endif%}
-                {%if person.github %}
-                  <a href="{{person.github}}"><span class="icon icon-github"></span></a>
-                {%endif%}
-              </div>
-            </div>
-            <div class="card-text">{{person.content}}</div>
-          </div>
+<div class="block block-inverse solid-angle-bg solid-angle-bg-white solid-angle-bg-no-overlap">
+  <div class="block-foreground container zoetrope-team">
+    <div class="content push-down-no-overlap zoetrope-white">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Meet the team</h2>
         </div>
       </div>
-      {% endfor %}
-    </div>
-
-    <div class="row">
-
-      {% for person in people %}
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="/assets/img/{{person.image_src}}" alt="Ben Howes">
-          <div class="card-block">
-            <h4 class="card-title team-name">{{person.title}}</h4>
-            <div class="team-subheading underline-border">
-              <div class="team-role">{{person.job_title}}</div>
-              <div class="team-links float-right">
-                <!-- add social links -->
-                {%if person.linkedin %}
-                  <a href="{{person.linkedin}}"><span class="icon icon-linkedin"></span></a>
-                {%endif%}
-                {%if person.github %}
-                  <a href="{{person.github}}"><span class="icon icon-github"></span></a>
-                {%endif%}
+      <div class="row">
+        {% for person in mangement_people %}
+        <div class="col-xs-12 col-md-6">
+          <div class="card">
+            <img class="card-img-top" src="/assets/img/{{person.image_src}}" alt="Ben Howes">
+            <div class="card-block">
+              <h4 class="card-title team-name">{{person.title}}</h4>
+              <div class="team-subheading underline-border">
+                <div class="team-role">{{person.job_title}}</div>
+                <div class="team-links float-right">
+                  <!-- add social links -->
+                  {%if person.linkedin %}
+                    <a href="{{person.linkedin}}"><span class="icon icon-linkedin"></span></a>
+                  {%endif%}
+                  {%if person.github %}
+                    <a href="{{person.github}}"><span class="icon icon-github"></span></a>
+                  {%endif%}
+                </div>
               </div>
+              <div class="card-text">{{person.content}}</div>
             </div>
-            <div class="card-text">{{person.content}}</div>
           </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
 
+      <div class="row">
+
+        {% for person in people %}
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="/assets/img/{{person.image_src}}" alt="Ben Howes">
+            <div class="card-block">
+              <h4 class="card-title team-name">{{person.title}}</h4>
+              <div class="team-subheading underline-border">
+                <div class="team-role">{{person.job_title}}</div>
+                <div class="team-links float-right">
+                  <!-- add social links -->
+                  {%if person.linkedin %}
+                    <a href="{{person.linkedin}}"><span class="icon icon-linkedin"></span></a>
+                  {%endif%}
+                  {%if person.github %}
+                    <a href="{{person.github}}"><span class="icon icon-github"></span></a>
+                  {%endif%}
+                </div>
+              </div>
+              <div class="card-text">{{person.content}}</div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
     </div>
   </div>
+  <div class="block-background">&nbsp;</div>
 </div>
