@@ -1,4 +1,9 @@
 
+
+.block{
+    font-size: 18px;
+}
+
 .block-inverse{
     background-color: transparent;
 }
@@ -97,6 +102,10 @@ $push-down-amount: 100px;
     .service-title {
         color: $zoetrope-white; //nasty little override
                                 // due to the zoetrope-theme inheritance
+    }
+
+    hr {
+        background-color: white;
     }
 
     .service-item {

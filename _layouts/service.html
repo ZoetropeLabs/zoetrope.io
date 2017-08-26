@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="block block-inverse hero">
+  <div class="block-foreground container">
+    <div class="col-md-8 col-lg-6">
+      <h1 class="page-heading">{{ page.heading }}</h1>
+      {{ page.subheading }}
+    </div>
+  </div>
+
+</div>
+
+<div class="block block-inverse solid-angle-bg zoeicons-blue">
+  <div class="block-foreground container">
+    <div class="content">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/assets/img/iphone.png">
+        </div>
+        <div class="col-md-6 push-down text-center">
+          <h3>Read how we built the Novo smart home connected system for e.on</h3>
+          <a class="btn btn-success">Read a case study</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block-background">&nbsp;</div>
+</div>
+
+<article class="block zconnect-fluid-height block-services zcontent zoetrope-grey">
+
+    <div class="block-foreground container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2>How ZConnect Works</h2>
+        </div>
+      </div>
+
+      {% for row in page.rows %}
+        {% assign mod = forloop.index | modulo: 2 %}
+            <div class="row service-item zoetrope-blue">
+              <div class="service-details col-sm-12 col-lg-6 {% if mod == 0 %} push-lg-6{% endif %}">
+                <h3 class="service-title">{{ row.title }}</h3>
+                <hr />
+                {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
+                {{ row.text | markdownify }}</p>
+              </div>
+              {% if row.image or row.include %}
+                <div class="borderless-img col-sm-12 col-lg-6 {% if mod == 0 %} pull-lg-6{% endif %}">
+                  {% if row.image %}<img src="{{ row.image }}">
+                  {% else %}{% include {{ row.include.name }} props=row.include.props %}
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+      {% endfor %}
+    </div>
+  </div>
+</article>

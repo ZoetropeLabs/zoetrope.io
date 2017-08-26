@@ -23,7 +23,7 @@ hr {
 .zoetrope-white {
     background: $zoetrope-white;
     color: $gray-darker;
-    a {
+    a, hr {
         color: $zoetrope-blue;
     }
     h1,h2,h3,h4,h5 {
@@ -34,7 +34,7 @@ hr {
 .zoetrope-grey {
     background: $zoetrope-grey;
     color: white;
-    a {
+    a, hr {
         color: white;
     }
     h1,h2,h3,h4,h5 {
@@ -45,7 +45,7 @@ hr {
 .zoetrope-light-grey{
     background: $zoetrope-grey-bg;
     color: $gray-darker;
-    a {
+    a, hr {
         color: $zoetrope-blue;
     }
     h1,h2,h3,h4,h5 {
@@ -56,7 +56,7 @@ hr {
 .zoetrope-dark-blue {
     background: $zoetrope-blue-darkest;
     color: white;
-    a {
+    a, hr {
         color: white;
     }
     h1,h2,h3,h4,h5 {

@@ -1,20 +1,25 @@
 ---
-layout: article
+layout: service
 title: ZConnect
 heading: ZConnect is a complete product IoT connectivity system
 subheading: Use IoT to predictively maintain, learn from your products, and delight your customers
 permalink: /zconnect/
 primary_menu: true
 weight: 10
+
+quote: >
+    Zoetrope took on the task of creating a world class IoT Cloud platform and mobile application that was easily scalable to serve millions of customers for Novo.
+quote_attribution: Tom Timothy, Novo Innovations, powered by e.on
+
 rows:
   - title: We create hardware that will interface with your product’s existing electronics to collect useful data
-    background: /assets/img/whatwedo/iot-gateway-board.jpg
+    image: /assets/img/whatwedo/iot-gateway-board.jpg
     text: |
       This hardware is tailored around what’s already in the product; we can add new sensors to collect data or use existing sensors and just add the required hardware to connect the product to the internet via 3G, wi-fi or LPWA.
 
       Throughout our consultative process, we design, improve and refine the hardware to ensure that the final product will be built to provide the maximum business value for you.
   - title: The ZConnect platform gives you analytics and actionable insights
-    background: /assets/img/whatwedo/code.jpg
+    image: /assets/img/whatwedo/code.jpg
     text: |
       ZConnect has a modular and customisable platform built on IBM watson technologies to provide a resilient and scalable platform to collect and aggregate data. Zoetrope is able to provide customisations and integrations with virtually any other software. This allows streamlining of existing processes.
 
@@ -51,7 +56,7 @@ rows:
               - Connected, last seen 10s ago <br /><strong>In use by Gerry Smith</strong>
               - <span class="icon icon-drop"></span>Fuel level 80%  &nbsp;&nbsp;<span class="icon icon-map"></span><i> See location</i>
   - title: Our consultative process always keeps the end goal in mind - create value in your business.
-    background: /assets/img/whatwedo/consult.jpg
+    image: /assets/img/whatwedo/consult.jpg
     text: |
       Our suite will allow you to exceed your customer’s expectations:
         - Make products safer, better and more efficient
