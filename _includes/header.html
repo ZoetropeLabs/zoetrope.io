@@ -28,17 +28,29 @@
 
     <a class="navbar-brand mr-auto" href="/">
       <img src="{{ site.baseurl }}/assets/img/logo-zoetrope-labs-white.png" width="auto" height="50rems" alt={{site.title}} />
-      <h3 style="visibility: hidden;">Zoetrope Labs</h3>
     </a>
 
     <div class="hidden-sm-down text-uppercase">
       <ul class="navbar-nav">
         {% for my_page in pages %}
           {% if my_page.title and my_page.primary_menu %}
-          <li class="nav-item px-1 ">
-            <a class="nav-link {% if page.url == my_page.url %}active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          </li>
+            {% if my_page.sub_links %}
+              <li class="nav-item dropdown px-1">
+                <a class="nav-link dropdown-toggle" href="{{my_page.url}}" id="dd-{{my_page.url | slugify}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{my_page.title}}</a>
+                <div class="dropdown-menu" aria-labelledby="dd-{{my_page.url | slugify}}">
+                  {% for sub_page in my_page.sub_links %}
+                    <a class="dropdown-item{% if page.url == sub_page.url %} active{% endif %}" href="{{ sub_page.url | relative_url }}">{{sub_page.title}}</a>
+                  {% endfor %}
+                </div>
+              </li>
+            {% else %}
+              <li class="nav-item px-1">
+                <a class="nav-link {% if page.url == my_page.url %}active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              </li>
+            {% endif %}
           {% endif %}
+
+
         {% endfor %}
       </ul>
     </div>
