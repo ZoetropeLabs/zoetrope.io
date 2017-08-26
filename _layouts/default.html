@@ -10,6 +10,10 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
+
+        {% if page.quote %}
+          {% include client-quote.html quote=page.quote attribution=page.quote_attribution link=page.quote_link %}
+        {% endif %}
       </div>
     </main>
 

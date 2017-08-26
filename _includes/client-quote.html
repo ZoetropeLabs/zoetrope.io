@@ -1,0 +1,17 @@
+
+<div class="block block-secondary block-quote zoetrope-white">
+    <div class="block-foreground container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="quote text-center">&ldquo;{{include.quote}}&rdquo;</p>
+                <p class="quote-attribution text-center">
+                    {% if include.link %}
+                        <a href="{{include.link}}">{{include.attribution}}</a>
+                    {% else %}
+                        {{include.attribution}}
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -101,3 +101,17 @@ $push-down-amount: 100px;
         }
     }
 }
+
+.block-quote {
+
+    box-shadow: inset 0px 8px 8px rgba(0,0,0,0.2);
+
+    .quote {
+        font-size: 32px;
+        font-style: italic;
+    }
+    .quote-attribution {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
