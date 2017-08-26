@@ -3,13 +3,19 @@
 
 }
 
+hr {
+    border: none;
+    height: 5px;
+    background-color: $zoetrope-blue;
+}
+
 .zoetrope-blue {
     background: $zoetrope-blue;
     color: white;
-    a {
+    a, hr {
         color: white;
     }
-    h1,h2,h3,h4 {
+    h1,h2,h3,h4,h5 {
         color: white;
     }
 }
@@ -20,7 +26,7 @@
     a {
         color: $zoetrope-blue;
     }
-    h1,h2,h3,h4 {
+    h1,h2,h3,h4,h5 {
         color: $zoetrope-blue;
     }
 }
@@ -31,7 +37,7 @@
     a {
         color: white;
     }
-    h1,h2,h3,h4 {
+    h1,h2,h3,h4,h5 {
         color: $zoetrope-blue;
     }
 }
@@ -42,7 +48,7 @@
     a {
         color: $zoetrope-blue;
     }
-    h1,h2,h3,h4 {
+    h1,h2,h3,h4,h5 {
         color: $zoetrope-blue;
     }
 }
@@ -53,7 +59,7 @@
     a {
         color: white;
     }
-    h1,h2,h3,h4 {
+    h1,h2,h3,h4,h5 {
         color: $zoetrope-blue;
     }
 }

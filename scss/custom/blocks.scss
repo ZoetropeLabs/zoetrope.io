@@ -44,23 +44,6 @@
     font-size: 18px;
 }
 
-$push-down-amount: 100px;
-.solid-blue-angle-bg{
-    overflow: hidden;
-
-    .block-background{
-      margin-top: $push-down-amount; //pushes angle down a bit
-      background-color: $zoetrope-blue;
-      height: 100%;
-      @include angle-edge($angle: 6, $angle-position-y: 'top', $angle-position-x: 'left');
-    }
-
-    .push-down{
-        padding-top: $push-down-amount + 50px;
-    }
-}
-
-
 // Responsive
 .zcontent{
 	@include media-breakpoint-down(md){
@@ -73,4 +56,48 @@ $push-down-amount: 100px;
 			position: relative;
 		}
 	}
+}
+
+
+// This block type is for where there is a angled blue line covering over
+// the background from a parent element. Normally used for a sub-hero.
+$push-down-amount: 100px;
+.solid-angle-bg{
+    overflow: hidden;
+
+    .block-background{
+        margin-top: $push-down-amount; //pushes angle down a bit
+        background-color: $zoetrope-blue;
+        height: 100%;
+        @include angle-edge($angle: 6, $angle-position-y: 'top', $angle-position-x: 'left');
+    }
+
+    .push-down{
+        padding-top: $push-down-amount + 50px;
+    }
+}
+
+.block-services {
+
+    .service-details {
+        padding: 45px;
+    }
+
+    .service-title {
+        color: $zoetrope-white; //nasty little override
+                                // due to the zoetrope-theme inheritance
+    }
+
+    .service-item {
+        margin-top: 45px;
+    }
+
+    .borderless-img{
+        padding:0;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
 }

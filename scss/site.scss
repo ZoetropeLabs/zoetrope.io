@@ -1,26 +1,13 @@
 
 @import "./variables.scss";
 
-@font-face {
-    font-family: 'truenoextrabold';
-    src: url('fonts/truenoexbd.eot');
-    src: url('fonts/truenoexbd.eot?#iefix') format('embedded-opentype'),
-         url('fonts/truenoexbd.woff2') format('woff2'),
-         url('fonts/truenoexbd.woff') format('woff'),
-         url('fonts/truenoexbd.ttf') format('truetype'),
-         url('fonts/truenoexbd.svg#truenoextrabold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400');
 
 // text overrides
 $body-color: #6c6f73;
 $font-size-base: 15px;
 $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-headings: "truenoextrabold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-headings: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
 
 

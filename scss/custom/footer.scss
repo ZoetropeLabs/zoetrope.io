@@ -5,14 +5,14 @@
 }
 
 .footer-content{
-  font-size: 12px;
+  //font-size: 12px;
 
   @include media-breakpoint-down(sm) {
     text-align: center;
   }
 
   .list-unstyled{
-    line-height: 18px;
+    //line-height: 18px;
   }
 }
 
