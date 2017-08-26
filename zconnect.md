@@ -2,14 +2,16 @@
 layout: service
 title: ZConnect
 heading: ZConnect is a complete product IoT connectivity system
-subheading: Use IoT to predictively maintain, learn from your products, and delight your customers
-permalink: /zconnect/
+subheading: Use IoT to predictively maintain, learn from your products, and delight your customers with our managed service.
+permalink: /zconnect-iot/
 primary_menu: true
 weight: 10
 
 quote: >
     Zoetrope took on the task of creating a world class IoT Cloud platform and mobile application that was easily scalable to serve millions of customers for Novo.
 quote_attribution: Tom Timothy, Novo Innovations, powered by e.on
+
+service_rows_title: How ZConnect works
 
 rows:
   - title: We create hardware that will interface with your product’s existing electronics to collect useful data
