@@ -3,7 +3,7 @@ layout: about
 title: About Us
 permalink: /about/
 primary_menu: true
-weight: 30
+weight: 35  
 
 quote: "It has been a pleasure working with Ben and his team at Zoetrope for the past year at Novo."
 quote_attribution: Tom Timothy, Novo Innovations, powered by e.on

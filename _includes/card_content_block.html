@@ -13,6 +13,8 @@
       {% assign shortened = post.content | markdownify | strip_html | truncate:  240 %}
     {{ shortened }}
       <a href="{{post.url}}">Read more</a>
+      
+      <hr />
     </div>
   </div>
 </div>

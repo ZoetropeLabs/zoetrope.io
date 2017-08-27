@@ -151,8 +151,6 @@ gulp.task('js-min', ['js'], () => {
 gulp.task('jekyll', ['build'], () => {
   const jekyll = child.spawn('bundle', ['exec', 'jekyll', 'build',
     '--watch',
-    '--verbose',
-    '--trace',
     //'--incremental',
     //'--drafts'
   ]);

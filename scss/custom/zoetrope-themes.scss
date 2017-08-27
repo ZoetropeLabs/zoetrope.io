@@ -6,14 +6,18 @@
 hr {
     border: none;
     height: 5px;
+    width: 100%;
     background-color: $zoetrope-blue;
 }
 
 .zoetrope-blue {
     background: $zoetrope-blue;
     color: white;
-    a, hr {
+    a {
         color: white;
+    }
+    hr {
+        background-color: white;
     }
     h1,h2,h3,h4,h5 {
         color: white;
@@ -26,6 +30,9 @@ hr {
     a, hr {
         color: $zoetrope-blue;
     }
+    hr {
+        background-color: $zoetrope-blue;
+    }
     h1,h2,h3,h4,h5 {
         color: $zoetrope-blue;
     }
@@ -36,6 +43,9 @@ hr {
     color: white;
     a, hr {
         color: white;
+    }
+    hr {
+        background-color: white;
     }
     h1,h2,h3,h4,h5 {
         color: $zoetrope-blue;
@@ -48,6 +58,9 @@ hr {
     a, hr {
         color: $zoetrope-blue;
     }
+    hr {
+        background-color: $zoetrope-blue;
+    }
     h1,h2,h3,h4,h5 {
         color: $zoetrope-blue;
     }
@@ -59,6 +72,9 @@ hr {
     a, hr {
         color: white;
     }
+    hr {
+        background-color: white;
+    }   
     h1,h2,h3,h4,h5 {
         color: $zoetrope-blue;
     }
