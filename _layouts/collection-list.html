@@ -24,7 +24,7 @@ layout: default
       {% if page.list_title %}
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2>Meet the team</h2>
+            <h2>{{page.list_title}}</h2>
           </div>
         </div>
       {% endif %}
@@ -32,9 +32,11 @@ layout: default
       <div class="row">
 
         <div class="col-xs-12 {%if page.sidebar %}col-sm-8{% else %}col-md-12{% endif %}">
+          <div class="row">
           {% for post in posts %}
             {% include {{page.card_template}} %}
           {% endfor %}
+          </div>
         </div>
 
         {%if page.sidebar %}
