@@ -1,0 +1,18 @@
+
+<section class="sidebar">
+  <h3>Featured</h3>
+
+  <ul class="blog-related-posts">
+    {% for post in site.tech-blog %}
+      {% if post.featured == 'true' %}
+      <li>
+        <a href="{{post.url}}">
+          {{post.title}}
+          <span class="post-date">{{post.date | date: "%-d %B %Y " }}</span>
+        </a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+

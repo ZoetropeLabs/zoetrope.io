@@ -45,7 +45,13 @@ hs_portal_id: "515796"
 permalink: /title
 
 collections:
-  - people
+  people:
+    output: true
+  tech-blog:
+    output: true
+  client_stories:
+    output: true
+    permalink: /client-story/:title/
 
 # Build settings
 markdown: kramdown

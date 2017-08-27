@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% assign posts =  site[page.collection] | sort: 'date' | reverse %}
+
+<div class="block hero block-inverse hero">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="col-md-8 col-lg-7">
+          <h1 class="page-heading">{{ page.title | escape }}</h1>
+          <p>{{ content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="block block-inverse solid-angle-bg solid-angle-bg-white solid-angle-bg-no-overlap">
+  <div class="block-foreground container zoetrope-team">
+    <div class="content push-down-no-overlap zoetrope-white">
+
+      {% if page.list_title %}
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Meet the team</h2>
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="row">
+
+        <div class="col-xs-12 {%if page.sidebar %}col-sm-8{% else %}col-md-12{% endif %}">
+          {% for post in posts %}
+            {% include {{page.card_template}} %}
+          {% endfor %}
+        </div>
+
+        {%if page.sidebar %}
+          <div class="col-xs-12 col-sm-4">
+            {% include {{page.sidebar}} %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="block-background">&nbsp;</div>
+</section>

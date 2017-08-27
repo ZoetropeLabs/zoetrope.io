@@ -1,10 +1,11 @@
 ---
+published: false
 layout: article
 title: Approach
 heading: Our approach is fast, proven and affordable
 subheading: We get the latest technology working in your business within weeks
 permalink: /approach/
-primary_menu: true
+primary_menu: false
 weight: 20
 rows:
   - title: Consult
