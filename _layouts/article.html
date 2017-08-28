@@ -2,53 +2,55 @@
 layout: default
 ---
 
-<div class="block block-inverse zconnect-hero hero strong-underline-border">
+<div class="block block-inverse hero">
   <div class="block-foreground container">
     <div class="col-md-8 col-lg-6">
       <h1 class="page-heading">{{ page.heading }}</h1>
       {{ page.subheading }}
     </div>
   </div>
-  <div class="block-background">
-    {% include blue-lines.html %}
-  </div>
+
 </div>
 
-<article class="zoetrope-white">
-
-  {% for row in page.rows %}
-    {% assign mod = forloop.index | modulo: 2 %}
-    <div class="block zconnect-fluid-height zcontent">
-      <div class="block-foreground container">
-        <div class="row">
-            <div class="col-sm-12 col-lg-6{% if mod == 0 %} offset-lg-6{% endif %}">
-              <h3>{{ row.title }}</h3>
-              {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
-              {{ row.text | markdownify }}</p>
+<article class="block block-inverse solid-angle-bg solid-angle-bg-white solid-angle-bg-no-overlap">
+  <div class="block-foreground container">
+    <div class="content">
+      <div class="row">
+        {% for row in page.rows %}
+          {% assign mod = forloop.index | modulo: 2 %}
+          <div class="block zconnect-fluid-height zcontent">
+            <div class="block-foreground container">
+              <div class="row">
+                  <div class="col-sm-12 col-lg-6{% if mod == 0 %} offset-lg-6{% endif %}">
+                    <h3>{{ row.title }}</h3>
+                    {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
+                    {{ row.text | markdownify }}</p>
+                  </div>
+                  {% if row.image or row.include %}
+                    <div class="col-sm-12 col-lg-6{% if mod != 0 %} text-right{% endif %}">
+                      {% if row.image %}<img width="65%" height="auto" src="{{ row.image }}">
+                      {% else %}{% include {{ row.include.name }} props=row.include.props %}
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                </div>
             </div>
-            {% if row.image or row.include %}
-              <div class="col-sm-12 col-lg-6{% if mod != 0 %} text-right{% endif %}">
-                {% if row.image %}<img width="65%" height="auto" src="{{ row.image }}">
-                {% else %}{% include {{ row.include.name }} props=row.include.props %}
+            {% if row.background %}
+              <div class="block-background">
+                {% if mod != 0 %}
+                  <div class="col-lg-6 offset-lg-6 image-mask-outer">
+                    {% include image-mask-right.html path=row.background %}
+                  </div>
+                {% else %}
+                  <div class="col-lg-6 image-mask-outer">
+                    {% include image-mask-left.html path=row.background %}
+                  </div>
                 {% endif %}
               </div>
             {% endif %}
           </div>
+        {% endfor %}
       </div>
-      {% if row.background %}
-        <div class="block-background">
-          {% if mod != 0 %}
-            <div class="col-lg-6 offset-lg-6 image-mask-outer">
-              {% include image-mask-right.html path=row.background %}
-            </div>
-          {% else %}
-            <div class="col-lg-6 image-mask-outer">
-              {% include image-mask-left.html path=row.background %}
-            </div>
-          {% endif %}
-        </div>
-      {% endif %}
     </div>
-  {% endfor %}
-
+  </div>
 </article>
