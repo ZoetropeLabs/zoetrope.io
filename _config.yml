@@ -47,11 +47,13 @@ permalink: /title
 collections:
   people:
     output: true
-  tech-blog:
+  tech_blog:
     output: true
   client_stories:
     output: true
     permalink: /client-story/:title/
+  careers:
+    output: true
 
 # Build settings
 markdown: kramdown
@@ -74,6 +76,13 @@ exclude:
   - case-studies
   - whitepapers
 
+authors:
+  benhowes:
+    name: Ben Howes
+    img: /assets/img/team/benhowes.jpg
+  richwebb:
+    name: Richard Webb
+    img: /assets/img/team/richardwebb.jpg
 
 defaults:
   - scope:
@@ -98,7 +107,9 @@ defaults:
       path: ''
       type: careers
     values:
-      layout: careers-job
+      layout: article
+      sidebar: careers_sidebar.html
+      header_background: "/assets/img/homepage.jpg"
   - scope:
       path: ''
       type: client_stories

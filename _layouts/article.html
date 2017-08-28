@@ -7,6 +7,12 @@ layout: default
     <div class="col-md-8 col-lg-6">
       <h1 class="page-heading">{{ page.title }}</h1>
       {{ page.subheading }}
+      <div class="byline">
+        {{page.date | date: "%b %d, %Y"}}
+        {% if page.author %}
+          by {{site.authors[page.author].name}}
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
@@ -51,12 +57,12 @@ layout: default
         {% endfor %}
       </div>
     </div>
-    <div class="row article-content zoetrope-white">
+    <div class="row article zoetrope-white">
       <div class="col-sm-12 {%if page.sidebar %}col-md-8{% else %}col-md-12{% endif %}">
         {{page.content}}
       </div>
       {%if page.sidebar %}
-        <div class="col-xs-12 col-sm-4">
+        <div class="sidebar col-xs-12 col-sm-4">
           {% include {{page.sidebar}} %}
         </div>
       {% endif %}

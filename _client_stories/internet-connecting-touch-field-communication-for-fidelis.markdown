@@ -1,10 +1,7 @@
 ---
 title: Fidelis Touch Field Communication
 date: 2016-03-22 20:21:00 Z
-assets:
-- path: "/assets/img/pages/oliver_spragg.png"
-  name: oliver_spragg
-  type: cover
+header_background: "/assets/img/pages/oliver_spragg.png"
 ---
 
 ## The Need

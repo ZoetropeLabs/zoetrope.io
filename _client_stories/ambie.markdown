@@ -2,11 +2,11 @@
 title: Ambie IoT music streaming
 date: 2017-03-25 17:52:00 Z
 assets:
-- path: "/assets/img/pages/Selection_004.png"
-  name: Selection_004
-  type: cover
 - path: "/assets/img/pages/ambie-prototypes.jpg"
   name: ambie-prototypes
+
+header_background: "/assets/img/pages/Selection_004.png"
+
 ---
 
 Zoetrope worked with [Ambie](http://ambie.fm) to conceive and deliver a music player suitable for use in commercial settings.

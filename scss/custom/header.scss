@@ -6,7 +6,7 @@
 }
 
 .navbar-light .navbar-nav a.nav-link:hover{
-  color: $zoetrope-grey;
+  color: darken($zoetrope-white, 20%);
 }
 
 .navbar-light .navbar-nav .nav-link.active{
@@ -32,7 +32,12 @@
 }
 
 .header-background{
+  // This background is the default if it's not set using
+  // the `header_background` attribute in front matter
+  // per page.
   background: linear-gradient(to right, #009fe3, #009fe3), url("/assets/img/homepage.jpg");
+
+  // required.
   background-repeat: no-repeat;
   background-position: center top;
   background-blend-mode: multiply;

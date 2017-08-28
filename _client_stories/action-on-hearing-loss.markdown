@@ -2,9 +2,6 @@
 title: Action On Hearing Loss - Wearable
 date: 2017-03-23 17:52:00 Z
 assets:
-- path: "/assets/img/pages/hearing-loop-itp-finalist.jpg"
-  name: hearing-loop-itp-finalist
-  type: cover
 - path: "/assets/img/pages/Scan 4.jpeg"
   name: Scan 4
 - path: "/assets/img/pages/IMG_20151207_125803.jpg"
@@ -14,6 +11,7 @@ assets:
   name: Action on Hearing loss proposal-1
 - path: "/assets/img/pages/App_screenshot.png"
   name: App_screenshot
+header_background: "/assets/img/pages/hearing-loop-itp-finalist.jpg"
 ---
 
 Zoetrope worked with [Action on Hearing Loss](https://www.actiononhearingloss.org.uk/default.aspx) as part of a Nesta prize to create a fully functional prototype of a low cost hearing loop device which could be used to assist people with mild to moderate hearing loss. Most hearing aid products target more severe hearing loss at present, leaving a gap in the market for technologies to aid milder cases of hearing impairments.

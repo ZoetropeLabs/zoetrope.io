@@ -1,10 +1,7 @@
 ---
 title: Interactive 3D Imaging for Ecommerce
 date: 2017-03-24 17:52:00 Z
-assets:
-- path: "/assets/img/pages/zoetrope_twitter_header.png"
-  name: zoetrope_twitter_header
-  type: cover
+header_background: "/assets/img/pages/zoetrope_twitter_header.png"
 ---
 
 ## The Business Case

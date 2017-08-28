@@ -1,10 +1,7 @@
 ---
 title: WiFi Connected Button Streamlines online tasks
 date: 2016-03-20 10:27:00 Z
-assets:
-- path: "/assets/img/pages/smart-button.jpg"
-  name: smart-button
-  type: cover
+header_background: "/assets/img/pages/smart-button.jpg"
 ---
 
 Kazendi came to Zoetrope with a great product vision inspired by the need of one of their clients. The vision? A whole new way to interact with the web, making the web more physical than ever.
