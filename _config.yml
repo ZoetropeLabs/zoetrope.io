@@ -55,7 +55,7 @@ collections:
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
 
@@ -75,8 +75,32 @@ exclude:
   - whitepapers
 
 
-defults:
-  -
-    primary_menu: false
-    secondary_menu: false
-    title: "Set a title!"
+defaults:
+  - scope:
+      path: ''
+    values:
+      primary_menu: false
+      secondary_menu: false
+      title: "Set a title!"
+  - scope:
+      path: ''
+      type: posts
+    values:
+      permalink: "/posts/:title/"
+  - scope:
+      path: ''
+      type: tech-blog
+    values:
+      layout: article
+      author: benhowes
+      sidebar: blog_sidebar.html
+  - scope:
+      path: ''
+      type: careers
+    values:
+      layout: careers-job
+  - scope:
+      path: ''
+      type: client_stories
+    values:
+      layout: article

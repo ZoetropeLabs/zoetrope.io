@@ -1,5 +1,4 @@
 ---
-layout: client-story-item
 title: Interactive 3D Imaging for Ecommerce
 date: 2017-03-24 17:52:00 Z
 assets:

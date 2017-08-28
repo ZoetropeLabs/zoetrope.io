@@ -1,5 +1,4 @@
 ---
-layout: client-story-item
 title: Ambie IoT music streaming
 date: 2017-03-25 17:52:00 Z
 assets:

@@ -1,5 +1,4 @@
 ---
-layout: client-story-item
 title: Action On Hearing Loss - Wearable
 date: 2017-03-23 17:52:00 Z
 assets:

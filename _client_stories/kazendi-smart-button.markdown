@@ -1,5 +1,4 @@
 ---
-layout: client-story-item
 title: WiFi Connected Button Streamlines online tasks
 date: 2016-03-20 10:27:00 Z
 assets:
