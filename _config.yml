@@ -98,7 +98,7 @@ defaults:
       permalink: "/posts/:title/"
   - scope:
       path: ''
-      type: tech-blog
+      type: tech_blog
     values:
       layout: article
       author: benhowes
