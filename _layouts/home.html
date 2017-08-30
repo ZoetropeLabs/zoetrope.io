@@ -7,9 +7,8 @@ layout: default
     <div class="content">
       <div class="row">
         <div class="col-md-8 col-lg-7">
-          <h1 class="page-heading">We accelerate ideas into connected products</h1>
-          <p>Zoetrope develops connected solutions and services for the internet of things, helping our clients enchance their existing products.</p>
-          <p><a class="btn btn-success btn-lg mt-1" href="/contact">Book a demo <span class="icon icon-chevron-small-right"></span></a></p>
+          <h1 class="page-heading">{{page.heading}}</h1>
+          <p>{{page.subheading | markdownify}}</p>
         </div>
       </div>
     </div>
@@ -21,18 +20,18 @@ layout: default
     <div class="content">
       <div class="row">
         <div class="col-md-6">
-          <img src="/assets/img/iphone.png">
+          <img src="{{page.hero_cta_image}}">
         </div>
         <div class="col-md-6 push-down">
-          <h3>Our clients trust us with their products... and reputation.</h3>
-          <p>We work with some of the biggest blue chips and brightest startups to enable connected products to generate business value</p>
+          <h3>{{page.hero_cta_heading}}</h3>
+          {{page.hero_cta_content | markdownify}}
           <div class="row credentials text-center zoetrope-blue">
             <div class="col"><span class="zoeicons-eon">&nbsp;</span></div>
             <div class="col"><span class="zoeicons-gsma">&nbsp;</span></div>
             <div class="col hidden-sm-down"><span class="zoeicons-ambie">&nbsp;</span></div>
           </div>
           <div class="text-center">
-            <a class="btn btn-success">Read a case study</a>
+            <a class="btn btn-success" href="{{page.hero_cta_link}}">{{page.hero_cta_link_text}}</a>
           </div>
         </div>
       </div>
@@ -46,13 +45,13 @@ layout: default
     <div class="content">
       <div class="row">
           <div class="col-md-6">
-            <h3>Empower your product with ZConnect IoT</h3>
-            <p>ZConnect is a customisable, managed and end-to-end IoT solution for connecting your products and producing actionable insight.</p>
-            <ul class="tick-list">
-              <li>Predicitive maintenance</li>
-              <li>Real-time insight</li>
-              <li>Remote diagnostics &amp; control</li>
-            </ul>
+            <h3>{{page.zconnect_callout_title}}</h3>
+            {{page.zconnect_callout_text | markldownify}}
+          </div>
+          <div class="col-md-6">
+            {% if page.page.zconnect_callout_include %}
+              {{include page.zconnect_callout_include}}
+            {% endif %}
           </div>
       </div>
     </div>
@@ -62,47 +61,33 @@ layout: default
 <div class="block block-secondary block-services zoetrope-grey">
   <div class="block-foreground container">
     <div class="content">
+
       <div class="row">
-
-          <div class="services-title text-center col-xs-12 col-md-12">
-            <h2 class="">Our other services</h2>
-            <p>When ZConnect is not a great fit for your problem, we've got other tricks up our sleeve.</p>
-          </div>
-      </div>
-      <div class="row service-item zoetrope-blue">
-          <div class="col-md-6 service-details">
-            <h3 class="service-title">A tailored and responsive consulting service</h3>
-            <hr />
-            <p>The team at Zoetrope labs have in-depth knowledge of IoT and technology more broadly. Combined with experience of IoT deployments this puts us in a unique position to advise on how technology may shape your business.</p>
-            <ul class="tick-list">
-              <li>Market Size</li>
-              <li>Competitive Landscape</li>
-              <li>Key applications</li>
-              <li>Core technologies</li>
-            </ul>
-            <a class="btn btn-success">Talk to us</a>
-          </div>
-          <div class="col-md-6 borderless-img">
-            <img src="http://via.placeholder.com/600x600"/>
-          </div>
+        <div class="services-title text-center col-xs-12 col-md-12">
+          <h2 class="">{{page.other_services_title}}</h2>
+          <p>{{page.other_services_subtitle}}</p>
+        </div>
       </div>
 
-      <div class="row service-item zoetrope-blue">
-          <div class="col-md-6 borderless-img">
-            <img src="http://via.placeholder.com/600x600"/>
+      {% for row in page.rows %}
+        {% assign mod = forloop.index | modulo: 2 %}
+          <div class="row service-item zoetrope-blue">
+            {% if row.image or row.include %}
+              <div class="borderless-img col-sm-12 col-lg-6 {% if mod == 1 %} push-lg-6{% endif %}">
+                {% if row.image %}<img src="{{ row.image }}">
+                {% else %}{% include {{ row.include.name }} props=row.include.props %}
+                {% endif %}
+              </div>
+            {% endif %}
+            <div class="service-details col-sm-12 col-lg-6 {% if mod == 1 %} pull-lg-6{% endif %}">
+              <h3 class="service-title">{{ row.title }}</h3>
+              <hr />
+              {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
+              {{ row.text | markdownify }}</p>
+              <p><a href="{{row.cat_link}}">{{row.cta_link_text}}</a></p>
+            </div>
           </div>
-          <div class="col-md-6 service-details">
-            <h3 class="service-title">A tailored and responsive consulting service</h3>
-            <hr />
-            <p>The team at Zoetrope labs have in-depth knowledge of IoT and technology more broadly. Combined with experience of IoT deployments this puts us in a unique position to advise on how technology may shape your business.</p>
-            <ul class="tick-list">
-              <li>Market Size</li>
-              <li>Competitive Landscape</li>
-              <li>Key applications</li>
-              <li>Core technologies</li>
-            </ul>
-          </div>
-      </div>
+      {% endfor %}
 
     </div>
   </div>
