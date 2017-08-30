@@ -74,9 +74,23 @@ hr {
     }
     hr {
         background-color: white;
-    }   
+    }
     h1,h2,h3,h4,h5 {
         color: $zoetrope-blue;
+    }
+}
+
+.zoetrope-green {
+    background: $zoetrope-green;
+    color: white;
+    a, hr {
+        color: white;
+    }
+    hr {
+        background-color: white;
+    }
+    h1,h2,h3,h4,h5 {
+        color: white;
     }
 }
 

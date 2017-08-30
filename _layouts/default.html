@@ -11,6 +11,10 @@
       <div class="wrapper">
         {{ content }}
 
+
+        {% if page.cta %}
+          {% include page-cta.html %}
+        {% endif %}
         {% if page.quote %}
           {% include client-quote.html quote=page.quote attribution=page.quote_attribution link=page.quote_link %}
         {% endif %}

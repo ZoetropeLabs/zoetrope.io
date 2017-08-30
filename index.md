@@ -74,4 +74,8 @@ quote: >
 quote_attribution: Tom Timothy, Novo Innovations, powered by e.on
 quote_link: false
 
+cta: Seen enough?
+cta_link: /contact
+cta_link_text: Let's talk
+
 ---
