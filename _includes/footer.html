@@ -7,8 +7,31 @@
       <div class="col-xs-12 col-sm-4 footer-metadata details">
         <!--<img src="/images/logo.png">-->
         <ul class="list-unstyled">
-          <li>{{site.meta.phone}}</li>
-          <li>{{site.meta.email}}</li>
+          <li>
+              <a class="contact-option" href="tel:{{site.phone}}">
+                <span class="contact-icon icon icon-phone"></span>
+                {{site.meta.phone}}
+              </a>
+          </li>
+          <li>
+            <a class="contact-option" href="mailto:{{site.email}}">
+              <span class="contact-icon icon icon-mail"></span>
+              {{site.email}}
+            </a>
+          </li>
+          <li>
+            <a class="contact-option" href="{{site.linkedin_page}}">
+              <span class="contact-icon icon icon-linkedin"></span>
+              {{site.title}} Linkedin
+            </a>
+          </li>
+          <li>
+            <a class="contact-option" href="https://github.com/{{site.github_username}}">
+              <span class="contact-icon icon icon-github"></span>
+              {{site.title}} Github
+            </a>
+          </li>
+
         </ul>
         <hr />
         <h5>{{site.title}}</h5>

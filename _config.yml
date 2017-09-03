@@ -23,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zoetrope.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zoetropeLabs
 github_username:  ZoetropeLabs
+linkedin_page: https://www.linkedin.com/company/zoetrope-limited
 phone: "+441172300234"
 
 meta:
