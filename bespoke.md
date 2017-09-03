@@ -25,7 +25,10 @@ rows:
   - title: Software Engineering
     image: /assets/img/whatwedo/iot-gateway-board.jpg
     text: |
-      The
+      - Our team of skilled developers work to what standards?
+      - Expereince of team members - who has done what and where?
+      - Languages - what can we code in?
+      - Other skills to the party?
 
   - title: Mobile Apps
     image: /assets/img/whatwedo/code.jpg
@@ -35,23 +38,19 @@ rows:
       but lack the internal skillsets to assess IoT.
 
   - title: 3D design and 3D printing
-    image: /assets/img/whatwedo/code.jpg
+    image: /assets/img/tools/formlabs_printer_fixed.jpg
     text: |
-      We have a super high resoultion 3D printer in the lab and use this to prototype injection-moulded parts.
+      Our workshop is equiped with everything we need to produce high-quality rapid protoypes. This includes a super high resoultion FormLabs 3D printer and an automated print washing and UV curing station, ensuring the mechancial propeties of our prints are to the higest standard. 
 
   - title: User Interfaces
-    image: /assets/img/whatwedo/consult.jpg
+    image: /assets/img/demo-screens/drinks_fridge_fixed.jpg
     text: |
-      man clicky on the screen
-
-      it's like having a mango in your mouth.
+      We keep up with the state of the art in interface design approaches, enabling us to create fresh, modern interfaces to your project. 
 
   - title: Solution Architecture
-    image: /assets/img/whatwedo/consult.jpg
+    image: /assets/img/approach/refine.jpg
     text: |
-      The team have designed many production systems in our team and we roll that knowledge into our
-      bespoke projects.
-
-      We often take on long term support agreements for the solutions we design and stand by the quality of what we produce.
+      The team have designed several production systems and have expereince of working on enterprise level deployments, including the defence sector.
+      We often take on long term support agreements for the solutions we design as a sign of the trust we place in the quality of what we produce.
 
 ---
