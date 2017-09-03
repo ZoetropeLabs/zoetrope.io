@@ -3,6 +3,7 @@ layout: page
 title: More
 primary_menu: true
 weight: 100
+mobile_weight: 11
 sitemap: false
 sub_links:
     #- url: /blog

@@ -1,20 +1,18 @@
 
 {% assign pages = site.pages | sort:"weight"  %}
+{% assign mobile_pages = site.pages | sort:"weight" | sort:"mobile_weight"  %}
 
 <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
   <ul class="nav nav-bordered nav-stacked flex-column">
-    {% for my_page in pages %}
+    {% for my_page in mobile_pages %}
       {% if my_page.title and my_page.primary_menu %}
         {% if my_page.sub_links %}
-          <li class="nav-item">
-            {{my_page.title}}
-            <ul>
-              {% for sub_page in my_page.sub_links %}
-                <li class="nav-item">
-                  <a class="{% if page.url == sub_page.url %}active{% endif %}" href="{{ sub_page.url | relative_url }}">{{sub_page.title}}</a>
-                </li>
-              {% endfor %}
-            </ul>
+          <li class="nav-header">{{my_page.title}}</li>
+          {% for sub_page in my_page.sub_links %}
+            <li class="nav-item px-1">
+              <a class="nav-link {% if page.url == sub_page.url %}active{% endif %}" href="{{ sub_page.url | relative_url }}">{{sub_page.title}}</a>
+            </li>
+          {% endfor %}
           </li>
         {% else %}
           <li class="nav-item px-1">

@@ -43,3 +43,13 @@
   background-blend-mode: multiply;
   background-size: contain;
 }
+
+.stage-shelf {
+  .nav-link.active {
+    border-left-color: $zoetrope-blue;
+  }
+
+  .nav-header {
+    padding: 5px 10px 5px 30px;
+  }
+}

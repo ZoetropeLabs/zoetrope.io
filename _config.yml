@@ -91,6 +91,7 @@ defaults:
       primary_menu: false
       secondary_menu: false
       title: "Set a title!"
+      mobile_weight: 50
   - scope:
       path: ''
       type: posts

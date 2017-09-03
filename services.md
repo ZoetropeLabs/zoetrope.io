@@ -3,6 +3,7 @@ layout: page
 title: Services
 primary_menu: true
 weight: 10
+mobile_weight: 10
 sitemap: false
 sub_links:
     - url: /zconnect-iot
