@@ -75,7 +75,7 @@ $push-down-amount: 100px;
         margin-top: $push-down-amount; //pushes angle down a bit
         background-color: $zoetrope-blue;
         height: 100%;
-        @include angle-edge($angle: 6, $angle-position-y: 'top', $angle-position-x: 'left');
+        @include angle-edge($angle: 6, $angle-position-y: 'top', $angle-position-x: 'left', $fallback: false);
     }
 
     .push-down {
@@ -85,6 +85,20 @@ $push-down-amount: 100px;
     .push-down-no-overlap {
         margin-top: $push-down-amount * 2 + 50px;
     }
+}
+
+// IE/Edge doesn't support the angle yet, so just do a bar
+// Edge may not need the hack in future!
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .solid-angle-bg .block-background {
+    margin-top: $push-down-amount * 2;
+  }
+}
+
+@supports (-ms-ime-align:auto){
+  .solid-angle-bg .block-background {
+    margin-top: $push-down-amount * 2;
+  }
 }
 
 .solid-angle-bg-white{
