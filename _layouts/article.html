@@ -67,6 +67,9 @@ layout: default
         </div>
       {% endif %}
     </div>
+    {% if page.comments %}
+      {% include disqus.html %}
+    {% endif %}
   </div>
   <div class="block-background">&nbsp;</div>
 </article>

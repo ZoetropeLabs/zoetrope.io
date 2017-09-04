@@ -29,13 +29,13 @@ Now, the RS-485 chips we are using ([MAX 489](http://datasheets.maximintegrated.
 
 ### <a id="Packet_Structure_19"></a>Packet Structure
 
-<table class="“table" table-striped”="">
+<table class="table" table-striped="">
 
 <tbody>
 
 <tr>
 
-<th>Field  
+<th>Field
 </th>
 
 <th>Length</th>
@@ -44,17 +44,17 @@ Now, the RS-485 chips we are using ([MAX 489](http://datasheets.maximintegrated.
 
 <tr>
 
-<td>SOH (Start Of Header)  
+<td>SOH (Start Of Header)
 </td>
 
-<td>5  
+<td>5
 </td>
 
 </tr>
 
 <tr>
 
-<td>Destination Address  
+<td>Destination Address
 </td>
 
 <td>1</td>
@@ -63,7 +63,7 @@ Now, the RS-485 chips we are using ([MAX 489](http://datasheets.maximintegrated.
 
 <tr>
 
-<td>Sender Address  
+<td>Sender Address
 </td>
 
 <td>1</td>
@@ -80,27 +80,27 @@ Now, the RS-485 chips we are using ([MAX 489](http://datasheets.maximintegrated.
 
 <tr>
 
-<td>Data Length in Bytes  
+<td>Data Length in Bytes
 </td>
 
-<td>1  
-</td>
-
-</tr>
-
-<tr>
-
-<td>Packet Type  
-</td>
-
-<td>1  
+<td>1
 </td>
 
 </tr>
 
 <tr>
 
-<td>STX (Start Text)  
+<td>Packet Type
+</td>
+
+<td>1
+</td>
+
+</tr>
+
+<tr>
+
+<td>STX (Start Text)
 </td>
 
 <td>1</td>
@@ -117,7 +117,7 @@ Now, the RS-485 chips we are using ([MAX 489](http://datasheets.maximintegrated.
 
 <tr>
 
-<td>ETX (End Text)  
+<td>ETX (End Text)
 </td>
 
 <td>1</td>
@@ -134,7 +134,7 @@ Now, the RS-485 chips we are using ([MAX 489](http://datasheets.maximintegrated.
 
 <tr>
 
-<td>EOT (End Of Transmission)  
+<td>EOT (End Of Transmission)
 </td>
 
 <td>1</td>

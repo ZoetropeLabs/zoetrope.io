@@ -8,9 +8,10 @@ assets:
   name: tanksarriving
 - path: "/uploads/stillsmiling.jpg"
   name: stillsmiling
+published: false
 ---
 
-![stillsmiling](/uploads/stillsmiling.jpg) 
+![stillsmiling](/uploads/stillsmiling.jpg)
 
 Zoetrope exhibited their IoT consultancy offering at the Business Showcase South West show on the 14th and 15th of May, the decision to attend the show was taken at quite short notice and we had only limited time to put together an engaging and fun display. We decided to take the IoT tank game, which demonstrates how we can simply internet connect a collection of small low powered devices and have them all talk to each other and a central server.
 
@@ -24,4 +25,4 @@ We also ran into classic battery life issues, sadly one of our two ebay tanks ga
 
 The tanks will be making their next appearance at VentureFest Bristol - where we are fortunate enough to be one of the select few exhibitors invited to the start-up village : http://venturefestbristolandbath.com/ 
 
-![brandedboards](/uploads/brandedboards.png) 
+![brandedboards](/uploads/brandedboards.png)

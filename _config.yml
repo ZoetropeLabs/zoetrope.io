@@ -105,6 +105,7 @@ defaults:
       layout: article
       author: benhowes
       sidebar: blog_sidebar.html
+      comments: true
   - scope:
       path: ''
       type: careers

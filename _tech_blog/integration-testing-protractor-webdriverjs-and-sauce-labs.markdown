@@ -2,6 +2,8 @@
 title: Integration Testing with Protractor, WebdriverJS and Sauce Labs
 date: 2016-03-23 21:39:00 Z
 featured: 'true'
+header_background: '/assets/img/tech-blog/protractors.jpg'
+author: richwebb
 tags:
 - saucelabs
 - Testing

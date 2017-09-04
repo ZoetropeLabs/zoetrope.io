@@ -2,6 +2,7 @@
 title: Refining our UI Regression Tests
 author: richwebb
 date: 2016-02-29 15:34:00 Z
+header_background: '/assets/img/tech-blog/protractors.jpg'
 ---
 
 A few months ago we [wrote about](https://zoetrope.io/tech-blog/integration-testing-protractor-webdriverjs-and-sauce-labs) using [Saucelabs](https://saucelabs.com/) and [Protractor](https://github.com/angular/protractor) to create a testing framework around our javascript [3D photography viewer](https://github.com/ZoetropeImaging/zoetrope-jquery). Since then we’ve made a few changes to our process.
@@ -29,6 +30,8 @@ Building everything in public ended up being easier than expected on Travis. The
 One issue we’ve had with Travis is debugging shell commands - it can be quite difficult to diagnose what’s wrong with a script when there’s no way of running commands inside the environment ad-hoc. There are some other CI environments that allow for interactive debugging, so it would be great to see Travis implement this!
 
 Here’s a copy of our travis.yml file:
+
+<script src="https://gist.github.com/bitdivision/8ff3114f7247feeba729.js"></script>
 
 ## Selenium bugs
 
