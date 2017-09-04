@@ -5,7 +5,7 @@ const headerResize = (($)=> {
   //Load the background image to get the sizes
   function getImageSize() {
     const bgImage = new Image()
-    const img_url = $('#stage').css('background-image').match(/url\(["']([^"']*?)["']\)/)[1]
+    const img_url = $('#stage').css('background-image').match(/url\(["']?([^"')]*?)["']?\)/)[1]
     bgImage.src = img_url
     bgImage.onload = () => {
       imageSize = {
