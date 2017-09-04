@@ -106,6 +106,7 @@ defaults:
       author: benhowes
       sidebar: blog_sidebar.html
       comments: true
+      header_background: '/assets/img/tech-blog/blog.jpg'
   - scope:
       path: ''
       type: careers

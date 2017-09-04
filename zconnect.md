@@ -6,6 +6,7 @@ subheading: Unlock the power of the IoT and gain predictive maintenance and insi
 permalink: /zconnect-iot/
 primary_menu: true
 weight: 10
+header_background: '/assets/img/zconnect.jpg'
 
 quote: >
     Zoetrope took on the task of creating a world class IoT Cloud platform and mobile application that was easily scalable to serve millions of customers for Novo.
@@ -19,7 +20,7 @@ rows:
     text: |
       This hardware is tailored around what’s already in the product; we can add new sensors to collect data or use existing sensors and just add the required hardware to connect the product to the internet via 3G, wi-fi or LPWA.
 
-      Throughout our consultative process, we design, improve and refine the hardware to ensure that the final product will be built to provide the maximum business value for you. 
+      Throughout our consultative process, we design, improve and refine the hardware to ensure that the final product will be built to provide the maximum business value for you.
   - title: Analytics and actionable insights
     image: /assets/img/whatwedo/code.jpg
     text: |
@@ -28,7 +29,7 @@ rows:
       ZConnect provides everything you need in a secure hosted platform which is supported by the experts from Zoetrope.
 
       Whether it’s asset tracking, predictive maintenance or data logging, ZConnect has you covered.
-  - title: Easy to use apps 
+  - title: Easy to use apps
     text: |
       ZConnect has base apps which we will customise for your business and are designed to be easy to use by your end-users, distributors and other stakeholders. These can be customised for several scenarios:
          1. Notify the status of a product to service personnel when something breaks

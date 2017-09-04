@@ -35,7 +35,7 @@
   // This background is the default if it's not set using
   // the `header_background` attribute in front matter
   // per page.
-  background: linear-gradient(to right, #009fe3, #009fe3), url("/assets/img/homepage.jpg");
+  background: url("/assets/img/homepage.jpg"), linear-gradient(to right, #009fe3, #009fe3);
 
   // required.
   background-repeat: no-repeat;
