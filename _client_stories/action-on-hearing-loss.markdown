@@ -67,7 +67,4 @@ A screenshot of the prototype app:
 
 Overall, this was a whirlwind 6 week project which was completed within incredibly tight deadlines to help Action on Hearing Loss produce an entry for the Nesta inclusive technology competition. Nesta ultimately did not award the project further budget, however there is scope for Action on Hearing Loss to continue the project in the future.
 
-James O'Halloran, an external consultant working on the project said:
-> **This has been one of the most rapid deliveries I have known in the whole industry.**
-
 Header image is courtesy of [Nesta](http://www.nesta.org.uk/inclusive-technology-prize-finalists/hearing-loop-listener)
