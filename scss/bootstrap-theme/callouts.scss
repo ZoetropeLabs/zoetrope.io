@@ -9,9 +9,9 @@
   width: 100%;
   margin-bottom: 1rem;
   color: $text-color;
-  background-color: #fff;
-  border-radius: $callout-border-radius;
-  border: 1px solid $gray-lighter;
+  //background-color: #fff;
+  //border-radius: $callout-border-radius;
+  //border: 1px solid $gray-lighter;
 }
 
 // Improve alignment and spacing of inner content
@@ -34,6 +34,6 @@
 }
 .callout-secondary {
   width: 1%;
-  background-color: #f5f7f9;
-  border-left: 1px solid $gray-lighter;
+  //background-color: fade-out(#f5f7f9, 0.8);
+  //border-left: 1px solid $gray-lighter;
 }
