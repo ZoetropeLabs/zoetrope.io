@@ -84,7 +84,7 @@ layout: default
               <hr />
               {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
               {{ row.text | markdownify }}</p>
-              <p><a href="{{row.cat_link}}">{{row.cta_link_text}}</a></p>
+              <p><a class="btn btn-success" href="{{row.cat_link}}">{{row.cta_link_text}}</a></p>
             </div>
           </div>
       {% endfor %}
