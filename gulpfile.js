@@ -57,7 +57,7 @@ const DEPLOY_SETTINGS = {
   host: 'staging.zoetrope.io',
   user: 'ben',
   port: 2223,
-  path: '~/Sites/zconnect.io'
+  path: '~/Sites/zoetrope.io'
 }
 
 gulp.task('img', () => {
@@ -103,7 +103,7 @@ gulp.task('scss-min', ['scss'], () => {
   return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS({compatibility: '*'}))
+    //.pipe(cleanCSS({compatibility: '*'}))
     .pipe(autoprefixer())
     //.pipe(rename({
     //  suffix: '.min'
