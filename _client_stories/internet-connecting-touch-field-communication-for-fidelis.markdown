@@ -20,6 +20,6 @@ Zoetrope worked with Oliver to identify issues relating to the security and simp
 
 Zoetrope  successfully delivered on all 3 parts of the project, meaning that Fidelis is able to progress the business and partner with application developers.
 
-Here’s what Oliver had to say about Zoetrope:
+Here’s what Ollie had to say about Zoetrope:
 
 <iframe allowfullscreen="" frameborder="0" height="281" mozallowfullscreen="" src="https://player.vimeo.com/video/125481113" webkitallowfullscreen="" width="500"></iframe>

@@ -3,18 +3,7 @@ title: Senior Software Engineer
 date: 2017-01-12 09:02:00 Z
 ---
 
-## Who is Zoetrope?
-
-Zoetrope is a fast growing technology consultancy focusing on IoT, based in Bristol. We pride ourselves on being the whole package - from transistor, to 3D print, to server, to web interface. We work on projects both with multinationals and startups as the virtual technology team, helping to drive the specification, prototyping and implementation of the client’s product.
-
-Zoetrope has a platform product in the works and we’re starting to roll this out to early adopter clients in the first quarter of 2017.
-
-We can promise you that no two projects will be the same and that you’ll get to work with a wide variety of amazing companies, both at the R&D stage and taking products to production.
-
-We maintain a technology blog here: https://zoetrope.io/tech-blog. It's not been updated much for a while now, but should give you a flavour of some of the work we do at Zoetrope.
-
-## Who Zoetrope is looking for:
-We’re looking for a multi-talented senior software engineer to join our Bristol team. The role will involve taking the lead on 
+We’re looking for a multi-talented senior software engineer to join our Bristol team. The role will involve taking the lead on projects and directing the work of a team of developers. 
 
 An ideal candidate will be at home with developing API’s, backends and occasionally even some front end work. 
 
@@ -36,6 +25,17 @@ Given the size of the team (currently 5), it’s essential that we find an all r
 * Developing platforms or products
 * Enjoy client facing roles
 * Leadership experience
+## Who is Zoetrope?
+
+Zoetrope is a fast growing technology consultancy focusing on IoT, based in Bristol. We pride ourselves on being the whole package - from transistor, to 3D print, to server, to web interface. We work on projects both with multinationals and startups as the virtual technology team, helping to drive the specification, prototyping and implementation of the client’s product.
+
+Zoetrope has a platform product in the works and we’re starting to roll this out to early adopter clients in the first quarter of 2017.
+
+We can promise you that no two projects will be the same and that you’ll get to work with a wide variety of amazing companies, both at the R&D stage and taking products to production.
+
+We maintain a technology blog here: https://zoetrope.io/tech-blog. It's not been updated much for a while now, but should give you a flavour of some of the work we do at Zoetrope.
+
+
 
 ## What’s in it for you?
 

@@ -2,10 +2,10 @@
 title: Ambie IoT music streaming
 date: 2017-03-25 17:52:00 Z
 assets:
-- path: "/assets/img/pages/ambie-prototypes.jpg"
-  name: ambie-prototypes
+- path: "/assets/img/case-studies/ambie-logo-text-1.png"
+  name: ambie-logo-text-1
 
-header_background: "/assets/img/pages/Selection_004.png"
+header_background: "/assets/img/case-studies/ambie-logo-text-1.png"
 
 ---
 

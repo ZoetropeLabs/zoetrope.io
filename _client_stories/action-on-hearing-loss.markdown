@@ -12,6 +12,10 @@ assets:
 - path: "/assets/img/pages/App_screenshot.png"
   name: App_screenshot
 header_background: "/assets/img/pages/hearing-loop-itp-finalist.jpg"
+
+quote: >
+    This has been one of the most rapid deliveries I have known in the whole industry.
+quote_attribution: James O'Halloran, external consultant to Action on Hearing Loss.
 ---
 
 Zoetrope worked with [Action on Hearing Loss](https://www.actiononhearingloss.org.uk/default.aspx) as part of a Nesta prize to create a fully functional prototype of a low cost hearing loop device which could be used to assist people with mild to moderate hearing loss. Most hearing aid products target more severe hearing loss at present, leaving a gap in the market for technologies to aid milder cases of hearing impairments.
@@ -54,11 +58,12 @@ Zoetrope created and delivered 5 working prototypes of the loop listener system 
 6. Usage instructions
 7. Support with the trials.
 
-The finished electronics, housed in an customised off-the-shelf enclosure:
+The finished electronics, housed in a customised off-the-shelf enclosure:
 ![Finished product](/assets/img/pages/IMG_20151207_125803.jpg)
 
 A screenshot of the prototype app:
-![App_screenshot](/assets/img/pages/App_screenshot.png)
+<img src="/assets/img/pages/App_screenshot.png" alt="Drawing" style="width: 400px;"/>
+
 
 Overall, this was a whirlwind 6 week project which was completed within incredibly tight deadlines to help Action on Hearing Loss produce an entry for the Nesta inclusive technology competition. Nesta ultimately did not award the project further budget, however there is scope for Action on Hearing Loss to continue the project in the future.
 

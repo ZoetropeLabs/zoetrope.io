@@ -3,14 +3,6 @@ title: Software Engineer
 date: 2016-03-20 12:56:00 Z
 ---
 
-## Who is Zoetrope?
-Zoetrope is a young and fast growing technology consultancy focusing on IoT, based in Bristol. We pride ourselves on being the whole package - from transistor, to 3D print, to server, to web interface. We work on projects both with multinationals and startups as the virtual technology team, helping to drive the specification, prototyping and implementation of the client’s project. We’ve grown quickly over the last year and are looking for more people to join as the 6th and 7th employees.
-
-No two projects are ever the same and you’ll get to work with a wide variety of amazing companies.
-
-We maintain a technology blog here: https://zoetrope.io/tech-blog. We’d love to know what you think.
-
-## Who Zoetrope is looking for:
 We’re looking for a multi-talented software engineer to join our Bristol team. This opening represents an opportunity to work in a fast paced startup where there will be many opportunities to learn and grow with us. 
 
 Zoetrope works largely in Python 3 for server side and embedded prototyping, ReactJS for any front end interfaces and C/C++ for embedded. An ideal candidate will be at competent with developing RESTful API’s, backends and occasionally even some front end work. We use gitlab, CI and CD for our projects.
@@ -31,6 +23,15 @@ Given the size of the team (currently 5), it’s essential that we find an all r
 4. Experience of app development
 5. Linux skills
 6. Hardware build experience
+
+## Who is Zoetrope?
+
+Zoetrope is a young and fast growing technology consultancy focusing on IoT, based in Bristol. We pride ourselves on being the whole package - from transistor, to 3D print, to server, to web interface. We work on projects both with multinationals and startups as the virtual technology team, helping to drive the specification, prototyping and implementation of the client’s project. We’ve grown quickly over the last year and are looking for more people to join as the 6th and 7th employees.
+
+No two projects are ever the same and you’ll get to work with a wide variety of amazing companies.
+
+We maintain a technology blog here: https://zoetrope.io/tech-blog. We’d love to know what you think.
+
 
 
 ## What’s in it for you?

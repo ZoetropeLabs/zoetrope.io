@@ -18,7 +18,7 @@ Some of the initial use-case ideas included:
 
 Zoetrope quickly set about developing a proof of concept device, allowing us to see how people would react to the product and what other use cases could be found. In less than a day the following rather rough and ready (but importantly working!) proof-of-concept was up and running:
 
-[[{"fid":"31","view_mode":"default","fields":{"format":"default","field_file_image_alt_text[und][0][value]":"Prototype wifi connected button","field_file_image_title_text[und][0][value]":""},"type":"media","link_text":null,"attributes":{"alt":"Prototype wifi connected button","height":705,"width":1305,"style":"width: 400px; height: 216px;","class":"media-element file-default"}}]]
+
 
 The guys at Kazendi loved the prototype and were keen to see what Zoetrope could do to further develop the project though to a more polished prototype product.
 
@@ -55,10 +55,8 @@ To configure the button, we integrated it with Zapier, giving users a huge range
 
 In a few days we had designed the PCB for the electronics and sent off the CAD files for manufacture while also getting started on a 3D printed case.
 
-[[{"fid":"32","view_mode":"default","fields":{"format":"default","field_file_image_alt_text[und][0][value]":"IoT button in case","field_file_image_title_text[und][0][value]":""},"type":"media","link_text":null,"attributes":{"alt":"IoT button in case","height":1939,"width":4000,"style":"width: 340px; height: 165px;","class":"media-element file-default"}}]]
-
 ### The Outcome
 
 Zoetrope delivered a polished prototype ready for Kazendi to test the product with clients and market the idea to a wider audience. With our help they went from a rough idea to a fully functional product. We used rapid prototyping tools to keep costs to a minimum. Zoetrope will continue to work with Kazendi to further develop this prototype to be used with clients.
 
-[[{"fid":"33","view_mode":"default","fields":{"format":"default","field_file_image_alt_text[und][0][value]":"An example of the button working","field_file_image_title_text[und][0][value]":""},"type":"media","link_text":null,"attributes":{"alt":"An example of the button working","height":428,"width":605,"class":"media-element file-default"}}]]
+

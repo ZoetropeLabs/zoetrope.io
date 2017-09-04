@@ -2,6 +2,11 @@
 title: Hardware Engineer
 date: 2016-03-20 13:02:00 Z
 published: false
+assets:
+- path: "/assets/img/whatwedo/consult.jpg"
+  name: consult
+
+header_background: "/assets/img/whatwedo/consult.jpg"
 ---
 
 ## Who is Zoetrope?

@@ -9,4 +9,6 @@ header_background: '/assets/img/client-stories.jpg'
 
 ---
 
-Here's some of our best work so far
+
+
+Our portfolio of success stories is growing. Here's some of our best work so far.
