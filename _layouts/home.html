@@ -50,7 +50,7 @@ layout: default
           </div>
           <div class="col-md-6">
             {% if page.zconnect_callout_include %}
-              {{include page.zconnect_callout_include}}
+              {% include {{page.zconnect_callout_include}} %}
             {% endif %}
           </div>
       </div>

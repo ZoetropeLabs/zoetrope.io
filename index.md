@@ -31,6 +31,7 @@ zconnect_callout_text: >
       <li>Real-time insight</li>
       <li>Remote diagnostics &amp; control</li>
     </ul>
+zconnect_callout_include: zconnect_slideshow.html
 
 # Other service titles
 other_services_title: Our other services
