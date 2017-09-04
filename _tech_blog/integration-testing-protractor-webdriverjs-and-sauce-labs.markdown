@@ -57,3 +57,5 @@ WebdriverJS makes use of promises to help keep us out of callback hell, but ther
 ### Conclusion
 
 Once they’re set up and working, automated integration tests on Sauce Labs are incredibly useful. We can now push a new branch to github, Jenkins will then build, serve and test that branch, giving us the result of a few hundred integration tests.
+
+Image by [Dean Hochman](https://www.flickr.com/photos/17997843@N02/) licensed under Creative Commons.
