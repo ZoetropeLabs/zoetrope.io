@@ -10,6 +10,12 @@ subheading: >
 permalink: /bespoke-iot-development/
 header_background: '/assets/img/bespoke.jpg'
 
+hero_cta_image: /assets/img/novo-app-climair.png
+hero_cta_heading: Read how we custom built the Novo connected system for e.on
+hero_cta_content: ""
+hero_cta_link: /client-story/hello-novo
+hero_cta_link_text: Read the case study
+
 quote: >
     The highly detailed, yet extremely
     intelligible, scoping report covered
