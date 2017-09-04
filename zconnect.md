@@ -4,8 +4,6 @@ title: ZConnect
 heading: ZConnect, a complete IoT ecosystem
 subheading: Unlock the power of the IoT and gain predictive maintenance and insight about your products, delighting your customers with our managed service.
 permalink: /zconnect-iot/
-primary_menu: true
-weight: 10
 header_background: '/assets/img/zconnect.jpg'
 
 quote: >
