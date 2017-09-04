@@ -11,11 +11,12 @@ heading: We accelerate ideas into connected products
 subheading: >
     Zoetrope develops connected solutions and services for the internet of things, helping our clients enchance their existing products.
 
-    <a class="btn btn-success btn-lg mt-1" href="/contact">Book a demo <span class="icon icon-chevron-small-right"></span></a>
+
+    <a class="btn btn-success btn-lg" href="/contact">Talk to us <span class="icon icon-chevron-small-right"></span></a>
 
 # Only the homepage template has this at the moment
 # The hero_cta_* keys control the text that appears
-hero_cta_image: /assets/img/iphone.png
+hero_cta_image: /assets/img/demo-screens/Timeline.png
 hero_cta_heading: Our clients trust us with their products... and reputation.
 hero_cta_content: We work with some of the biggest blue chips and brightest startups to enable connected products to generate business value
 hero_cta_link: /client-stories
@@ -23,7 +24,6 @@ hero_cta_link_text: Read a case study
 
 
 zconnect_callout_title: "Empower your product with ZConnect IoT"
-image: /assets/demo-screens/Status.png
 zconnect_callout_text: >
     ZConnect is a customisable, managed and end-to-end IoT solution for connecting your products and producing actionable insight.
 
@@ -51,7 +51,6 @@ rows:
               <li><span class="icon icon-check"></span> Core technologies</li>
             </ul>
 
-        The landscape of the IoT is constantly changing. Our experts can help you prepare for the regulatory and technological challenges facing IoT deployments.
 
       image: /assets/img/services/consulting-cropped.jpg
       cta_link: /iot-consulting
@@ -82,6 +81,7 @@ quote_attribution: Tom Timothy, Novo Innovations, powered by e.on
 quote_link: false
 
 cta: Seen enough?
+cta_body: If you're looking to progress your IoT ambitions, have a chat today!
 cta_link: /contact
 cta_link_text: Let's talk
 

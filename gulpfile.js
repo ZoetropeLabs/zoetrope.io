@@ -197,7 +197,8 @@ gulp.task('serve', () => {
       serveStaticOptions: {
         extensions: ["html"]
       }
-    }
+    },
+    open: false,
   });
 
   gulp.watch(Paths.SCSS, ['scss']);

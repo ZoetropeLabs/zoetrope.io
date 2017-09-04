@@ -1,12 +1,11 @@
 
 <div class="block page-cta zoetrope-green">
     <div class="block-foreground container">
-        <div class="content callout">
-            <div class="callout-content">
-                <h3 class="text-center">{{page.cta}}</h3>
-            </div>
-            <div class="callout-secondary">
-                <a class="btn btn-primary btn-lg" href="{{page.cta_link}}">{{page.cta_link_text}}</a>
+        <div class="content">
+            <div class="">
+                <a class="btn btn-primary btn-lg float-right" href="{{page.cta_link}}">{{page.cta_link_text}}</a>
+                <h3>{{page.cta}}</h3>
+                {{page.cta_body | markdownify}}
             </div>
         </div>
     </div>
