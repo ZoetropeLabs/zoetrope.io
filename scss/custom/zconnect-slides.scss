@@ -1,0 +1,43 @@
+
+#zconnect-slide-show{
+
+    background-image: url("/assets/img/fridge.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 400px;
+
+    ul {
+
+        width: 340px;
+        margin: 0 auto;
+        padding: 15px 0;
+
+        li {
+            opacity: 0;
+            transition: opacity 1s;
+
+            border: 2px solid $zoetrope-blue;
+            border-radius: 5px;
+            background: $zoetrope-grey-light;
+            width: 100%;
+
+            margin-bottom: 20px;
+            padding: 13px;
+
+
+            span {
+                line-height: 60px;
+                padding-right: 10px;
+                font-size: 30px;
+                float: left;
+            }
+        }
+
+        li.show{
+            opacity: 1;
+        }
+
+    }
+}
