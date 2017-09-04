@@ -119,3 +119,7 @@ defaults:
       type: client_stories
     values:
       layout: article
+      cta: Seen enough?
+      cta_body: If you're looking to progress your IoT ambitions, have a chat today!
+      cta_link: /contact
+      cta_link_text: Let's talk

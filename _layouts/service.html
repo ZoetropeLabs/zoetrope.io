@@ -12,16 +12,21 @@ layout: default
 
 </div>
 
-<div class="block block-inverse solid-angle-bg zoeicons-blue">
+<div class="block block-inverse solid-angle-bg zoeicons-blue block-reduce-bottom-pad">
   <div class="block-foreground container">
     <div class="content">
       <div class="row">
-        <div class="col-md-6">
-          <img src="/assets/img/iphone.png">
+        <div class="col-sm-12 col-lg-6 text-center">
+
+          <img src="{{page.hero_cta_image}}">
+
         </div>
-        <div class="col-md-6 push-down text-center">
-          <h3>Read how we built the Novo smart home connected system for e.on</h3>
-          <a class="btn btn-success">Read a case study</a>
+        <div class="col-sm-12 col-lg-6 push-down-no-overlap text-center">
+          <h3>{{page.hero_cta_heading}}</h3>
+          {{page.hero_cta_content | markdownify}}
+          <p class="text-center">
+            <a class="btn btn-success" href="{{page.hero_cta_link}}">{{page.hero_cta_link_text}}</a>
+          </p>
         </div>
       </div>
     </div>

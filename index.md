@@ -32,6 +32,9 @@ zconnect_callout_text: >
       <li><span class="icon icon-check"></span> Real-time insight</li>
       <li><span class="icon icon-check"></span> Remote diagnostics &amp; control</li>
     </ul>
+
+
+    <a class="btn btn-success" href="/zconnect-iot">Find out more</a>
 zconnect_callout_include: zconnect_slideshow.html
 
 # Other service titles

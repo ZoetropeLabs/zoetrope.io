@@ -1,12 +1,14 @@
 
 
+$window-color: white;
+
 .app-window-block{
   // Some extra space around the block
-  padding: 0 40px;
+  padding: 20px 40px;
 }
 
 .app-window{
-  border: 1px solid $zoetrope-blue;
+  border: 1px solid $window-color;
   @include border-radius(3px);
 }
 
@@ -37,7 +39,7 @@
 
 .app-window-header{
   height: 30px;
-  border-bottom: 1px solid $zoetrope-blue;
+  border-bottom: 1px solid $window-color;
 }
 
 //buttons
@@ -50,14 +52,14 @@
   float: left;
   margin-left: 8px;
   margin-top: 12px;
-  background-color: $zoetrope-blue;
+  background-color: $window-color;
   @include border-radius(5px);
 }
 .app-window-home{
   height: 30px;
   width: 30px;
   float: left;
-  border: 1px solid $zoetrope-blue;
+  border: 1px solid $window-color;
   @include border-radius(15px);
   position: absolute;
   right:10px;

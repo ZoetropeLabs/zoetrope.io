@@ -12,6 +12,12 @@ quote_attribution: Tom Timothy, Novo Innovations, powered by e.on
 
 service_rows_title: How ZConnect works
 
+hero_cta_image: /assets/img/novo-app-climair.png
+hero_cta_heading: Read how we built the Novo connected system for e.on
+hero_cta_content: ""
+hero_cta_link: /client-story/hello-novo
+hero_cta_link_text: Read the case study
+
 rows:
   - title: Tailored hardware
     image: /assets/img/whatwedo/iot-gateway-board.jpg
@@ -71,4 +77,9 @@ rows:
       See new business opportunities clearly:
         - Explore new business models
         - See trends in the data that allow you to make your business more efficient
+
+cta: Seen enough?
+cta_body: If you're looking to progress your IoT ambitions, have a chat today!
+cta_link: /contact
+cta_link_text: Let's talk
 ---

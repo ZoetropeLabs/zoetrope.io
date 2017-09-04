@@ -54,4 +54,9 @@ rows:
       The team have designed several production systems and have expereince of working on enterprise level deployments, including the defence sector.
       We often take on long term support agreements for the solutions we design as a sign of the trust we place in the quality of what we produce.
 
+
+cta: Seen enough?
+cta_body: If you're looking to progress your IoT ambitions, have a chat today!
+cta_link: /contact
+cta_link_text: Let's talk
 ---
