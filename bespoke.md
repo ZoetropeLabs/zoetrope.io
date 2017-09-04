@@ -8,6 +8,7 @@ subheading: >
   Zoetrope's key USP is the ability to work accross the whole stack - 3D printing through to user interfaces.
 
 permalink: /bespoke-iot-development/
+header_background: '/assets/img/bespoke.jpg'
 
 quote: >
     The highly detailed, yet extremely
@@ -40,12 +41,12 @@ rows:
   - title: 3D design and 3D printing
     image: /assets/img/tools/formlabs_printer_fixed.jpg
     text: |
-      Our workshop is equiped with everything we need to produce high-quality rapid protoypes. This includes a super high resoultion FormLabs 3D printer and an automated print washing and UV curing station, ensuring the mechancial propeties of our prints are to the higest standard. 
+      Our workshop is equiped with everything we need to produce high-quality rapid protoypes. This includes a super high resoultion FormLabs 3D printer and an automated print washing and UV curing station, ensuring the mechancial propeties of our prints are to the higest standard.
 
   - title: User Interfaces
     image: /assets/img/demo-screens/drinks_fridge_fixed.jpg
     text: |
-      We keep up with the state of the art in interface design approaches, enabling us to create fresh, modern interfaces to your project. 
+      We keep up with the state of the art in interface design approaches, enabling us to create fresh, modern interfaces to your project.
 
   - title: Solution Architecture
     image: /assets/img/approach/refine.jpg

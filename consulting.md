@@ -4,6 +4,7 @@ title: Consulting
 heading: IoT consulting services
 subheading: Zoetrope labs can help you exploit the immense business value of the IoT.
 permalink: /iot-consulting/
+header_background: '/assets/img/consulting.jpg'
 
 quote: >
     The highly detailed, yet extremely
@@ -22,15 +23,15 @@ rows:
   - title: Where we sit in the market
     image: /assets/img/whatwedo/iot-gateway-board.jpg
     text: |
-      The IoT is a new market, however is already changing how business is done. While there are many IT consultancies out there, few have the IoT knowledge and 
-      experience  of Zoetrope labs. We deliver the full range of IoT consultancy services from helping you to identify gaps in your IoT capability, through to advice 
+      The IoT is a new market, however is already changing how business is done. While there are many IT consultancies out there, few have the IoT knowledge and
+      experience  of Zoetrope labs. We deliver the full range of IoT consultancy services from helping you to identify gaps in your IoT capability, through to advice
       on best practice and lesson learned. Zoetrope labs is rare in that in addition to our consulting arm, we are also able to provide turn-key IoT solutions.
 
   - title: Skills and Capability
     image: /assets/img/whatwedo/iot-gateway-board.jpg
     text: |
       Our team draws on a wide range of skills and backgrounds. We are strong in the areas of research, wireless protocols, data analytics, machine learning, security
-      and encryption and network systems integration. We have built up a considerable portfolio of diverse skill sets, gained through working in a variety of 
+      and encryption and network systems integration. We have built up a considerable portfolio of diverse skill sets, gained through working in a variety of
       industries such as healthcare, agriculture, defence, utilities, smart homes and automated factory tooling.
 
   - title: A Tailored Consultancy Service
@@ -49,7 +50,7 @@ rows:
   - title: We are Delivery Focused
     image: /assets/img/whatwedo/iot-gateway-board.jpg
     text: |
-      Zoetrope is a delivery focused IoT consultancy. Stay in direct contact with the engineers working to deliver your project.  Our Bristol based agile team has a 
-      great track record of delivering projects on time and to budget. We keep the layers of a minimum; not something our bigger competitors can claim. This 
-      enables you to have regular conversations with the actual team working on your project and get great results.      
+      Zoetrope is a delivery focused IoT consultancy. Stay in direct contact with the engineers working to deliver your project.  Our Bristol based agile team has a
+      great track record of delivering projects on time and to budget. We keep the layers of a minimum; not something our bigger competitors can claim. This
+      enables you to have regular conversations with the actual team working on your project and get great results.
 ---
