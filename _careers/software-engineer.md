@@ -32,8 +32,6 @@ No two projects are ever the same and you’ll get to work with a wide variety o
 
 We maintain a technology blog here: https://zoetrope.io/tech-blog. We’d love to know what you think.
 
-
-
 ## What’s in it for you?
 
 We’ll set you up with a new computer or laptop of your choice (standard issue being a dual-monitor linux box) and make sure you have everything you need to work effectively.

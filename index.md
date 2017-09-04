@@ -23,6 +23,7 @@ hero_cta_link_text: Read a case study
 
 
 zconnect_callout_title: "Empower your product with ZConnect IoT"
+image: /assets/demo-screens/Status.png
 zconnect_callout_text: >
     ZConnect is a customisable, managed and end-to-end IoT solution for connecting your products and producing actionable insight.
 
@@ -39,9 +40,9 @@ other_services_subtitle: When ZConnect is not a great fit for your problem, we'v
 
 # Other service rows
 rows:
-    - title: A tailored and responsive consulting services
+    - title: IoT Consulting
       text: >
-        The team at Zoetrope labs have in-depth knowledge of IoT and technology more broadly. Combined with experience of IoT deployments this puts us in a unique position to advise on how technology may shape your business.
+        The team at Zoetrope labs have in-depth knowledge of the IoT and of technology more broadly. Combined with experience of IoT deployments, this puts us in a unique position to advise on how technology may shape your business, including: 
 
         <ul class="tick-list">
               <li>Market Size</li>
@@ -49,21 +50,27 @@ rows:
               <li>Key applications</li>
               <li>Core technologies</li>
             </ul>
-      image: http://via.placeholder.com/600x600
+   
+        The landscape of the IoT is constantly changing. Our experts can help you prepare for the regulatory and technological challenges facing IoT deployments.
+      image: /assets/img/services/consulting-cropped.jpg
       cta_link: none
       cta_link_text: Talk to us
 
-    - title: A tailored and responsive consulting services
+    - title: Bespoke Development
       text: >
-        The team at Zoetrope labs have in-depth knowledge of IoT and technology more broadly. Combined with experience of IoT deployments this puts us in a unique position to advise on how technology may shape your business.
+        It all started with a passion for making things light up. Zoetrope can make anything from prototypes through to complete production systems. Zoetrope's key USP is the ability to work accross the whole stack, including:
 
         <ul class="tick-list">
-              <li>Market Size</li>
-              <li>Competitive Landscape</li>
-              <li>Key applications</li>
-              <li>Core technologies</li>
+              <li>3D printing</li>
+              <li>Electronics</li>
+              <li>Server-side applications</li>
+              <li>Mobile apps</li>
+              <li>User interfaces</li>
             </ul>
-      image: http://via.placeholder.com/600x600
+
+
+       
+      image: \assets\img\services\bespoke-cropped.jpg
       cta_link: none
       cta_link_text: Talk to us
 
