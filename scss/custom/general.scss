@@ -44,3 +44,9 @@
     width: 100%;
     text-align: center;
 }
+
+// Make icon-list ticks green
+.iconlist > li > .icon{
+    color: $zoetrope-green;
+    opacity: 1;
+}

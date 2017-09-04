@@ -27,10 +27,10 @@ image: /assets/demo-screens/Status.png
 zconnect_callout_text: >
     ZConnect is a customisable, managed and end-to-end IoT solution for connecting your products and producing actionable insight.
 
-    <ul class="tick-list">
-      <li>Predicitive maintenance</li>
-      <li>Real-time insight</li>
-      <li>Remote diagnostics &amp; control</li>
+    <ul class="iconlist">
+      <li><span class="icon icon-check"></span> Predicitive maintenance</li>
+      <li><span class="icon icon-check"></span> Real-time insight</li>
+      <li><span class="icon icon-check"></span> Remote diagnostics &amp; control</li>
     </ul>
 zconnect_callout_include: zconnect_slideshow.html
 
@@ -42,37 +42,36 @@ other_services_subtitle: When ZConnect is not a great fit for your problem, we'v
 rows:
     - title: IoT Consulting
       text: >
-        The team at Zoetrope labs have in-depth knowledge of the IoT and of technology more broadly. Combined with experience of IoT deployments, this puts us in a unique position to advise on how technology may shape your business, including: 
+        The team at Zoetrope labs have in-depth knowledge of the IoT and of technology more broadly. Combined with experience of IoT deployments, this puts us in a unique position to advise on how technology may shape your business, including:
 
-        <ul class="tick-list">
-              <li>Market Size</li>
-              <li>Competitive Landscape</li>
-              <li>Key applications</li>
-              <li>Core technologies</li>
+        <ul class="iconlist">
+              <li><span class="icon icon-check"></span> Market Size</li>
+              <li><span class="icon icon-check"></span> Competitive Landscape</li>
+              <li><span class="icon icon-check"></span> Key applications</li>
+              <li><span class="icon icon-check"></span> Core technologies</li>
             </ul>
-   
+
         The landscape of the IoT is constantly changing. Our experts can help you prepare for the regulatory and technological challenges facing IoT deployments.
+
       image: /assets/img/services/consulting-cropped.jpg
-      cta_link: none
-      cta_link_text: Talk to us
+      cta_link: /iot-consulting
+      cta_link_text: Find out more
 
     - title: Bespoke Development
       text: >
         It all started with a passion for making things light up. Zoetrope can make anything from prototypes through to complete production systems. Zoetrope's key USP is the ability to work accross the whole stack, including:
 
-        <ul class="tick-list">
-              <li>3D printing</li>
-              <li>Electronics</li>
-              <li>Server-side applications</li>
-              <li>Mobile apps</li>
-              <li>User interfaces</li>
-            </ul>
+        <ul class="iconlist">
+          <li><span class="icon icon-check"></span> 3D printing</li>
+          <li><span class="icon icon-check"></span> Electronics</li>
+          <li><span class="icon icon-check"></span> Server-side applications</li>
+          <li><span class="icon icon-check"></span> Mobile apps</li>
+          <li><span class="icon icon-check"></span> User interfaces</li>
+        </ul>
 
-
-       
       image: \assets\img\services\bespoke-cropped.jpg
-      cta_link: none
-      cta_link_text: Talk to us
+      cta_link: /bespoke-iot-development
+      cta_link_text: Find out more
 
 
 # Any page can have a quote, which will be shown at the bottom of the page. This should be used to call out the good work we've been doing.
