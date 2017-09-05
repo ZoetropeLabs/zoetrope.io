@@ -55,7 +55,7 @@ rows:
             </ul>
 
 
-      image: /assets/img/services/consulting-cropped.jpg
+      image: /assets/img/services/iot-consulting-square.jpg
       cta_link: /iot-consulting
       cta_link_text: Find out more
 
@@ -71,7 +71,7 @@ rows:
           <li><span class="icon icon-check"></span> User interfaces</li>
         </ul>
 
-      image: \assets\img\services\bespoke-cropped.jpg
+      image: /assets/img/services/bespoke-iot-square.jpg
       cta_link: /bespoke-iot-development
       cta_link_text: Find out more
 
