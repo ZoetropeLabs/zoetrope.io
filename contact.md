@@ -11,5 +11,5 @@ quote_attribution: Charles Cosser, American Data Corperation
 header_background: '/assets/img/contact.jpg'
 ---
 
-We are excited about cutting-edge technology and love problem-solving, so why not have a chat to see if we can help your company break in to IoT?
+We are excited about cutting-edge technology and love problem-solving, so why not have a chat to see if we can help your company break in to the IoT?
 
