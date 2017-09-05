@@ -39,17 +39,14 @@ rows:
       and encryption and network systems integration. We have built up a considerable portfolio of diverse skill sets, gained through working in a variety of
       industries such as healthcare, agriculture, defence, utilities, smart homes and automated factory tooling.
 
-  - title: A Tailored Consultancy Service
-    image: /assets/img/approach/consult.jpg
-    text: |
-      What we can offer is as varied as the IoT. We can produce a comprehensive report detailing the market size, competitive landscape, key applications and core
-      technologies required in order for you to achieve your IoT objectives.
-
   - title: A Responsive Consultancy Service
     image: /assets/img/approach/refine.jpg
     text: |
       We respond quickly to our clients needs, recognising that change is a natural part of the IoT development cycle. We constantly monitor the industry to keep you
       ahead of any new technological developments, giving you the foresight to make more informed strategic decisions.
+
+      We produce comprehensive reports detailing the market size, competitive landscape, key applications and core
+      technologies required in order for you to achieve your IoT objectives.
 
   - title: We are Delivery Focused
     image: /assets/img/approach/golive.jpg

@@ -26,39 +26,37 @@ quote: >
     components necessary
 quote_attribution: Charles Cosser, American Data Corperation
 
-service_rows_title: What do we work with?
+service_rows_title: "Zoetrope labs creates:"
 
 rows:
-  - title: Software Engineering
-    image: /assets/img/whatwedo/iot-gateway-board.jpg
-    text: |
-      - Our team of skilled developers work to what standards?
-      - Expereince of team members - who has done what and where?
-      - Languages - what can we code in?
-      - Other skills to the party?
-
-  - title: Mobile Apps
-    image: /assets/img/whatwedo/code.jpg
-    text: |
-      We help both product companies who are looking to continually improve their product.
-      They normally have a wealth of knowledge in their domain (e.g. agriculture or facilities management)
-      but lack the internal skillsets to access the IoT.
-
-  - title: 3D design and 3D printing
-    image: /assets/img/tools/formlabs_printer_fixed.jpg
-    text: |
-      Our workshop is equiped with everything we need to produce high-quality rapid protoypes. This includes a super high resoultion FormLabs 3D printer and an automated print washing and UV curing station, ensuring the mechancial propeties of our prints are to the higest standard.
-
-  - title: User Interfaces
-    image: /assets/img/zconnect-zoomed.jpg
-    text: |
-      We keep up with the state of the art in interface design approaches, enabling us to create fresh, modern interfaces to your project.
-
   - title: Solution Architecture
     image: /assets/img/approach/refine.jpg
     text: |
-      The team have designed several production systems and have expereince of working on enterprise level deployments, including the defence sector.
-      We often take on long term support agreements for the solutions we design as a sign of the trust we place in the quality of what we produce.
+      The team at Zoetrope labs are well versed in creating production systems with many moving parts, both for startups and for larger organisations.
+
+      We regularly take on long term support agreements for the solutions we design as a sign of the trust we place in the quality of what we produce.
+
+  - title: Software Engineering
+    image: /assets/img/whatwedo/iot-gateway-board.jpg
+    text: |
+      The vast majority of Zoetrope labs' staff are engineers working on software spanning embedded devices, servers, terminals and mobiles.
+
+      We're able to work across a variety of languages and technologies, however largely focus on using linux and other open source tech.
+
+  - title: Mobile Apps
+    image: /assets/img/zconnect.jpg
+    text: |
+      We keep up with the state of the art in interface design approaches, enabling us to create fresh, modern interfaces to your project.
+
+
+      Zoetrope creates clean and high quality web and native apps which work with the rest of our software to provide a great user experience. We've built complete UI framework's for our our product [ZConnect](/zconnect-iot) as well as apps in the fitness sector and home automation.
+
+  - title: 3D design and electronics
+    image: /assets/img/tools/formlabs_printer_fixed.jpg
+    text: |
+      Our workshop is equipped with everything we need to produce high-quality rapid prototypes - both electronic and casing. This includes a super high resolution FormLabs 3D printer, ensuring the mechanical properties of our prints are to the highest standard.
+
+      Our electronic projects have included bluetooth hearing aids, connected buttons and other devices.
 
 
 cta: Seen enough?
