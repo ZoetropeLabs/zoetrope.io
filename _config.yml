@@ -16,9 +16,9 @@
 title: Zoetrope labs
 email: enquiries@zoetrope.io
 description: > # this means to ignore newlines until "baseurl:"
-  ZConnect is an end-to-end solution for connecting new or existing products
-  to the web to unlock predictive maintenance, product intelligence and new business models.
-  We provide expertise, and the tools to get your business making the most of IoT.
+  Zoetrope develops connected solutions and services for the internet of things,
+  helping our clients enchance their existing products.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zoetrope.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zoetropeLabs
