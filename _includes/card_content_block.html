@@ -12,7 +12,7 @@
       <a href="{{post.url}}">{{ post.title }}</a>
     </h3>
     <div class="card-content">
-      {% assign shortened = post.content | markdownify | strip_html | truncate:  240 %}
+      {% assign shortened = post.content | markdownify | strip_html | truncate:  220 %}
     {{ shortened }}
       <a href="{{post.url}}">Read more</a>
       <hr />
