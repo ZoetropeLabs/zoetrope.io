@@ -29,7 +29,7 @@ Zoetrope labs was selected by Novo as their full-stack IoT partner and set to wo
 
 ![Climair apps](/assets/img/case-studies/climair-3-phones.png) 
 
-Zoetrope labs designed each of the elements of the system and produced specifications for the protocols used. The result is Climair, a system which allows customers to control their air condition via an app as wella s setting up schedules and inviting family members to use the app.
+Zoetrope labs designed each of the elements of the system and produced specifications for the protocols used. The result is Climair, a system which allows customers to control their air conditioning via an app as well as setting up schedules and inviting family members to use the app.
 
 <img src="/assets/img/case-studies/climair-with-hub.jpg" alt="Drawing" style="width: 400px;"/>
 

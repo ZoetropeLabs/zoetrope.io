@@ -17,7 +17,7 @@ subheading: >
 # Only the homepage template has this at the moment
 # The hero_cta_* keys control the text that appears
 hero_cta_image: /assets/img/demo-screens/Timeline.png
-hero_cta_heading: Our clients trust us with their products... and reputation.
+hero_cta_heading: Our clients trust us with their products...and their reputation.
 hero_cta_content: We work with some of the biggest blue chips and brightest startups to enable connected products to generate business value
 hero_cta_link: /client-stories
 hero_cta_link_text: Read a case study
@@ -61,7 +61,7 @@ rows:
 
     - title: Bespoke Development
       text: >
-        It all started with a passion for making things light up. Zoetrope can make anything from prototypes through to complete production systems. Zoetrope's key USP is the ability to work accross the whole stack, including:
+        It all started with a passion for making things light up. Zoetrope can make anything from prototypes through to complete production systems. Zoetrope's key USP is our ability to work accross the whole stack, including:
 
         <ul class="iconlist">
           <li><span class="icon icon-check"></span> 3D printing</li>

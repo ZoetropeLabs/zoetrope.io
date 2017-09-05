@@ -28,7 +28,7 @@ rows:
   - title: Analytics and actionable insights
     image: /assets/img/whatwedo/code.jpg
     text: |
-      ZConnect has a modular and customisable platform built on IBM watson technologies to provide a resilient and scalable platform to collect and aggregate data. Zoetrope is able to provide customisations and integrations with virtually any other software. This allows streamlining of existing processes.
+      ZConnect has a modular and customisable platform built on [IBM Watson](https://www.ibm.com/watson/) technologies to provide a resilient and scalable platform to collect and aggregate data. Zoetrope is able to provide customisations and integrations with virtually any other software. This allows streamlining of existing processes.
 
       ZConnect provides everything you need in a secure hosted platform which is supported by the experts from Zoetrope.
 
