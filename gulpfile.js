@@ -62,8 +62,8 @@ const DEPLOY_SETTINGS = {
 
 gulp.task('img', () => {
   gulp.src(Paths.IMG_SRC)
-    .pipe(imagemin([imagemin.jpegtran({progressive: true})]))
-    .pipe(gulp.dest('assets/img'))
+    .pipe(imagemin([imagemin.jpegtran({progressive: true})], {verbose: true}))
+    .pipe(gulp.dest(Paths.DIST+'/img'))
 })
 
 gulp.task('fonts', () => {
