@@ -48,9 +48,11 @@ layout: default
             <div class="row service-item zoetrope-blue">
               {% if row.image or row.include %}
                 <div class="borderless-img col-sm-12 col-lg-6 {% if mod == 1 %} push-lg-6{% endif %}">
-                  {% if row.image %}<img src="{{ row.image }}">
-                  {% else %}{% include {{ row.include.name }} props=row.include.props %}
-                  {% endif %}
+                {% if row.image %}
+                  <div class="borderless-img-content col" style="background-image: url('{{ row.image }}');">&nbsp;</div>
+                {% else %}
+                  {% include {{ row.include.name }} props=row.include.props %}
+                {% endif %}
                 </div>
               {% endif %}
               <div class="service-details col-sm-12 col-lg-6 {% if mod == 1 %} pull-lg-6{% endif %}">
