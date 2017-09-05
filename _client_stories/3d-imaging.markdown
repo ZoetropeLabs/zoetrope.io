@@ -4,8 +4,6 @@ date: 2017-03-24 17:52:00 Z
 header_background: "/assets/img/pages/zoetrope_twitter_header.png"
 ---
 
-## The Business Case
-
 Product photography on ecommerce websites is often not what it could be - product images are too small and not consistent accross different product ranges on the same website. A lot of this owes to ecommerce stores use of manufacturer supplied images. This in turn is caused in part by the up-front cost of ecommerce stores generating their own imagery and in part due to time pressures experienced by ecommerce operators.
 
 Zoetrope has worked with Magpie to create an automated 3D photography solution which generates 3D images as a service (reducing time pressures) and at a low cost.

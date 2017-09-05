@@ -42,7 +42,7 @@ rows:
     text: |
       We help both product companies who are looking to continually improve their product.
       They normally have a wealth of knowledge in their domain (e.g. agriculture or facilities management)
-      but lack the internal skillsets to assess IoT.
+      but lack the internal skillsets to access the IoT.
 
   - title: 3D design and 3D printing
     image: /assets/img/tools/formlabs_printer_fixed.jpg
@@ -50,7 +50,7 @@ rows:
       Our workshop is equiped with everything we need to produce high-quality rapid protoypes. This includes a super high resoultion FormLabs 3D printer and an automated print washing and UV curing station, ensuring the mechancial propeties of our prints are to the higest standard.
 
   - title: User Interfaces
-    image: /assets/img/demo-screens/drinks_fridge_fixed.jpg
+    image: /assets/img/zconnect-zoomed.jpg
     text: |
       We keep up with the state of the art in interface design approaches, enabling us to create fresh, modern interfaces to your project.
 
