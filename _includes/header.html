@@ -27,9 +27,9 @@
 <div class="stage header-background" id="stage" {% if page.header_background %}style="background-image: url({{page.header_background}}), linear-gradient(to right, #009fe3, #009fe3)" {% endif %}>
 
 <div class="container py-4 app-navbar">
-  <nav class="navbar nav-bordered navbar-padded navbar-transparent navbar-toggleable-sm navbar-light">
+  <nav class="navbar nav-bordered navbar-padded navbar-transparent navbar-toggleable-md navbar-light">
     <button
-      class="navbar-toggler navbar-toggler-right hidden-md-up"
+      class="navbar-toggler navbar-toggler-right hidden-lg-up"
       type="button"
       data-target="#stage"
       data-toggle="stage"
@@ -41,7 +41,7 @@
       <img src="{{ site.baseurl }}/assets/img/logo-zoetrope-labs-white.png" width="auto" height="40rems" alt={{site.title}} />
     </a>
 
-    <div class="hidden-sm-down text-uppercase">
+    <div class="hidden-md-down text-uppercase">
       <ul class="navbar-nav">
         {% for my_page in pages %}
           {% if my_page.title and my_page.primary_menu %}
