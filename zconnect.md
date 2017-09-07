@@ -13,7 +13,7 @@ quote_attribution: Tom Timothy, Novo Innovations, powered by e.on
 service_rows_title: How ZConnect works
 
 hero_cta_image: /assets/img/novo-app-climair.png
-hero_cta_heading: Read how we built the Novo connected system for e.on
+hero_cta_heading: Read how we built the Novo connected system for <span class="zoeicons-eon large-icon"></span>
 hero_cta_content: ""
 hero_cta_link: /client-story/hello-novo
 hero_cta_link_text: Read the case study
