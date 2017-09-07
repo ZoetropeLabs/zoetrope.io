@@ -28,7 +28,7 @@ rows:
   - title: Analytics and actionable insights
     image: /assets/img/whatwedo/code.jpg
     text: |
-      ZConnect has a modular and customisable platform built on [IBM Watson](https://www.ibm.com/watson/) technologies to provide a resilient and scalable platform to collect and aggregate data. Zoetrope is able to provide customisations and integrations with virtually any other software. This allows streamlining of existing processes.
+      ZConnect has a modular and customisable platform using the latest technologies to provide a resilient and scalable platform to collect and aggregate data. Zoetrope is able to provide customisations and integrations with virtually any other software. This allows streamlining of existing processes.
 
       ZConnect provides everything you need in a secure hosted platform which is supported by the experts from Zoetrope.
 
@@ -65,18 +65,13 @@ rows:
   - title: Goal-driven consultation process
     image: /assets/img/whatwedo/consult.jpg
     text: |
-      Our suite of tools will allow you to exceed your customer’s expectations. Our consultative process always keeps the end goal in mind - create value in your business:
-        - Make products safer, better and more efficient
-        - Improve your service offering by understanding how your products are used
-        - Proactively manage your products and fix faults
+      Our ZConnect system will allow you to exceed your customer’s expectations. Our consultative process always keeps the end goal in mind - create value in your business.
 
-      Empower your team to excel at their jobs:
-        - Real-time information at their fingertips frees them up to focus on managing customers and servicing your products
-        - Reduce wasted time by allowing service engineers to diagnose and potentially fix issues remotely
+        - Proactively manage your products and fix faults with our preventative maintenance features
+        - Empower your team to excel at their tasks with real-time diagnostics information
+        - Reduce wasted time by allowing service engineers to diagnose and fix simple issues remotely
 
-      See new business opportunities clearly:
-        - Explore new business models
-        - See trends in the data that allow you to make your business more efficient
+      Get in touch to find out what this could mean for your business.
 
 cta: Seen enough?
 cta_body: If you're looking to progress your IoT ambitions, have a chat today!
