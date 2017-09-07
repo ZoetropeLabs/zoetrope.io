@@ -33,7 +33,7 @@ Zoetrope labs designed each of the elements of the system and produced specifica
 
 <img src="/assets/img/case-studies/climair-with-hub.jpg" alt="Drawing" style="width: 400px;"/>
 
-Speaking of the collaboration, Nova Director Tom Timothy said, “It has been a pleasure working with Ben and his team at Zoetrope for the past year at Novo. Novo received a complete solution from a single vendor which reduced overall complexity of managing the delivery of the project.”
+Speaking of the collaboration, Novo Director Tom Timothy said, “It has been a pleasure working with Ben and his team at Zoetrope for the past year at Novo. Novo received a complete solution from a single vendor which reduced overall complexity of managing the delivery of the project.”
 
 ## About Novo:
 
