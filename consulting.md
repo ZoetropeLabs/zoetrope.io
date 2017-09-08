@@ -16,11 +16,11 @@ quote: >
     components necessary
 quote_attribution: Charles Cosser, American Data Corperation
 
-hero_cta_image: /assets/img/novo-app-climair.png
-hero_cta_heading: Read how we custom built the Novo connected system for e.on
+hero_cta_image: /assets/img/consulting-rocket.png
+hero_cta_heading: Insight and clarity for your IoT ambitions
 hero_cta_content: ""
-hero_cta_link: /client-story/hello-novo
-hero_cta_link_text: Read the case study
+hero_cta_link: /contact
+hero_cta_link_text: Talk to Us
 
 service_rows_title: About our IoT consulting service
 text: this is a test
@@ -54,4 +54,10 @@ rows:
       Zoetrope is a delivery focused IoT consultancy. Stay in direct contact with the engineers working to deliver your project.  Our Bristol based agile team has a
       great track record of delivering projects on time and to budget. We keep the layers of bureaucracy to a minimum; not something our bigger competitors can claim. This
       enables you to have regular conversations with the actual team working on your project and get great results.
+
+cta: Seen enough?
+cta_body: If you're looking to progress your IoT ambitions, have a chat today!
+cta_link: /contact
+cta_link_text: Let's talk
+
 ---

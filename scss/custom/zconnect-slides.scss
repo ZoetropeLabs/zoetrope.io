@@ -18,20 +18,25 @@
             opacity: 0;
             transition: opacity 1s;
 
-            border: 2px solid $zoetrope-blue;
-            border-radius: 5px;
             background: $zoetrope-grey-light;
             width: 100%;
-
+            height: 70px;
             margin-bottom: 20px;
-            padding: 13px;
 
+            box-shadow: 0 0 2px 0px;
 
             span {
-                line-height: 60px;
-                padding-right: 10px;
+                line-height: 40px;
+                padding: 15px;
                 font-size: 30px;
                 float: left;
+                display: block;
+                background-color: $zoetrope-grey;
+                color: $zoetrope-blue;
+                margin-right: 10px;
+            }
+            p {
+                padding: 10px;
             }
         }
 
