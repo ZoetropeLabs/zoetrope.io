@@ -54,4 +54,10 @@ rows:
       Zoetrope is a delivery focused IoT consultancy. Stay in direct contact with the engineers working to deliver your project.  Our Bristol based agile team has a
       great track record of delivering projects on time and to budget. We keep the layers of bureaucracy to a minimum; not something our bigger competitors can claim. This
       enables you to have regular conversations with the actual team working on your project and get great results.
+
+cta: Seen enough?
+cta_body: If you're looking to progress your IoT ambitions, have a chat today!
+cta_link: /contact
+cta_link_text: Let's talk
+
 ---
