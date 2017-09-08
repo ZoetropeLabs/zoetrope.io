@@ -42,7 +42,7 @@ rows:
   - title: A Responsive Consultancy Service
     image: /assets/img/approach/refine.jpg
     text: |
-      We respond quickly to our clients needs, recognising that change is a natural part of the IoT development cycle. We constantly monitor the industry to keep you
+      We respond quickly to our clients' needs, recognising that change is a natural part of the IoT development cycle. We constantly monitor the industry to keep you
       ahead of any new technological developments, giving you the foresight to make more informed strategic decisions.
 
       We produce comprehensive reports detailing the market size, competitive landscape, key applications and core
@@ -52,6 +52,6 @@ rows:
     image: /assets/img/approach/golive.jpg
     text: |
       Zoetrope is a delivery focused IoT consultancy. Stay in direct contact with the engineers working to deliver your project.  Our Bristol based agile team has a
-      great track record of delivering projects on time and to budget. We keep the layers of bureaucracy a minimum; not something our bigger competitors can claim. This
+      great track record of delivering projects on time and to budget. We keep the layers of bureaucracy to a minimum; not something our bigger competitors can claim. This
       enables you to have regular conversations with the actual team working on your project and get great results.
 ---

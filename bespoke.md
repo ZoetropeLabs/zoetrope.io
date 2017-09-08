@@ -46,10 +46,10 @@ rows:
   - title: Mobile Apps
     image: /assets/img/zconnect.jpg
     text: |
-      We keep up with the state of the art in interface design approaches, enabling us to create fresh, modern interfaces to your project.
+      We keep up with state of the art interface design approaches, enabling us to create fresh, modern interfaces for your project.
 
 
-      Zoetrope creates clean and high quality web and native apps which work with the rest of our software to provide a great user experience. We've built complete UI framework's for our our product [ZConnect](/zconnect-iot) as well as apps in the fitness sector and home automation.
+      Zoetrope creates clean and high quality web and native apps which work with the rest of our software to provide a great user experience. We've built complete UI frameworks for our product [ZConnect](/zconnect-iot), as well as apps in the fitness sector and home automation.
 
   - title: 3D design and electronics
     image: /assets/img/tools/formlabs_printer_fixed.jpg
