@@ -54,7 +54,12 @@
           hbspt.forms.create({
             css: '',
             portalId: '515796',
-            formId: '0e8ff736-5eac-473d-8b39-117a6a201d8d'
+            formId: '0e8ff736-5eac-473d-8b39-117a6a201d8d',
+            onFormSubmit: function($form) {
+              if(!!window.ga){
+                ga('send', 'event', 'form', 'submit', 'Contact Footer');
+              }
+            }
           });
         </script>
       </div>

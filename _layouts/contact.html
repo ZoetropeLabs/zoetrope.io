@@ -33,7 +33,12 @@ layout: default
               hbspt.forms.create({
                 css: '',
                 portalId: '515796',
-                formId: 'a18f3a71-28ef-4a6e-86b1-e850d814fd3d'
+                formId: 'a18f3a71-28ef-4a6e-86b1-e850d814fd3d',
+                onFormSubmit: function($form) {
+                  if(!!window.ga){
+                    ga('send', 'event', 'form', 'submit', 'Contact Page');
+                  }
+                },
               });
             </script>
           </div>
