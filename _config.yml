@@ -47,7 +47,7 @@ permalink: /title
 
 collections:
   people:
-    output: true
+    output: false
   tech_blog:
     output: true
   client_stories:
