@@ -6,6 +6,7 @@ management: "true"
 job_title: Founder & CEO
 linkedin: https://www.linkedin.com/in/benjaminhowes/
 github: https://github.com/benhowes
+
 ---
 
 I have always been entrepreneurial; I launched my first tech start-up while I was completing my Masters in Computer Science and Electronics at Bristol University.

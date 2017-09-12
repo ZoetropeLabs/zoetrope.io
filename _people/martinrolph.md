@@ -7,7 +7,7 @@ job_title: Software Engineer
 linkedin: https://www.linkedin.com/in/benjaminhowes/
 github: https://github.com/benhowes
 
-published: false
+hidden: "true"
 ---
 
 This is a test

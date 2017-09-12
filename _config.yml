@@ -117,6 +117,11 @@ defaults:
       header_background: "/assets/img/homepage.jpg"
   - scope:
       path: ''
+      type: people
+    values:
+      hidden: "false"
+  - scope:
+      path: ''
       type: client_stories
     values:
       layout: article

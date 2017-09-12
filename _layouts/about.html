@@ -2,8 +2,8 @@
 layout: default
 ---
 
-{% assign people = site.people | where:"management","false" | sort:"weight"  %}
-{% assign mangement_people = site.people | where:"management","true" | sort:"weight" %}\
+{% assign people = site.people | where:"hidden","false" | where:"management","false" | sort:"weight"  %}
+{% assign mangement_people = site.people | where:"hidden","false" | where:"management","true" | sort:"weight" %}\
 
 <div class="block hero block-inverse hero">
   <div class="container">
