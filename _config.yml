@@ -50,6 +50,7 @@ collections:
     output: false
   tech_blog:
     output: true
+    permalink: /tech-blog/:title/
   client_stories:
     output: true
     permalink: /client-story/:title/

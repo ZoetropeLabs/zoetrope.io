@@ -211,7 +211,7 @@ gulp.task('deploy', ['jekyll-compile'], cb => {
 
   const settings = DEPLOY_SETTINGS;
 
-  const scp = child.spawn('rsync', ['-rz', '--progress',
+  const scp = child.spawn('rsync', ['-rz', '--progress', '--delete',
                            Paths.SITE_ROOT + '/', settings.user+'@'+settings.host+':'+settings.path]);
 
   const scplog = (buffer) => {
