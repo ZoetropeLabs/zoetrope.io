@@ -8,7 +8,7 @@ sitemap: false
 sub_links:
     #- url: /blog
     #  title: Zoetrope IoT Blog
-    - url: /technology-blog
+    - url: /tech-blog
       title: Technology Blog
     #- url: /whitepapers
     #  title: Whitepapers
