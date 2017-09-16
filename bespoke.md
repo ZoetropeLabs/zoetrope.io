@@ -10,10 +10,10 @@ subheading: >
 permalink: /bespoke-iot-development/
 header_background: '/assets/img/bespoke.jpg'
 
-hero_cta_image: /assets/img/novo-app-climair.png
-hero_cta_heading: Read how we custom built the Novo connected system for e.on
+hero_cta_image: /assets/img/bespoke-iot-action-on-hearing-loss.png
+hero_cta_heading: Learn how Zoetrope labs created a proof-of-concept hearing aid for Action on Hearing loss UK
 hero_cta_content: ""
-hero_cta_link: /client-story/hello-novo
+hero_cta_link: /client-story/action-on-hearing-loss/
 hero_cta_link_text: Read the case study
 
 quote: >
