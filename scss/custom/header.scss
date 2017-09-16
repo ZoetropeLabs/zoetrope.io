@@ -42,6 +42,8 @@
   background-position: center top;
   background-blend-mode: multiply;
   background-size: contain;
+
+  transition: background 1s;
 }
 
 .stage-shelf {

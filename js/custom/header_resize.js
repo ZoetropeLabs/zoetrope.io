@@ -28,28 +28,47 @@ const headerResize = (($)=> {
       return
     }
 
-    const $angle_bg_elem = $('.solid-angle-bg')
-    const offset = $angle_bg_elem.offset().top
+    const $angleBgElem = $('.solid-angle-bg')
+    const offset = $angleBgElem.offset().top
     const height = 350; // Magic number based on the angle
     const bgHeight = offset + height
+
 
     // If the page is wider than the image, after re-sizing
     // then we should just leave it as a `contain` sized
     // background image which will cover the height more
     // appropriately
     if(pageWidth < (bgHeight * imageSize.aspect) ){
+      // In order to make animations work, we need to work out
+      // how big the background image is naturally with the
+      // contain. This requires working out the container aspect
+      // ratio
+      // Then once we've set the size numerically, we can animate it
+      const contW = $(document).width(),
+            imageHeight = contW / imageSize.aspect
+
+
       $('#stage').css({
-        backgroundSize: 'auto ' + bgHeight + 'px, auto',
+        backgroundSize: 'auto ' + imageHeight + 'px, auto',
       })
+
+      // A set timeout seems to be required in order to allow
+      // the animation to start
+      setTimeout(() => {
+
+        $('#stage').css({
+          backgroundSize: 'auto ' + bgHeight + 'px, auto',
+        })
+      }, 10)
+
       console.log("set by height: ", bgHeight)
     }
-    else{
+    else {
       $('#stage').css({
         backgroundSize: 'contain',
       })
       console.log("set by width, height: ", bgHeight)
     }
-
   }
 
   getImageSize();
