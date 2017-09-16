@@ -60,9 +60,19 @@ const DEPLOY_SETTINGS = {
   path: '~/Sites/zoetrope.io'
 }
 
-gulp.task('img', () => {
-  gulp.src(Paths.IMG_SRC)
-    .pipe(imagemin([imagemin.jpegtran({progressive: true})], {verbose: true}))
+gulp.task('img-compress', () => {
+  return gulp.src(Paths.IMG_SRC)
+    .pipe(imagemin([
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng(),
+      imagemin.svgo(),
+      imagemin.gifsicle()
+    ], {verbose: true}))
+    .pipe(gulp.dest('images'))
+})
+
+gulp.task('img', ['img-compress'], () => {
+  return gulp.src(Paths.IMG_SRC)
     .pipe(gulp.dest(Paths.DIST+'/img'))
 })
 
