@@ -87,7 +87,7 @@
 }
 
 
-$duration: 2s;
+$duration: 1.5s;
 
 @keyframes fade-in {
   0%   { opacity: 0; }
@@ -109,6 +109,7 @@ $duration: 2s;
 
   svg {
     zoom: 0.9;
+
     path {
       fill: white !important;
     }
