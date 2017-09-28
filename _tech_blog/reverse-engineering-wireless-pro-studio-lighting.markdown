@@ -5,6 +5,7 @@ tags:
 - Flashes
 - Reverse Engineering
 - SPI
+author: richwebb
 ---
 
 ### Introduction
