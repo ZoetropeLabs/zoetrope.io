@@ -45,6 +45,8 @@ The bootloader can go into a number of modes depending on the state of GPIOs 0, 
 
 <tr>
 
+<th>&nbsp;</th>
+
 <th>GPIO 0</th>
 
 <th>GPIO 2</th>
