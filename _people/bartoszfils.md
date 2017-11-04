@@ -5,7 +5,7 @@ weight: 10
 management: "false"
 job_title: Software Engineer
 linkedin: https://www.linkedin.com/in/benjaminhowes/
-github: https://github.com/benhowes
+github: https://github.com/bfo
 
 hidden: "true"
 ---

@@ -5,7 +5,7 @@ weight: 10
 management: "false"
 job_title: Software Engineer
 linkedin: false
-github: false
+github: https://github.com/mitch104
 ---
 
 After completing a Masters in Physics at Durham University, I decided to become a software developer. I particularly enjoyed working on a project for an X-ray metrology company, creating 3D visualisations of the compositions of the X-ray’s wafer chips, in order to find defects.

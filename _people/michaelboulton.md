@@ -5,7 +5,7 @@ weight: 5
 management: "false"
 job_title: Software Engineer
 linkedin: false
-github: false
+github: https://github.com/michaelboulton
 ---
 
 I first used my Masters in Computer science and Electronics in internal scalability and parallel computing for high-performance computing. Creating scientific simulations of super-computing with emerging technologies, I travelled around the world and was published a couple of times in scientific journals.
