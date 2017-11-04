@@ -173,7 +173,7 @@ There’s a little boilerplate here since this code is used on both the master a
 
 When a slave needs to perform an operation which may take some time (e.g moving an actuator to a specific position) multiple poll commands can be sent:
 
-<script src="[https://gist.github.com/bitdivision/0f261d32c11000c93b9b.js](https://gist.github.com/bitdivision/0f261d32c11000c93b9b.js)"></script>
+<script src="https://gist.github.com/bitdivision/0f261d32c11000c93b9b.js"></script>
 
 The first function `runSingleSlaveProcess()` sends a command to a slave by calling the `pollUntilComplete(...)` function. This function will block (and continually send packets) until a `COMMAND_COMPLETE` packet is received or it’s timeout is reached.
 

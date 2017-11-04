@@ -7,6 +7,7 @@ tags:
 - ESP-07
 - IoT
 - electronics
+author: richwebb
 ---
 
 ### Introduction
@@ -44,6 +45,8 @@ The bootloader can go into a number of modes depending on the state of GPIOs 0, 
 <tbody>
 
 <tr>
+
+<th>&nbsp;</th>
 
 <th>GPIO 0</th>
 
