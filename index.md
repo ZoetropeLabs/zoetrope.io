@@ -9,7 +9,7 @@ header_background: "/assets/img/home.jpg"
 title: "Zoetrope Labs - IoT consulting and developement"
 heading: We accelerate ideas into connected products
 subheading: >
-    Zoetrope develops connected solutions and services for the internet of things, helping our clients enchance their existing products.
+    Zoetrope labs develops connected solutions and services for the internet of things, helping our clients make fantastic connected products
 
 
     <a class="btn btn-success btn-lg" href="/contact">Talk to us <span class="icon icon-chevron-small-right"></span></a>
