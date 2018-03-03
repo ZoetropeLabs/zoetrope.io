@@ -39,5 +39,8 @@ Speaking of the collaboration, Novo Director Tom Timothy said, “It has been a 
 
 Novo was founded in 2015 as part of the e.on:agile accelerator programme, whose vision is to transform the way people interact with buildings. Novo’s first product, Climair leverages the power of the Internet of Things to existing air conditioning units; offering smart features and energy saving capabilities.
 
+## IBM Case Study:
+IBM have written up a more complete case study detailing the work Zoetrope labs completed, [see the Novo case study here](http://ecc.ibm.com/case-study/us-en/ECCF-KUC12473USEN?lnk=ushpv18cs1&lnk2=learn)
+
 <img src="/assets/img/case-studies/Novo-logo.jpg" alt="Drawing" style="width: 300px;"/>
 
