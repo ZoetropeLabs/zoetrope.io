@@ -1,12 +1,10 @@
 ---
 layout: blocks
-title: ZConnect
-heading: ZConnect is a managed end-to-end IoT solution to turn data from your products into actionable insights
+title: Technical Overview
+heading: ZConnect develops connected products and services for the Internet of Things, Wearables and other smart devices
 subheading: Use IoT to predictively maintain, learn from your products and delight your customers
-permalink: /zconnect-iot/
+permalink: /zconnect-iot/technical-overview
 header_background: '/assets/img/zconnect.jpg'
-cta_link: /contact
-cta_link_text: BOOK A DEMO
 
 quote: >
     Zoetrope took on the task of creating a world class IoT Cloud platform and mobile application that was easily scalable to serve millions of customers for Novo.
@@ -16,7 +14,7 @@ hero_cta_image: /assets/img/novo-app-climair.png
 hero_cta_heading: Read how we built the Novo connected system for <span class="zoeicons-eon large-icon"></span>
 hero_cta_content: ""
 hero_cta_link: /client-story/hello-novo
-hero_cta_link_text: READ THE CASE STUDY
+hero_cta_link_text: Read the case study
 
 rows:
   - title: Hardware that interfaces with your product to collect data

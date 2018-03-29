@@ -1,7 +1,11 @@
 
 
 .block{
-    font-size: 18px;
+  font-size: 18px;
+
+  &.no-padding {
+    padding: 0;
+  }
 }
 
 .block-inverse{
@@ -120,6 +124,10 @@ $push-down-amount: 100px;
 }
 
 .block-services {
+
+    .zconnect-details {
+        padding: 60px;
+    }
 
     .service-details {
         padding: 45px;
