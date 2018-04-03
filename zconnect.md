@@ -1,5 +1,5 @@
 ---
-layout: blocks
+layout: zconnect
 title: ZConnect
 heading: ZConnect is a managed end-to-end IoT solution to turn data from your products into actionable insights
 subheading: Use IoT to predictively maintain, learn from your products and delight your customers

@@ -74,6 +74,7 @@
 $push-down-amount: 100px;
 .solid-angle-bg{
     overflow: hidden;
+    padding-bottom: 13vw;
 
     .block-background{
         margin-top: $push-down-amount; //pushes angle down a bit
@@ -88,6 +89,10 @@ $push-down-amount: 100px;
 
     .push-down-no-overlap {
         margin-top: $push-down-amount * 2 + 50px;
+    }
+
+    &.hero {
+      padding-bottom: 50px;
     }
 }
 
@@ -185,8 +190,4 @@ $push-down-amount: 100px;
         font-size: 18px;
         font-weight: bold;
     }
-}
-
-.block-reduce-bottom-pad {
-    padding-bottom: 50px;
 }

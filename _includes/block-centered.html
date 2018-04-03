@@ -1,0 +1,18 @@
+<div class="row">
+  {% assign block = include.block %}
+  <div class="col-sm-12 col-lg-6 push-lg-3"
+    <h3>{{ block.title }}</h3>
+    <hr />
+    {% if block.subtitle %}<em><strong>{{ block.subtitle | escape }}</strong></em>{% endif %}
+    {{ block.text | markdownify }}</p>
+    {% if block.image or block.include %}
+      <div class="borderless-img">
+      {% if block.image %}
+        <div class="borderless-img-content" style="background-image: url('{{ block.image }}');">&nbsp;</div>
+      {% else %}
+        {% include {{ block.include.name }} props=block.include.props %}
+      {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="block block-inverse hero">
+  <div class="block-foreground container">
+    <div class="col-md-8 col-lg-6">
+      <h1 class="page-heading">{{ page.heading }}</h1>
+      <p>{{ page.subheading }}</p>
+      <a class="btn btn-success" href="{{page.cta_link}}">{{page.cta_link_text}}</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="block block-inverse solid-angle-bg zoeicons-blue block-reduce-bottom-pad">
+  <div class="block-foreground container">
+    <div class="content">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 text-center">
+
+          <img src="{{page.hero_cta_image}}">
+
+        </div>
+        <div class="col-sm-12 col-lg-6 push-down-no-overlap text-center">
+          <h3>{{page.hero_cta_heading}}</h3>
+          {{page.hero_cta_content | markdownify}}
+          <p class="text-center">
+            <a class="btn btn-success" href="{{page.hero_cta_link}}">{{page.hero_cta_link_text}}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block-background">&nbsp;</div>
+</div>
+
+<article class="block zconnect-fluid-height block-services zcontent zoetrope-dark-blue no-padding">
+  <div class="block-forground container">
+      {% for row in page.rows %}
+        {% assign mod = forloop.index | modulo: 2 %}
+            <div class="row">
+              {% if row.image or row.include %}
+                <div class="borderless-img col-sm-12 col-lg-6 {% if mod == 1 %} push-lg-6{% endif %}">
+                {% if row.image %}
+                  <div class="borderless-img-content col" style="background-image: url('{{ row.image }}');">&nbsp;</div>
+                {% else %}
+                  {% include {{ row.include.name }} props=row.include.props %}
+                {% endif %}
+                </div>
+              {% endif %}
+              <div class="zconnect-details col-sm-12 col-lg-6 {% if mod == 1 %} pull-lg-6{% endif %}">
+                <h3 class="service-title">{{ row.title }}</h3>
+                <hr />
+                {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
+                {{ row.text | markdownify }}</p>
+              </div>
+            </div>
+      {% endfor %}
+    </div>
+  </div>
+</article>
