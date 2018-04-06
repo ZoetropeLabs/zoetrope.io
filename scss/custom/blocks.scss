@@ -74,7 +74,6 @@
 $push-down-amount: 100px;
 .solid-angle-bg{
     overflow: hidden;
-    padding-bottom: 13vw;
 
     .block-background{
         margin-top: $push-down-amount; //pushes angle down a bit
@@ -89,10 +88,6 @@ $push-down-amount: 100px;
 
     .push-down-no-overlap {
         margin-top: $push-down-amount * 2 + 50px;
-    }
-
-    &.hero {
-      padding-bottom: 50px;
     }
 }
 
@@ -125,6 +120,50 @@ $push-down-amount: 100px;
 .solid-angle-bg-white{
     .block-background{
         background-color: $zoetrope-white;
+    }
+}
+
+.zconnect-technical{
+    padding-top: 200px;
+    color: inherit;
+    h3 {
+        color: $zoetrope-blue;
+    }
+    .block-background{
+        margin-top: 0;
+        background-color: $zoetrope-grey-light;
+    }
+    @include media-breakpoint-down(md){
+        padding-top: 100px;
+    }
+}
+
+.zt-rows {
+
+    h3, h5 {
+        color: $zoetrope-blue;
+    }
+
+    h5 {
+        font-size: 1.05rem;
+        margin-top: 8px;
+    }
+
+    .zt-row-image {
+        padding: 60px 0;
+    }
+
+    .zt-support-guy {
+        padding: 0;
+        background: $zoetrope-grey-light;
+
+        div:first-of-type {
+            padding: 60px 0;
+        }
+    }
+
+    .zt-row-centered {
+        padding: 60px 0;
     }
 }
 
@@ -176,6 +215,10 @@ $push-down-amount: 100px;
             height: 300px;
         }
     }
+}
+
+.block-reduce-bottom-pad {
+    padding-bottom: 50px;
 }
 
 .block-quote {

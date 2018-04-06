@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="block block-inverse hero">
+  <div class="block-foreground container">
+    <div class="col-md-8 col-lg-6">
+      <h1 class="page-heading">{{ page.heading }}</h1>
+      <p>{{ page.subheading }}</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="block block-inverse solid-angle-bg zconnect-technical zoeicons-blue block-reduce-bottom-pad">
+  <div class="block-foreground container">
+    <div class="col-md-12 col-lg-8 push-lg-2">
+      <div class="content text-center">
+        <h3>{{page.hero_heading}}</h3>
+        {{page.hero_text | markdownify}}
+        <img src="{{page.hero_image}}">
+      </div>
+    </div>
+  </div>
+  <div class="block-background">&nbsp;</div>
+</div>
+
+<article class="block zconnect-fluid-height zcontent no-padding">
+  <div class="block-forground container zt-rows">
+      {% for row in page.rows %}
+        {% include {{ row.layout }} row=row %}
+      {% endfor %}
+    </div>
+  </div>
+</article>
