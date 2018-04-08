@@ -25,11 +25,8 @@ layout: default
   <div class="block-background">&nbsp;</div>
 </div>
 
-<article class="block zconnect-fluid-height zcontent no-padding">
-  <div class="block-forground container zt-rows">
-      {% for row in page.rows %}
-        {% include {{ row.layout }} row=row %}
-      {% endfor %}
-    </div>
-  </div>
+<article class="block zconnect-fluid-height zcontent no-padding container zt-rows">
+  {% for row in page.rows %}
+    {% include {{ row.layout }} row=row %}
+  {% endfor %}
 </article>

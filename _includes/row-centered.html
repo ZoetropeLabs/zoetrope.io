@@ -1,27 +1,31 @@
-<div class="row zt-row-centered">
-  {% assign row = include.row %}
-  <div class="col-sm-12 text-center">
-    <h3>{{ row.title }}</h3>
-    {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
-    {{ row.text | markdownify }}</p>
-    {% if row.image or row.include %}
-      <div class="borderless-img">
-      {% if row.image %}
-        <div class="borderless-img-content" style="background-image: url('{{ row.image }}');">&nbsp;</div>
-      {% else %}
-        {% include {{ row.include.name }} props=row.include.props %}
-      {% endif %}
-      </div>
-    {% endif %}
-    {% if row.columns %}
-      <div class="row">
-        {% for column in row.columns %}
-          <div class="col-sm-4">
-            <img src={{ column.image }} class="img-fluid"/>
-            <h5>{{ column.title }}</h5>
+<div class="block zt-row-centered">
+  <div class="block-foreground container">
+    <div class="row">
+      {% assign row = include.row %}
+      <div class="col-sm-12 text-center">
+        <h3>{{ row.title }}</h3>
+        {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
+        {{ row.text | markdownify }}</p>
+        {% if row.image or row.include %}
+          <div class="borderless-img">
+          {% if row.image %}
+            <div class="borderless-img-content" style="background-image: url('{{ row.image }}');">&nbsp;</div>
+          {% else %}
+            {% include {{ row.include.name }} props=row.include.props %}
+          {% endif %}
           </div>
-        {% endfor %}
+        {% endif %}
+        {% if row.columns %}
+          <div class="row">
+            {% for column in row.columns %}
+              <div class="col-sm-4">
+                <img src={{ column.image }} class="img-fluid"/>
+                <h5>{{ column.title }}</h5>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
       </div>
-    {% endif %}
+    </div>
   </div>
 </div>

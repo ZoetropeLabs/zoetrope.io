@@ -1,12 +1,16 @@
-<div class="row zt-support-guy">
-  {% assign row = include.row %}
-  <div class="col-sm-12 col-lg-6">
-    <h3>{{ row.title }}</h3>
-    {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
-    {{ row.text | markdownify }}</p>
-    {% if row.cta_title %}<a class="btn btn-success" href="{{row.cta_link}}">{{row.cta_title}}</a>{% endif %}
-  </div>
-  <div class="borderless-img col-sm-12 col-lg-6">
-    <img src="/assets/img/zconnect/ZT_Support_Chap.png" class="img-fluid"/>
+<div class="block zt-support-guy">
+  <div class="block-foreground container">
+    <div class="row">
+      {% assign row = include.row %}
+      <div class="col-sm-12 col-lg-6">
+        <h3>{{ row.title }}</h3>
+        {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
+        {{ row.text | markdownify }}</p>
+        {% if row.cta_title %}<a class="btn btn-success" href="{{row.cta_link}}">{{row.cta_title}}</a>{% endif %}
+      </div>
+      <!-- <div class="borderless-img col-sm-12 col-lg-6">
+        <img src="/assets/img/zconnect/ZT_Support_Chap.png" class="img-fluid"/>
+      </div> -->
+    </div>
   </div>
 </div>

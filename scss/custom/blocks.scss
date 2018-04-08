@@ -144,26 +144,23 @@ $push-down-amount: 100px;
         color: $zoetrope-blue;
     }
 
-    h5 {
-        font-size: 1.05rem;
-        margin-top: 8px;
-    }
-
-    .zt-row-image {
-        padding: 60px 0;
+    .block {
+      padding: 60px 0;
     }
 
     .zt-support-guy {
-        padding: 0;
         background: $zoetrope-grey-light;
-
-        div:first-of-type {
-            padding: 60px 0;
-        }
+        background-image: url('/assets/img/zconnect/ZT_Support_Chap.png');
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
     }
 
     .zt-row-centered {
-        padding: 60px 0;
+        h5 {
+            font-size: 1.05rem;
+            margin-top: 8px;
+        }
     }
 }
 
