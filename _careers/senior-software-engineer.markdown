@@ -17,7 +17,7 @@ Given the size of the team (currently 5), it’s essential that we find an all r
 * History of project based work - working in a development team
 * Command of source control, unit testing, CI etc.
 * Teamwork skills
-* Good working knowledge of python
+* Good working knowledge of python, django
 * Knowledge of bash command line tools
 
 **Desirable:**
@@ -25,6 +25,7 @@ Given the size of the team (currently 5), it’s essential that we find an all r
 * Developing platforms or products
 * Enjoy client facing roles
 * Leadership experience
+
 ## Who is Zoetrope?
 
 Zoetrope is a fast growing technology consultancy focusing on IoT, based in Bristol. We pride ourselves on being the whole package - from transistor, to 3D print, to server, to web interface. We work on projects both with multinationals and startups as the virtual technology team, helping to drive the specification, prototyping and implementation of the client’s product.

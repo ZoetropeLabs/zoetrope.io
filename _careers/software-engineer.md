@@ -17,8 +17,8 @@ Given the size of the team (currently 5), it’s essential that we find an all r
 5. Teamwork skills
 
 **It’s desirable that you have *some* of the following skills:**
-1. Electronics/Robotics experience
-2. 3D printing knowledge
+1. Good knowledge of Django (and Django rest framework)
+2. Electronics/Robotics experience
 3. C/C++ or Javascript experience
 4. Experience of app development
 5. Linux skills
