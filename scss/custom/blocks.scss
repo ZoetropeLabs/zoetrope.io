@@ -154,85 +154,91 @@ $push-down-amount: 100px;
 
 .zt-rows {
 
-    h3, h4, h5 {
-        color: $zoetrope-blue;
+  h3, h4, h5 {
+    color: $zoetrope-blue;
+  }
+
+  .block {
+    padding: 60px 0;
+
+    &.bg-grey-light {
+      background: $zoetrope-grey-light;
     }
 
-    .block {
+    &.bg-blue-darkest {
+      background: $zoetrope-blue-darkest;
+    }
+  }
+
+  .zt-row-image {
+    overflow: hidden;
+    @include media-breakpoint-up(lg) {
+      img {
+        position: absolute;
+        width: 314px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      img {
+        margin-bottom: 20px;
+      }
+      .row {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  .zt-row-centered {
+    h5 {
+      font-size: 1.05rem;
+      margin-top: 8px;
+    }
+
+    img {
+      height: 80px;
+      margin: 10px 0;
+    }
+  }
+
+  .zt-cta {
+    h3 {
+      color: white;
+    }
+    background: $zoetrope-blue;
+    color: white;
+  }
+
+  .zt-row-columns {
+    color: white;
+
+    img {
+      height: 100px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .zt-row-image-full {
+    padding: 0;
+
+    .row div:first-of-type {
       padding: 60px 0;
+    }
 
-      &.bg-grey-light {
-        background: $zoetrope-grey-light;
+    &.how-zc-helps {
+      img {
+        height: 380px;
+        margin: 20px 0;
       }
+    }
 
-      &.bg-blue-darkest {
-        background: $zoetrope-blue-darkest;
+    &.align-image-bottom {
+      .borderless-img {
+        display: flex;
+        align-items: flex-end;
       }
     }
-
-    .zt-row-image {
-        overflow: hidden;
-        @include media-breakpoint-up(lg) {
-            img {
-                position: absolute;
-                width: 314px;
-            }
-        }
-
-        @include media-breakpoint-down(md) {
-            img {
-                margin-bottom: 20px;
-            }
-            .row {
-                flex-direction: column-reverse;
-            }
-        }
-    }
-
-    .zt-support-guy {
-        background: $zoetrope-grey-light;
-        background-image: url('/assets/img/zconnect/ZT_Support_Chap.png');
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
-    }
-
-    .zt-row-centered {
-        h5 {
-            font-size: 1.05rem;
-            margin-top: 8px;
-        }
-
-        img {
-          height: 80px;
-          margin: 10px 0;
-        }
-    }
-
-    .zt-cta {
-        h3 {
-          color: white;
-        }
-        background: $zoetrope-blue;
-        color: white;
-    }
-
-    .zt-row-columns {
-        color: white;
-
-        img {
-          height: 100px;
-          margin-bottom: 20px;
-        }
-    }
-
-    .zt-row-image-full {
-        padding: 0;
-
-        .row div:first-of-type {
-          padding: 60px 0;
-        }
-    }
+  }
 }
 
 .block-services {

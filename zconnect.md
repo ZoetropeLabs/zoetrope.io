@@ -1,12 +1,10 @@
 ---
 layout: zconnect
 title: ZConnect
-heading: ZConnect is a managed end-to-end IoT solution to turn data from your products into actionable insights
-subheading: Use IoT to predictively maintain, learn from your products and delight your customers
+heading: ZConnect - How connected products get delivered
+subheading: Rapidly add scalable IoT cnnectivity to your product range, integrate with other systems and gain business value with ZConnect
 permalink: /zconnect-iot/
 header_background: '/assets/img/zconnect.jpg'
-cta_link: /contact
-cta_link_text: BOOK A DEMO
 
 quote: >
     Zoetrope took on the task of creating a world class IoT Cloud platform and mobile application that was easily scalable to serve millions of customers for Novo.
@@ -19,17 +17,48 @@ hero_cta_link: /client-story/hello-novo
 hero_cta_link_text: READ THE CASE STUDY
 
 rows:
-  - title: Hardware that interfaces with your product to collect data
-    image: /assets/img/services/bespoke.jpg
+  - layout: row-image-full.html
+    class: bg-grey-light how-zc-helps
+    title: How ZConnect helps you
+    image: /assets/img/zconnect/ZT_How_ZT_Helps_Diagram.svg
     text: |
-      This hardware is tailored around what's already in the product; we can add new sensors to collect data or use existing sensors and just add the required hardware to connect the product to the internet via 3G, wi-fi or LPWA.
+      ZConnect is a connected product system for OEMs who want to add connectivity to existing products
 
-      Throughout our consultive process we design, improve and refine the hardware to ensure that the final product will be built to provide maximum business value for you.
+      This applies across almost all industries from white goods, through to factory tooling, to agricultural equipment
 
-  - title: The ZConnect platform gives you analytics and actionable insights
-    image: /assets/img/whatwedo/iot-gateway-board.jpg
+      ZConnect can rapidly have new functionality added to allow bespoke data display, integration with other platforms, or
+  - layout: row-image-full.html
+    class: align-image-bottom
+    reverse: true
+    title: Remote Diagnosis & Predictive Maintenance
+    image: /assets/img/zconnect/ZT_Laptop.png
     text: |
-      ZConnect has a modular and customisable platform built on IBM watson technologies to provide a resilient and scalable platform to collect and aggregate data. Zoetrope is able to provide customisations and integrations with virtually any other software. This allows streamlining of existing processes.
+      ZConnect allows remote monitoring and easy diagnosis of faults on remote systems, getting data from sensors which may be on the product.
 
-      ZConnect provides everything you need in a secure platform which is supported by the experts from Zoetrope.
+      ZConnect is also able to alert users when devices do not appear to be operating normally in order to allow proactive servicing.
+  - layout: row-image-full.html
+    class: bg-grey-light
+    title: Compliance and Audit Trail
+    image: /assets/img/zconnect/ZT_Service_Engineer.png
+    text: |
+      Connected products open up new possibilities for collecting and storing data about the operation of equipment and movement of goods.
+
+      Create maps, graphs and reports of everything from panic button activations to application of weed killer!
+  - layout: row-centered.html
+    title: Open source, easy choice
+    text: |
+      ZConnect has been released as an open source project, meaning you can be safe in the knowledge that you're organisation will never be dependent on a third party vendor for licencing or your connected product platform.
+
+      ZConnect has considered security from the ground up and role-based permissions come as standard. Create groups and organisations to only give access to the data which is required for a particular party
+  - layout: row-image-full.html
+    class: bg-grey-light
+    reverse: true
+    title: Single source solution
+    image: /assets/img/zconnect/ZT_Board_Hand.png
+    text: |
+      Zoetrope consults on and creates connected products for our customers - helping right from level concept planning and business cases, designing and implementing the ZConnect system, understanding product lifecycles and helping you setup manufacturing processes for smart products
+  - layout: row-cta.html
+    title: Link to benefits
+    label: LOAD MORE
+    link: /benefits
 ---
