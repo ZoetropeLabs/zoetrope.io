@@ -8,7 +8,7 @@
         {{ row.text | markdownify }}</p>
         {% if row.cta_title %}<a class="btn btn-success" href="{{row.cta_link}}">{{row.cta_title}}</a>{% endif %}
       </div>
-      <div class="borderless-img col-sm-12 col-lg-6">
+      <div class="borderless-img col-lg-6 d-flex justify-content-center">
         {% if row.image or row.include %}
           {% if row.image %}
             <img src={{ row.image }} class="img-fluid"/>

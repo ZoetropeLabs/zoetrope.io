@@ -133,6 +133,9 @@ $push-down-amount: 100px;
         margin-top: 0;
         background-color: $zoetrope-grey-light;
     }
+    img {
+        padding-left: 50px;
+    }
     @include media-breakpoint-down(md){
         padding-top: 100px;
     }
@@ -140,12 +143,31 @@ $push-down-amount: 100px;
 
 .zt-rows {
 
-    h3, h5 {
+    h3 {
         color: $zoetrope-blue;
     }
 
     .block {
       padding: 60px 0;
+    }
+
+    .zt-row-image {
+        overflow: hidden;
+        @include media-breakpoint-up(lg) {
+            img {
+                position: absolute;
+                width: 314px;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            img {
+                margin-bottom: 20px;
+            }
+            .row {
+                flex-direction: column-reverse;
+            }
+        }
     }
 
     .zt-support-guy {
@@ -158,9 +180,18 @@ $push-down-amount: 100px;
 
     .zt-row-centered {
         h5 {
+            color: $zoetrope-blue;
             font-size: 1.05rem;
             margin-top: 8px;
         }
+    }
+
+    .zt-cta {
+        h3 {
+          color: white;
+        }
+        background: $zoetrope-blue;
+        color: white;
     }
 }
 

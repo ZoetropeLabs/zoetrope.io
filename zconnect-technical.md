@@ -38,5 +38,8 @@ rows:
         image: /assets/img/zconnect/ZT_Icon_Laptop.svg
       - title: Secure Cloud
         image: /assets/img/zconnect/ZT_Icon_Cloud.svg
-
+  - layout: row-cta.html
+    title: Call to action
+    label: More
+    link: /link/to/zconnect/more
 ---
