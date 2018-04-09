@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="block block-inverse hero block-reduce-bottom-pad">
+  <div class="block-foreground container">
+    <div class="col-md-8">
+      <h1 class="page-heading">{{ page.heading }}</h1>
+      <p>{{ page.subheading }}</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="block block-inverse solid-angle-bg zc-benefits zoeicons-blue">
+  <div class="block-foreground container">
+    <div class="content">
+      <div class="row zt-hero">
+        <div class="col-sm-12 col-lg-6 text-center">
+
+          <img src="{{page.hero_cta_image}}">
+
+        </div>
+        <div class="col-sm-12 col-lg-6 push-down-no-overlap text-center">
+          <h3>{{page.hero_cta_heading}}</h3>
+          {{page.hero_cta_content | markdownify}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block-background">&nbsp;</div>
+</div>
+
+<article class="block no-padding zt-rows">
+  {% for row in page.rows %}
+    {% include {{ row.layout }} row=row %}
+  {% endfor %}
+</article>

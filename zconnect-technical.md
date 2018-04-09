@@ -23,8 +23,10 @@ rows:
     cta_link: /link/to/zconnect/docs
     text: |
       Zoetrope Labs has made all of the components of ZConnect available online, along with documentation and details of how to start developing on ZConnect.
-  - layout: support-guy.html
+  - layout: row-image-full.html
     title: Support when you need it
+    class: bg-grey-light
+    image: /assets/img/zconnect/ZT_Support_Chap.png
     text: |
       Zoetope labs uses ZConnect for a multitude of projects both internally and for our clients. we're able to offer training, support and consulting, whatever your level of expertise. In some cases that may be a complete project delivery, in others it might just be a 1 day training session with your developers.
   - layout: row-centered.html

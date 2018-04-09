@@ -1,0 +1,15 @@
+<div class="block zt-row-columns{% if include.row.class %} {{ include.row.class }}{% endif %}">
+  <div class="block-foreground container">
+    <div class="row">
+      {% assign row = include.row %}
+      {% for column in row.columns %}
+        <div class="col-sm-{{ 12 | divided_by:row.columns.size | floor }} text-center">
+          <img src={{ column.image }} class="img-fluid"/>
+          <h4>{{ column.title }}</h4>
+          <hr />
+          <p>{{ column.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
