@@ -30,9 +30,28 @@ rows:
 
       ZConnect can rapidly have new functionality added to allow bespoke data display, integration with other platforms, or
   - layout: row-image-full.html
-    class: align-image-bottom
+    class: laptop-slideshow
     reverse: true
     title: Remote Diagnosis & Predictive Maintenance
+    include:
+      layout: app-window-slideshow.html
+      props:
+        notifications:
+          - device: Fridge &#35;34
+            icon: icon-signal
+            lines:
+              - Connected, last seen 30s ago<br/><strong>No issues detected</strong>
+              - <span class="icon icon-thermometer"></span>3.4&deg;C <span class="icon icon-flash"></span> 300W
+          - device: Revolving Door
+            icon: icon-warning
+            lines:
+              - Connected, last seen 10s ago
+              - <p><strong>Suspected motor failure.<br /> Engineer dispatched 30 minutes ago.</strong>
+          - device: Lawn Mower &#35;10
+            icon: icon-signal
+            lines:
+              - Connected, last seen 10s ago <br /><strong>In use by Gerry Smith</strong>
+              - <span class="icon icon-drop"></span>Fuel level 80%  &nbsp;&nbsp;<span class="icon icon-map"></span><i> See location</i>
     image: /assets/img/zconnect/ZT_Laptop.png
     text: |
       ZConnect allows remote monitoring and easy diagnosis of faults on remote systems, getting data from sensors which may be on the product.

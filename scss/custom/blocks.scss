@@ -221,7 +221,7 @@ $push-down-amount: 100px;
   .zt-row-image-full {
     padding: 0;
 
-    .row div:first-of-type {
+    .text-side {
       padding: 60px 0;
     }
 
@@ -232,7 +232,22 @@ $push-down-amount: 100px;
       }
     }
 
-    &.align-image-bottom {
+    &.laptop-slideshow {
+      .app-window-block {
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform: scale(0.7);
+
+        .app-window {
+          border: none;
+          .app-window-header {
+            display: none;
+          }
+        }
+      }
       .borderless-img {
         display: flex;
         align-items: flex-end;

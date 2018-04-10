@@ -36,6 +36,6 @@ layout: default
 
 <article class="block zconnect-fluid-height no-padding container zt-rows">
   {% for row in page.rows %}
-    {% include {{ row.layout }} row=row %}
+    {% include {{ row.layout }} props=row %}
   {% endfor %}
 </article>

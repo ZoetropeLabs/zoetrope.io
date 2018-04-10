@@ -1,9 +1,9 @@
 <div class="block zt-cta">
   <div class="block-foreground container">
     <div class="d-flex justify-content-between">
-      {% assign row = include.row %}
-      <h3>{{ row.title }}</h3>
-      <a class="btn btn-success" href="{{row.link}}">{{row.label}}</a>
+      {% assign props = include.props %}
+      <h3>{{ props.title }}</h3>
+      <a class="btn btn-success" href="{{props.link}}">{{props.label}}</a>
     </div>
   </div>
 </div>

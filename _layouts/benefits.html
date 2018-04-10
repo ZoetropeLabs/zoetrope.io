@@ -33,6 +33,6 @@ layout: default
 
 <article class="block no-padding zt-rows">
   {% for row in page.rows %}
-    {% include {{ row.layout }} row=row %}
+    {% include {{ row.layout }} props=row %}
   {% endfor %}
 </article>
