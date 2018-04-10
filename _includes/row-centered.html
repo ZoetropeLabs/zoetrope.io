@@ -1,8 +1,8 @@
 <div class="block zt-row-centered{% if include.row.class %} {{ include.row.class }}{% endif %}">
   <div class="block-foreground container">
-    <div class="row">
-      {% assign row = include.row %}
-      <div class="col-sm-12 text-center">
+    {% assign row = include.row %}
+    <div class="row justify-content-center">
+      <div class="col-xs-12 col-sm-8 text-center">
         <h3>{{ row.title }}</h3>
         {% if row.subtitle %}<em><strong>{{ row.subtitle | escape }}</strong></em>{% endif %}
         {{ row.text | markdownify }}</p>
@@ -15,18 +15,18 @@
           {% endif %}
           </div>
         {% endif %}
-        {% if row.columns %}
-          <div class="row">
-            {% for column in row.columns %}
-              <div class="col-sm-{{ 12 | divided_by:row.columns.size | floor }}">
-                <img src={{ column.image }} class="img-fluid"/>
-                <h5>{{ column.title }}</h5>
-                <p>{{ column.text }}</p>
-              </div>
-            {% endfor %}
-          </div>
-        {% endif %}
       </div>
     </div>
+    {% if row.columns %}
+      <div class="row">
+        {% for column in row.columns %}
+          <div class="col-sm-{{ 12 | divided_by:row.columns.size | floor }} text-center">
+            <img src={{ column.image }} class="img-fluid"/>
+            <h5>{{ column.title }}</h5>
+            <p>{{ column.text }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 </div>

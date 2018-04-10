@@ -57,7 +57,7 @@ rows:
       <h5>Save energy</h5>
       Allow users to remotely check on their devices and power them up or turn them off as required. Devices can automatically respond to external factors such as weather or the current electricity cost
   - layout: row-cta.html
-    title: Call to action
-    label: More
-    link: /link/to/zconnect/more
+    title: More about how it works..
+    label: TECHNICAL OVERVIEW
+    link: /technical-overview
 ---

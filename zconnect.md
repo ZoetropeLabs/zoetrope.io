@@ -1,6 +1,8 @@
 ---
 layout: zconnect
 title: ZConnect
+primary_menu: true
+weight: 30
 heading: ZConnect - How connected products get delivered
 subheading: Rapidly add scalable IoT cnnectivity to your product range, integrate with other systems and gain business value with ZConnect
 permalink: /zconnect-iot/
