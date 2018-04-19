@@ -6,8 +6,8 @@ weight: 100
 mobile_weight: 11
 sitemap: false
 sub_links:
-    - url: /client-stories
-      title: Client Stories
+    #- url: /client-stories
+    #  title: Client Stories
     - url: /tech-blog
       title: Technology Blog
     #- url: /whitepapers
