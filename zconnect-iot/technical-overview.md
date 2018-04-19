@@ -3,7 +3,6 @@ layout: technical
 title: ZConnect
 heading: Technical Overview
 subheading: ZConnect develops connected products and services for the Internet of Things, Wearables and other smart devices
-permalink: /technical-overview/
 header_background: '/assets/img/zconnect/whiteboard_hub.jpg'
 
 hero_heading: ZConnect in a nutshell
