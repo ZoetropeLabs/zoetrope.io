@@ -85,6 +85,14 @@ authors:
   richwebb:
     name: Richard Webb
     img: /assets/img/team/richardwebb.jpg
+  martinrolph:
+    name: Martin Rolph
+    img: /assets/img/team/martinrolph.jpg
+    title: Full-stack Developer
+  mitchellharle:
+    name: Mitchell Harle
+    img: /assets/img/team/mitchellharle.jpg
+    title: Full-stack Developer
 
 defaults:
   - scope:
