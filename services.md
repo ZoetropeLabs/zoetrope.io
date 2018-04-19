@@ -10,6 +10,8 @@ sub_links:
       title: Consulting
     - url: /bespoke-iot-development
       title: Bespoke development
+    - url: /zconnect-iot
+      title: ZConnect
 
 comment: Dummy page, which shouldn't be rendered
 ---
